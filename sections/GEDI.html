@@ -169,7 +169,7 @@ window.Quarto = {
 </ul></li>
 <li>(<span class="emoji" data-emoji="deciduous_tree">🌳</span> &amp; <span class="emoji" data-emoji="herb">🌿</span>) GEDI 3D view can also show different disturbance dynamics.
 <ul>
-<li>e.g.&nbsp;Only understory loss after fires</li>
+<li>e.g.&nbsp;Only under-story loss after fires</li>
 </ul></li>
 <li>(<span class="emoji" data-emoji="chart_with_upwards_trend">📈</span>) GEDI biomass loss and Landsat AFC disturbance metrics are related.
 <ul>
@@ -229,16 +229,16 @@ Figure&nbsp;1: Image taken from <a href="https://www.sciencedirect.com/science/a
 <li>Control groups showed 1:1 relationship, but slightly noisier when considering areas were disturbances have happened.</li>
 <li>Mean biomass loss was significantly higher in treatment than control for both AFC and GLAD. <span class="math inline">\(\rightarrow\)</span> Biomass loss can be estimated by GEDI. (Also for only degradation (Subset with AFC))</li>
 <li>Linear relationship between biomass loss and disturbance extent, complex with time since disturbance and square relationship with disturbance intensity.</li>
-<li>Forest structural changes detected after fires showed that 65% of samples didn’t have canopy losses. and in 35% of this canopy preseved samples big part of understoy was lost.</li>
+<li>Forest structural changes detected after fires showed that 65% of samples didn’t have canopy losses. and in 35% of this canopy preserved samples big part of under-story was lost.</li>
 </ul>
 <section id="personal-ideas" class="level4">
 <h4 class="anchored" data-anchor-id="personal-ideas">Personal ideas</h4>
 <ul>
 <li>How important it is for Carbon models to differentiate if the biomass loss is due to deforestation or due to forest disturbance?
 <ul>
-<li>Maybe not for Carbon models, but it is importante for ecological reasons (Ecosystem services).</li>
+<li>Maybe not for Carbon models, but it is important for ecological reasons (Ecosystem services).</li>
 </ul></li>
-<li>What is the viability of this being reproduce in europe?
+<li>What is the viability of this being reproduce in Europe?
 <ul>
 <li>GEDI coverage (Lats. &lt; 51.6º)</li>
 </ul></li>
@@ -249,8 +249,45 @@ Figure&nbsp;1: Image taken from <a href="https://www.sciencedirect.com/science/a
 </section>
 <section id="characterizing-the-structural-complexity-of-the-earths-forests-with-spaceborne-lidar" class="level2">
 <h2 class="anchored" data-anchor-id="characterizing-the-structural-complexity-of-the-earths-forests-with-spaceborne-lidar"><a href="https://www.nature.com/articles/s41467-024-52468-2">Characterizing the structural complexity of the Earth’s forests with spaceborne lidar</a></h2>
+<section id="main-ideas-1" class="level3">
+<h3 class="anchored" data-anchor-id="main-ideas-1">Main ideas</h3>
+<ul>
+<li><p>Forest structural complexity has a major influence on ecosystem functioning and biodiversity.</p></li>
+<li><p>A 3D canopy complexity data product was derived from space-borne LiDAR (GEDI) measurements (<a href="https://daac.ornl.gov/GEDI/guides/GEDI_L4C_WSCI.html">data</a>).</p>
+<ul>
+<li>Trained with ALS 3D complexity measurements (In-situ).</li>
+</ul></li>
+<li><p>(🌎 Spatial variations) Highest complexity is present in tropical forests and this complexity is related to canopy attributes from lower and middle story.</p></li>
+</ul>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<ul>
+<li><p><strong>Forest structural complexity</strong> is a function of the heterogeneity of canopy structure in tri-dimensional space.</p>
+<ul>
+<li><p>Determined by:</p>
+<ul>
+<li><p>🌳Tree diameter</p></li>
+<li><p>📏 Height</p></li>
+<li><p>🌲 Biomass</p></li>
+<li><p>🍃Leaf angle</p></li>
+<li><p><span class="emoji" data-emoji="wood">🪵</span> Deadwood</p></li>
+<li><p>Vertical layering</p></li>
+</ul></li>
+</ul></li>
+<li><p>GEDI waveforms record vertical distribution of leaves and branches from top of canopy to ground.</p></li>
+</ul>
+</section>
+<section id="methods-1" class="level3">
+<h3 class="anchored" data-anchor-id="methods-1">Methods</h3>
+<ul>
+<li>GEDI records vertical variations. Assuming that vertical and horizontal variations are related, authors tried to inferred 3D complexity out of GEDI records alone.</li>
+<li>800,000 measured values of CE<span class="math inline">\(_{xyz}\)</span> were used to model the structural complexity.</li>
+<li>Extreme gradient boosted trees regression model was trained <span class="math display">\[ CE_{xyz} = XGBoost(GEDI_{L2}) \]</span></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
