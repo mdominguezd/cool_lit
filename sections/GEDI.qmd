@@ -3,9 +3,7 @@ from: markdown+emoji
 toc: true
 toc-depth: 2
 ---
-## Repeat GEDI footprints measure the effects of tropical forest disturbances (2024)
-
-[Repeat GEDI footprints measure the effects of tropical forest disturbances (2024)](https://www.sciencedirect.com/science/article/pii/S0034425724001925?via%3Dihub#f0005)
+## [Repeat GEDI footprints measure the effects of tropical forest disturbances (2024)](https://www.sciencedirect.com/science/article/pii/S0034425724001925?via%3Dihub#f0005)
 
 ### Main ideas
 
@@ -15,9 +13,9 @@ toc-depth: 2
     -   At a population level
 -   (:deciduous_tree: & :herb:) GEDI 3D view can also show different disturbance dynamics.
     -   e.g. Only understory loss after fires
--   (:chart_with_upwards_trend:)GEDI biomass loss and Landsat AFC disturbance metrics are related.
+-   (:chart_with_upwards_trend:) GEDI biomass loss and Landsat AFC disturbance metrics are related.
     -   Opens possibility of ML models for extrapolating.
--   GEDI can measure C emissions without new optical-detected disturbance.
+-   (:bulb:) GEDI can measure C emissions without new optical-detected disturbance.
 
 ### Intro
 
@@ -26,8 +24,8 @@ toc-depth: 2
 -   Magnitude of carbon losses due to forest disturbance lacks scientific consensus.
     -   (29 - 73% of total carbon loss in tropical forests)
 -   Forest disturbances are already well detected (GLAD + AFC), but carbon loss estimation associated is still challenging (esp. tropics)
--   **Ideal tool:** :wrench: Annual biomass map created using frequent and consistent sensor (e.g. Optical and/or SAR).
-    -   However: SAR saturates with high biomass :/.
+-   Ideal tool: Annual biomass map created using frequent and consistent sensor (e.g. Optical and/or SAR).
+    -   However, this doesn't exist. A problem: SAR tends to saturate with high biomass :/.
 -   GEDI can't be used as the tool to monitor disturbances (No repeated cycles and affected by clouds).
     -   But, in some cases where disturbances have happened. It can be used to quantify the effect of those disturbances.
 
@@ -62,8 +60,7 @@ toc-depth: 2
     -   Maybe not for Carbon models, but it is importante for ecological reasons (Ecosystem services).
 -   What is the viability of this being reproduce in europe?
     -   GEDI coverage (Lats. \< 51.6º)
--   For checking the structural changes checking the Waveform Structrutal Complexity Index product could also be feasible? Check [this](https://www.nature.com/articles/s41467-024-52468-2).
+-   For checking structural changes checking the Waveform Structrutal Complexity Index product could also be feasible? Check [this](https://www.nature.com/articles/s41467-024-52468-2).
 
-## Characterizing the structural complexity of the Earth’s forests with spaceborne lidar
+## [Characterizing the structural complexity of the Earth’s forests with spaceborne lidar](https://www.nature.com/articles/s41467-024-52468-2)
 
-[Characterizing the structural complexity of the Earth’s forests with spaceborne lidar](https://www.nature.com/articles/s41467-024-52468-2)

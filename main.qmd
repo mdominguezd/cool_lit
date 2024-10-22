@@ -9,7 +9,7 @@ format:
     theme: journal
 ---
 
-The following chapters contain some interesting literature that could or could not be interesting for the reader. They are mainly related to topics related to carbon loss estimation due to forest fires using earth observation products (e.g. GEDI, Ice-SAT, Sentinel, etc.)
+The following chapters contain some interesting literature that could be (or not) interesting for the reader. They are mainly related to topics related to **carbon loss estimation due to forest fires using earth observation products** (e.g. GEDI, Ice-SAT, Sentinel, etc.).
 
 
 

@@ -1,3 +1,5 @@
 _site
 main_files
 .quarto
+
+/.quarto/
