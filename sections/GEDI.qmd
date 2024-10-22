@@ -63,3 +63,7 @@ toc-depth: 2
 -   What is the viability of this being reproduce in europe?
     -   GEDI coverage (Lats. \< 51.6º)
 -   For checking the structural changes checking the Waveform Structrutal Complexity Index product could also be feasible? Check [this](https://www.nature.com/articles/s41467-024-52468-2).
+
+## Characterizing the structural complexity of the Earth’s forests with spaceborne lidar
+
+[Characterizing the structural complexity of the Earth’s forests with spaceborne lidar](https://www.nature.com/articles/s41467-024-52468-2)
