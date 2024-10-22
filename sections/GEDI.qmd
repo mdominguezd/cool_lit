@@ -3,16 +3,17 @@ from: markdown+emoji
 toc: true
 toc-depth: 2
 ---
+
 ## [Repeat GEDI footprints measure the effects of tropical forest disturbances (2024)](https://www.sciencedirect.com/science/article/pii/S0034425724001925?via%3Dihub#f0005)
 
 ### Main ideas
 
--   (:rocket::satellite::link:) A method to examine forest changes using nearby GEDI footprints was developed. 
+-   (:rocket::satellite::link:) A method to examine forest changes using nearby GEDI footprints was developed.
 -   (:evergreen_tree::fallen_leaf:) GEDI is able to capture biomass/canopy height losses after disturbances
     -   In 30x30m resolution
     -   At a population level
 -   (:deciduous_tree: & :herb:) GEDI 3D view can also show different disturbance dynamics.
-    -   e.g. Only understory loss after fires
+    -   e.g. Only under-story loss after fires
 -   (:chart_with_upwards_trend:) GEDI biomass loss and Landsat AFC disturbance metrics are related.
     -   Opens possibility of ML models for extrapolating.
 -   (:bulb:) GEDI can measure C emissions without new optical-detected disturbance.
@@ -49,18 +50,54 @@ toc-depth: 2
 
 ### Results
 
-- Control groups showed 1:1 relationship, but slightly noisier when considering areas were disturbances have happened.
-- Mean biomass loss was significantly higher in treatment than control for both AFC and GLAD. $\rightarrow$ Biomass loss can be estimated by GEDI. (Also for only degradation (Subset with AFC))
-- Linear relationship between biomass loss and disturbance extent, complex with time since disturbance and square relationship with disturbance intensity.
-- Forest structural changes detected after fires showed that 65% of samples didn't have canopy losses. and in 35% of this canopy preseved samples big part of understoy was lost.
+-   Control groups showed 1:1 relationship, but slightly noisier when considering areas were disturbances have happened.
+-   Mean biomass loss was significantly higher in treatment than control for both AFC and GLAD. $\rightarrow$ Biomass loss can be estimated by GEDI. (Also for only degradation (Subset with AFC))
+-   Linear relationship between biomass loss and disturbance extent, complex with time since disturbance and square relationship with disturbance intensity.
+-   Forest structural changes detected after fires showed that 65% of samples didn't have canopy losses. and in 35% of this canopy preserved samples big part of under-story was lost.
 
 #### Personal ideas
 
 -   How important it is for Carbon models to differentiate if the biomass loss is due to deforestation or due to forest disturbance?
-    -   Maybe not for Carbon models, but it is importante for ecological reasons (Ecosystem services).
--   What is the viability of this being reproduce in europe?
+    -   Maybe not for Carbon models, but it is important for ecological reasons (Ecosystem services).
+-   What is the viability of this being reproduce in Europe?
     -   GEDI coverage (Lats. \< 51.6º)
 -   For checking structural changes checking the Waveform Structrutal Complexity Index product could also be feasible? Check [this](https://www.nature.com/articles/s41467-024-52468-2).
 
 ## [Characterizing the structural complexity of the Earth’s forests with spaceborne lidar](https://www.nature.com/articles/s41467-024-52468-2)
 
+### Main ideas
+
+-   Forest structural complexity has a major influence on ecosystem functioning and biodiversity.
+
+-   A 3D canopy complexity data product was derived from space-borne LiDAR (GEDI) measurements ([data](https://daac.ornl.gov/GEDI/guides/GEDI_L4C_WSCI.html)).
+
+    -   Trained with ALS 3D complexity measurements (In-situ).
+
+-   (🌎 Spatial variations) Highest complexity is present in tropical forests and this complexity is related to canopy attributes from lower and middle story.
+
+### Introduction
+
+-   **Forest structural complexity** is a function of the heterogeneity of canopy structure in tri-dimensional space.
+
+    -   Determined by:
+
+        -   🌳Tree diameter
+
+        -   📏 Height
+
+        -   🌲 Biomass
+
+        -   🍃Leaf angle
+
+        -   :wood: Deadwood
+
+        -   Vertical layering
+
+- GEDI waveforms record vertical distribution of leaves and branches from top of canopy to ground.
+
+### Methods
+
+- GEDI records vertical variations. Assuming that vertical and horizontal variations are related, authors tried to inferred 3D complexity out of GEDI records alone.
+-   800,000 measured values of CE$_{xyz}$ were used to model the structural complexity.
+- Extreme gradient boosted trees regression model was trained
+$$ CE_{xyz} = XGBoost(GEDI_{L2}) $$
