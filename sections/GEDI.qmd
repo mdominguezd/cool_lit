@@ -40,7 +40,7 @@ toc-depth: 2
 
     1.  (1:1 relationship on control)
 
-    2.  S1-S2 \< 0 in treatment.
+    2.  S2-S1 \< 0 in treatment.
 
 4.  Studied relationships of disturbance extent, time since disturbance and disturbance intensity with biomass loss estimated by GEDI. (Used AFC pairs)
 
@@ -98,6 +98,16 @@ toc-depth: 2
 ### Methods
 
 - GEDI records vertical variations. Assuming that vertical and horizontal variations are related, authors tried to inferred 3D complexity out of GEDI records alone.
--   800,000 measured values of CE$_{xyz}$ were used to model the structural complexity.
+-   > 800,000 measured values of CE$_{xyz}$ were used to model the structural complexity.
 - Extreme gradient boosted trees regression model was trained
 $$ CE_{xyz} = XGBoost(GEDI_{L2}) $$
+- Separate regression models were developed for each plant functional type (PFT): Evergreen Broadleef Trees (EBT), Deciduous Broadleef Tree (DBT), Evergreen Needleaf Trees (ENT) and Grasslands Shrublands, and Woodlands (GSW).
+- Model uncertainty was quantified usinf conformal predictors (?).
+- Spatial cross-validation was used to assess the performance.
+- A PCA was performed to understand WSCI and
+
+### Results
+
+- The models resulted in a R$^{2}$ of 68% in the training data.
+- Vertical complexity is better predicted (75%) than horizontal complexity (40%). Also it is mainly predicted by upper strata metrics.
+    - Explained by: As canopy height increases, vertical layering also develops, increasing tree density.
