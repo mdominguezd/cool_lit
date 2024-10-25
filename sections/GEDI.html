@@ -207,7 +207,7 @@ window.Quarto = {
 <li><p>Compared both groups to check if GEDI can measure biomass and canopy height loss at population level. (Used GLAD and AFC pairs)</p>
 <ol type="1">
 <li><p>(1:1 relationship on control)</p></li>
-<li><p>S1-S2 &lt; 0 in treatment.</p></li>
+<li><p>S2-S1 &lt; 0 in treatment.</p></li>
 </ol></li>
 <li><p>Studied relationships of disturbance extent, time since disturbance and disturbance intensity with biomass loss estimated by GEDI. (Used AFC pairs)</p></li>
 <li><p>Evaluated impacts of fires in the forest structure (e.g.&nbsp;Subcanopy loss). (GLAD pairs U MODIS burned area {614 pairs})</p></li>
@@ -282,8 +282,24 @@ Figure&nbsp;1: Image taken from <a href="https://www.sciencedirect.com/science/a
 <h3 class="anchored" data-anchor-id="methods-1">Methods</h3>
 <ul>
 <li>GEDI records vertical variations. Assuming that vertical and horizontal variations are related, authors tried to inferred 3D complexity out of GEDI records alone.</li>
-<li>800,000 measured values of CE<span class="math inline">\(_{xyz}\)</span> were used to model the structural complexity.</li>
+<li><blockquote class="blockquote">
+<p>800,000 measured values of CE<span class="math inline">\(_{xyz}\)</span> were used to model the structural complexity.</p>
+</blockquote></li>
 <li>Extreme gradient boosted trees regression model was trained <span class="math display">\[ CE_{xyz} = XGBoost(GEDI_{L2}) \]</span></li>
+<li>Separate regression models were developed for each plant functional type (PFT): Evergreen Broadleef Trees (EBT), Deciduous Broadleef Tree (DBT), Evergreen Needleaf Trees (ENT) and Grasslands Shrublands, and Woodlands (GSW).</li>
+<li>Model uncertainty was quantified usinf conformal predictors (?).</li>
+<li>Spatial cross-validation was used to assess the performance.</li>
+<li>A PCA was performed to understand WSCI and</li>
+</ul>
+</section>
+<section id="results-1" class="level3">
+<h3 class="anchored" data-anchor-id="results-1">Results</h3>
+<ul>
+<li>The models resulted in a R<span class="math inline">\(^{2}\)</span> of 68% in the training data.</li>
+<li>Vertical complexity is better predicted (75%) than horizontal complexity (40%). Also it is mainly predicted by upper strata metrics.
+<ul>
+<li>Explained by: As canopy height increases, vertical layering also develops, increasing tree density.</li>
+</ul></li>
 </ul>
 
 
