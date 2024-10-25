@@ -1,0 +1,58 @@
+---
+from: markdown+emoji
+toc: true
+toc-depth: 2
+---
+
+# Forest & Climate change
+
+## [Forest disturbances under climate change (2017)](https://www.nature.com/articles/nclimate3303)
+
+### Main ideas
+
+- Warmer and drier conditions particularly facilitate fire, drought and insect disturbances
+- Warmer and wetter conditions increase disturbances from wind and pathogens.
+- Interactions between different disturbance agents may amplify their effects, while vegetation changes could reduce the long-term sensitivities to climate.
+- Most pronounced changes in disturbances are expected in coniferous forests and the boreal biome
+
+### Forest fires (:fire:) on CC scenario
+
+- Climate change is likely to increase the frequency and intensity of forest fires due to warmer and drier conditions
+- **Fire disturbances are one of the primary agents expected to dominate future forest disturbance regimes globally** (With insects and pathogens)
+
+# Remote sensing for forest fires
+
+## [Remote sensing for wildfire monitoring: Insights into burned area, emissions, and fire dynamics (2024)](https://www.sciencedirect.com/science/article/pii/S2590332224002574)
+
+### Main takeaways for me
+- Divided the paper into RS for BA, FE and AF.
+- Thermal imagers, which detect the infrared radiation emitted by fires, are the primary tools for real-time monitoring of AFs. Burning vegetation at temperatures between 500°C and 1,200°C emits significantly more infrared radiation than its surroundings.
+- The Global Fire Emissions Database BA (GFED BA) combines information from multiple satellite platforms to obtain better BA datasets, using the MODIS MCD64 BA product as its primary input. AF data from the ATSR and VIRS sensors are used to extend the data record prior to the MODIS era. 
+
+
+#### Methods for using remotely sensed data to estimate fire emissions.
+1. The formula for estimating gas and aerosol species emitted from fires (E) follows several sequential steps: Ei = A × B × C × EFi, where A is the area burned; B is the biomass available per area; C is combustion completeness, representing the fraction of biomass actually consumed; and EFi is the emission factor for species i. (This approach has produced most of the current fire emissions datasets, including GFED, FLAMBE, GICC, WFEIS, MFLEI, and FINN)
+2. Physically based on the linear correlation between remotely sensed fire radiative energy and biomass consumed in fires, independent of vegetation type.
+3. Satellite instruments measure atmospheric concentrations of fire-emitted pollutants (CO, NOx, CO2) and integrate these with **atmospheric inversion**.
+
+#### Limitations
+- AF detections often suffer from false alarms due to bright surfaces reflecting sunlight that cannot be completely screened out using available image bands. 
+- BA algorithms can misinterpret land-use changes as fire activity
+- Small, cool, understory, and sub-surface fires are frequently omitted.
+- **BIG DOMAIN ADAPTATION POTENTIAL:** Data integration poses additional challenges. Developing algorithms that perform well globally is difficult due to regional differences in vegetation, fire behavior, and climate.
+
+
+### RS workflow for fire monitoring
+
+![Taken from: [https://www.sciencedirect.com/science/article/pii/S2590332224002574](https://www.sciencedirect.com/science/article/pii/S2590332224002574)](https://ars.els-cdn.com/content/image/1-s2.0-S2590332224002574-gr2.jpg)
+
+
+## [Assessing the performance of MODIS and VIIRS active fire products in the monitoring of wildfires: a case study in Turkey (2022)](https://iforest.sisef.org/contents/?id=ifor3754-015)
+
+### Main ideas
+
+- These products have some limitations in detecting fires in forested areas due to closed canopy and smoke.
+- Results indicated that the overall accuracy of MODIS ranged from **0.6% to 16.6%** and VIIRS ranged from **1.3% to 25.6%** of all ground-based fires.
+- Detection rates increased as the fire size increased. 
+
+
