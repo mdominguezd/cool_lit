@@ -40,7 +40,7 @@ toc-depth: 2
 
     1.  (1:1 relationship on control)
 
-    2.  S2-S1 \< 0 in treatment.
+    2.  S2 - S1 \< 0 in treatment.
 
 4.  Studied relationships of disturbance extent, time since disturbance and disturbance intensity with biomass loss estimated by GEDI. (Used AFC pairs)
 
@@ -102,7 +102,7 @@ toc-depth: 2
 - Extreme gradient boosted trees regression model was trained
 $$ CE_{xyz} = XGBoost(GEDI_{L2}) $$
 - Separate regression models were developed for each plant functional type (PFT): Evergreen Broadleef Trees (EBT), Deciduous Broadleef Tree (DBT), Evergreen Needleaf Trees (ENT) and Grasslands Shrublands, and Woodlands (GSW).
-- Model uncertainty was quantified usinf conformal predictors (?).
+- Model uncertainty was quantified using conformal predictors (?).
 - Spatial cross-validation was used to assess the performance.
 - A PCA was performed to understand WSCI and
 
@@ -111,3 +111,10 @@ $$ CE_{xyz} = XGBoost(GEDI_{L2}) $$
 - The models resulted in a R$^{2}$ of 68% in the training data.
 - Vertical complexity is better predicted (75%) than horizontal complexity (40%). Also it is mainly predicted by upper strata metrics.
     - Explained by: As canopy height increases, vertical layering also develops, increasing tree density.
+
+
+## [On the NASA GEDI and ESA CCI biomass maps: aligning for uptake in the UNFCCC global stocktake](https://doi.org/10.1088/1748-9326/ad0b60)
+
+A cmparison between GEDI agbd estimations and Climate Change Initiative Biomass estimations. Also, these were compared with National Forest Inventories (NFIs).
+
+Main finding: Both products show strong correlation to NFI-estimated AGBD, with no systematic deviations. These results are remarkably promising, and to support the operational use of AGB map products for policy reporting
