@@ -29,6 +29,23 @@ toc-depth: 2
 - GFED showed lower estimates compared to other FE datasets and to the one developed in the study.
 - The discrepancies were attributed to GFED's **low spatial resolution** (Indy) and inconsistencies in input parameters **biomass burning emissions** (Me).
 
+## [On the NASA GEDI and ESA CCI biomass maps: Aligning for uptake in the UNFCCC global stocktake](https://www.doi.org/10.1088/1748-9326/ad0b60)
+
+### Main ideas
+
+- Earth Observation data can effectively estimate forest aboveground biomass density (AGBD) in line with UNFCCC principles, but their use for national-level reporting is minimal as of 2023, coinciding with the end of the first Global Stocktake (GST).
+- A comparison of AGBD estimates from NASA's GEDI and ESA's CCI reveals significant differences, particularly in the Congolese lowlands and east/southeast Asia, while showing strong correlation with National Forest Inventories (NFIs) in regions like Peru and Mexico
+- The study emphasizes the need for alignment between scientific teams to enhance the operational use of AGBD maps for policy reporting, recommending consistent statistical terminology and a rigorous framework for uncertainty estimation.
+- The authors advocate for user-friendly documentation and tools that facilitate the integration of NFIs with AGBD products, aiming to improve the accuracy of national biomass estimates and ensure that space agencies provide reliable global biomass data for policy impact.
+
+### Uncertainty estimation standardization
+
+"Large differences exist not only between the map AGBD estimates, but also in the analytical frameworks used to estimate uncertainties, their underlying scope, definitions, assumptions and level of transparency."
+
+Then scientific community should:
+- Align uncertainty assessment frameworks <font color='blue'>(**GEDI > CCI** The GEDI products clearly show how to measure the accuracy of AGBD predictions, making it easier to follow IPCC guidelines for large areas.)</font>
+- Provide source codes for large area estimations.
+
 ## [Remote sensing for wildfire monitoring: Insights into burned area, emissions, and fire dynamics (2024)](https://www.sciencedirect.com/science/article/pii/S2590332224002574)
 
 ### Main takeaways for me
