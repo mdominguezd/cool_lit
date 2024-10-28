@@ -147,6 +147,7 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#repeat-gedi-footprints-measure-the-effects-of-tropical-forest-disturbances-2024" id="toc-repeat-gedi-footprints-measure-the-effects-of-tropical-forest-disturbances-2024" class="nav-link active" data-scroll-target="#repeat-gedi-footprints-measure-the-effects-of-tropical-forest-disturbances-2024">Repeat GEDI footprints measure the effects of tropical forest disturbances (2024)</a></li>
   <li><a href="#characterizing-the-structural-complexity-of-the-earths-forests-with-spaceborne-lidar" id="toc-characterizing-the-structural-complexity-of-the-earths-forests-with-spaceborne-lidar" class="nav-link" data-scroll-target="#characterizing-the-structural-complexity-of-the-earths-forests-with-spaceborne-lidar">Characterizing the structural complexity of the Earth’s forests with spaceborne lidar</a></li>
+  <li><a href="#on-the-nasa-gedi-and-esa-cci-biomass-maps-aligning-for-uptake-in-the-unfccc-global-stocktake" id="toc-on-the-nasa-gedi-and-esa-cci-biomass-maps-aligning-for-uptake-in-the-unfccc-global-stocktake" class="nav-link" data-scroll-target="#on-the-nasa-gedi-and-esa-cci-biomass-maps-aligning-for-uptake-in-the-unfccc-global-stocktake">On the NASA GEDI and ESA CCI biomass maps: aligning for uptake in the UNFCCC global stocktake</a></li>
   </ul>
 </nav>
     </div>
@@ -207,7 +208,7 @@ window.Quarto = {
 <li><p>Compared both groups to check if GEDI can measure biomass and canopy height loss at population level. (Used GLAD and AFC pairs)</p>
 <ol type="1">
 <li><p>(1:1 relationship on control)</p></li>
-<li><p>S2-S1 &lt; 0 in treatment.</p></li>
+<li><p>S2 - S1 &lt; 0 in treatment.</p></li>
 </ol></li>
 <li><p>Studied relationships of disturbance extent, time since disturbance and disturbance intensity with biomass loss estimated by GEDI. (Used AFC pairs)</p></li>
 <li><p>Evaluated impacts of fires in the forest structure (e.g.&nbsp;Subcanopy loss). (GLAD pairs U MODIS burned area {614 pairs})</p></li>
@@ -287,7 +288,7 @@ Figure&nbsp;1: Image taken from <a href="https://www.sciencedirect.com/science/a
 </blockquote></li>
 <li>Extreme gradient boosted trees regression model was trained <span class="math display">\[ CE_{xyz} = XGBoost(GEDI_{L2}) \]</span></li>
 <li>Separate regression models were developed for each plant functional type (PFT): Evergreen Broadleef Trees (EBT), Deciduous Broadleef Tree (DBT), Evergreen Needleaf Trees (ENT) and Grasslands Shrublands, and Woodlands (GSW).</li>
-<li>Model uncertainty was quantified usinf conformal predictors (?).</li>
+<li>Model uncertainty was quantified using conformal predictors (?).</li>
 <li>Spatial cross-validation was used to assess the performance.</li>
 <li>A PCA was performed to understand WSCI and</li>
 </ul>
@@ -301,9 +302,14 @@ Figure&nbsp;1: Image taken from <a href="https://www.sciencedirect.com/science/a
 <li>Explained by: As canopy height increases, vertical layering also develops, increasing tree density.</li>
 </ul></li>
 </ul>
-
-
 </section>
+</section>
+<section id="on-the-nasa-gedi-and-esa-cci-biomass-maps-aligning-for-uptake-in-the-unfccc-global-stocktake" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-nasa-gedi-and-esa-cci-biomass-maps-aligning-for-uptake-in-the-unfccc-global-stocktake"><a href="https://doi.org/10.1088/1748-9326/ad0b60">On the NASA GEDI and ESA CCI biomass maps: aligning for uptake in the UNFCCC global stocktake</a></h2>
+<p>A cmparison between GEDI agbd estimations and Climate Change Initiative Biomass estimations. Also, these were compared with National Forest Inventories (NFIs).</p>
+<p>Main finding: Both products show strong correlation to NFI-estimated AGBD, with no systematic deviations. These results are remarkably promising, and to support the operational use of AGB map products for policy reporting</p>
+
+
 </section>
 
 </main> <!-- /main -->
