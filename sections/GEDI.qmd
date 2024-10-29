@@ -131,6 +131,7 @@ A comparison between GEDI agbd estimations and Climate Change Initiative Biomass
 "Large differences exist not only between the map AGBD estimates, but also in the analytical frameworks used to estimate uncertainties, their underlying scope, definitions, assumptions and level of transparency."
 
 Then scientific community should:
+
 - Align uncertainty assessment frameworks <font color='blue'>(**GEDI > CCI** The GEDI products clearly show how to measure the accuracy of AGBD predictions, making it easier to follow IPCC guidelines for large areas.)</font>
 - Provide source codes for large area estimations.
 - Provide guidance on enhancing NFIs with AGBD maps
