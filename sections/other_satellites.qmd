@@ -4,3 +4,9 @@ toc: true
 toc-depth: 2
 ---
 
+## [ALOS-2 PALSAR-2 ScanSAR and Sentinel-1 data for timely tropical forest disturbance mapping: A case study for Sumatra, Indonesia](https://www.sciencedirect.com/science/article/pii/S1569843224003480)
+
+## Main ideas
+
+- Combined detections improved detection rates by up to 38 % and timeliness by 16.5 days.
+- L-Band reduces C-Band omissions in disturbance events with tree remnants. **e.g. FIRES :fire:**
