@@ -115,12 +115,9 @@ $$ CE_{xyz} = XGBoost(GEDI_{L2}) $$
 
 ## [On the NASA GEDI and ESA CCI biomass maps: aligning for uptake in the UNFCCC global stocktake](https://doi.org/10.1088/1748-9326/ad0b60)
 
-A cmparison between GEDI agbd estimations and Climate Change Initiative Biomass estimations. Also, these were compared with National Forest Inventories (NFIs).
+A comparison between GEDI agbd estimations and Climate Change Initiative Biomass estimations. Also, these were compared with National Forest Inventories (NFIs).
 
-Main finding: Both products show strong correlation to NFI-estimated AGBD, with no systematic deviations. These results are remarkably promising, and to support the operational use of AGB map products for policy reporting
-
-
-## [On the NASA GEDI and ESA CCI biomass maps: Aligning for uptake in the UNFCCC global stocktake](https://www.doi.org/10.1088/1748-9326/ad0b60)
+**Main finding:** Both products show strong correlation to NFI-estimated AGBD, with no systematic deviations. These results are remarkably promising, and to support the operational use of AGB map products for policy reporting, but the methodologies to report uncerainty are not always transparent.
 
 ### Main ideas
 
@@ -129,10 +126,12 @@ Main finding: Both products show strong correlation to NFI-estimated AGBD, with 
 - The study emphasizes the need for alignment between scientific teams to enhance the operational use of AGBD maps for policy reporting, recommending consistent statistical terminology and a rigorous framework for uncertainty estimation.
 - The authors advocate for user-friendly documentation and tools that facilitate the integration of NFIs with AGBD products, aiming to improve the accuracy of national biomass estimates and ensure that space agencies provide reliable global biomass data for policy impact.
 
-### Uncertainty estimation standardization
+### Seeking alignment
 
 "Large differences exist not only between the map AGBD estimates, but also in the analytical frameworks used to estimate uncertainties, their underlying scope, definitions, assumptions and level of transparency."
 
 Then scientific community should:
 - Align uncertainty assessment frameworks <font color='blue'>(**GEDI > CCI** The GEDI products clearly show how to measure the accuracy of AGBD predictions, making it easier to follow IPCC guidelines for large areas.)</font>
 - Provide source codes for large area estimations.
+- Provide guidance on enhancing NFIs with AGBD maps
+- Make documentation and usability practical for UNFCCC reporting
