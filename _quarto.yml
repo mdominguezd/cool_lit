@@ -13,7 +13,6 @@ website:
         text: Other satellites
       - href: sections/Modelling.qmd
 	      text: Modelling
-
 format:
   html:
     css: styles.css
