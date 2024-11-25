@@ -11,8 +11,6 @@ website:
         text: Forest fires
       - href: sections/other_satellites.qmd
         text: Other satellites
-      - href: sections/Modelling.qmd
-	      text: Modelling
 format:
   html:
     css: styles.css
