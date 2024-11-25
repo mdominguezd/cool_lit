@@ -7,6 +7,27 @@
     "text": "Main ideas\n\nCombined detections improved detection rates by up to 38 % and timeliness by 16.5 days.\nL-Band reduces C-Band omissions in disturbance events with tree remnants. e.g. FIRES 🔥"
   },
   {
+    "objectID": "sections/Modelling.html#a-high-resolution-canopy-height-model-of-the-earth",
+    "href": "sections/Modelling.html#a-high-resolution-canopy-height-model-of-the-earth",
+    "title": "Lit literature review",
+    "section": "A high-resolution canopy height model of the Earth",
+    "text": "A high-resolution canopy height model of the Earth"
+  },
+  {
+    "objectID": "sections/Modelling.html#satclip-global-general-purpose-location-embeddings-with-satellite-imagery",
+    "href": "sections/Modelling.html#satclip-global-general-purpose-location-embeddings-with-satellite-imagery",
+    "title": "Lit literature review",
+    "section": "SatCLIP: Global, General-Purpose Location Embeddings with Satellite Imagery",
+    "text": "SatCLIP: Global, General-Purpose Location Embeddings with Satellite Imagery"
+  },
+  {
+    "objectID": "main.html",
+    "href": "main.html",
+    "title": "Lit literature review",
+    "section": "",
+    "text": "The following chapters contain some interesting literature that could be (or not) interesting for the reader. They are mainly related to topics related to carbon loss estimation due to forest fires using earth observation products (e.g. GEDI, Ice-SAT, Sentinel, etc.).\n\nGEDI & Forest 🌳 🛰️ Forests and Forest Fires 🌳 🔥 Other Satellites and Fires 🛰️"
+  },
+  {
     "objectID": "sections/GEDI.html",
     "href": "sections/GEDI.html",
     "title": "Lit literature review",
@@ -33,13 +54,6 @@
     "title": "Lit literature review",
     "section": "On the NASA GEDI and ESA CCI biomass maps: aligning for uptake in the UNFCCC global stocktake",
     "text": "On the NASA GEDI and ESA CCI biomass maps: aligning for uptake in the UNFCCC global stocktake\nA comparison between GEDI agbd estimations and Climate Change Initiative Biomass estimations. Also, these were compared with National Forest Inventories (NFIs).\nMain finding: Both products show strong correlation to NFI-estimated AGBD, with no systematic deviations. These results are remarkably promising, and to support the operational use of AGB map products for policy reporting, but the methodologies to report uncerainty are not always transparent.\n\nMain ideas\n\nEarth Observation data can effectively estimate forest aboveground biomass density (AGBD) in line with UNFCCC principles, but their use for national-level reporting is minimal as of 2023, coinciding with the end of the first Global Stocktake (GST).\nA comparison of AGBD estimates from NASA’s GEDI and ESA’s CCI reveals significant differences, particularly in the Congolese lowlands and east/southeast Asia, while showing strong correlation with National Forest Inventories (NFIs) in regions like Peru and Mexico\nThe study emphasizes the need for alignment between scientific teams to enhance the operational use of AGBD maps for policy reporting, recommending consistent statistical terminology and a rigorous framework for uncertainty estimation.\nThe authors advocate for user-friendly documentation and tools that facilitate the integration of NFIs with AGBD products, aiming to improve the accuracy of national biomass estimates and ensure that space agencies provide reliable global biomass data for policy impact.\n\n\n\nSeeking alignment\n“Large differences exist not only between the map AGBD estimates, but also in the analytical frameworks used to estimate uncertainties, their underlying scope, definitions, assumptions and level of transparency.”\nThen scientific community should:\n\nAlign uncertainty assessment frameworks (GEDI &gt; CCI The GEDI products clearly show how to measure the accuracy of AGBD predictions, making it easier to follow IPCC guidelines for large areas.)\nProvide source codes for large area estimations.\nProvide guidance on enhancing NFIs with AGBD maps\nMake documentation and usability practical for UNFCCC reporting"
-  },
-  {
-    "objectID": "main.html",
-    "href": "main.html",
-    "title": "Lit literature review",
-    "section": "",
-    "text": "The following chapters contain some interesting literature that could be (or not) interesting for the reader. They are mainly related to topics related to carbon loss estimation due to forest fires using earth observation products (e.g. GEDI, Ice-SAT, Sentinel, etc.).\n\nGEDI & Forest 🌳 🛰️ Forests and Forest Fires 🌳 🔥 Other Satellites and Fires 🛰️"
   },
   {
     "objectID": "sections/forest_fires.html",
