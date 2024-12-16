@@ -13,6 +13,8 @@ website:
         text: Other satellites
       - href: sections/Modelling.qmd
         text: Modelling
+      - href: sections/knowledge_gaps.qmd
+        text: Knowledge gap
 format:
   html:
     css: styles.css
