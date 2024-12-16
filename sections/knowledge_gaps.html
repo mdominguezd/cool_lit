@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>other_satellites – Lit literature review</title>
+<title>Knowledge gap + research questions – Lit literature review</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Forest fires</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../sections/other_satellites.html" aria-current="page"> 
+    <a class="nav-link" href="../sections/other_satellites.html"> 
 <span class="menu-text">Other satellites</span></a>
   </li>  
   <li class="nav-item">
@@ -105,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Modelling</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../sections/knowledge_gaps.html"> 
+    <a class="nav-link active" href="../sections/knowledge_gaps.html" aria-current="page"> 
 <span class="menu-text">Knowledge gap</span></a>
   </li>  
 </ul>
@@ -123,32 +143,58 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul class="collapse">
-  <li><a href="#alos-2-palsar-2-scansar-and-sentinel-1-data-for-timely-tropical-forest-disturbance-mapping-a-case-study-for-sumatra-indonesia" id="toc-alos-2-palsar-2-scansar-and-sentinel-1-data-for-timely-tropical-forest-disturbance-mapping-a-case-study-for-sumatra-indonesia" class="nav-link active" data-scroll-target="#alos-2-palsar-2-scansar-and-sentinel-1-data-for-timely-tropical-forest-disturbance-mapping-a-case-study-for-sumatra-indonesia">ALOS-2 PALSAR-2 ScanSAR and Sentinel-1 data for timely tropical forest disturbance mapping: A case study for Sumatra, Indonesia</a></li>
-  <li><a href="#main-ideas" id="toc-main-ideas" class="nav-link" data-scroll-target="#main-ideas">Main ideas</a></li>
+  <ul>
+  <li><a href="#idetnification-of-knowledge-gap" id="toc-idetnification-of-knowledge-gap" class="nav-link active" data-scroll-target="#idetnification-of-knowledge-gap">Idetnification of knowledge gap</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Knowledge gap + research questions</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="alos-2-palsar-2-scansar-and-sentinel-1-data-for-timely-tropical-forest-disturbance-mapping-a-case-study-for-sumatra-indonesia" class="level2">
-<h2 class="anchored" data-anchor-id="alos-2-palsar-2-scansar-and-sentinel-1-data-for-timely-tropical-forest-disturbance-mapping-a-case-study-for-sumatra-indonesia"><a href="https://www.sciencedirect.com/science/article/pii/S1569843224003480">ALOS-2 PALSAR-2 ScanSAR and Sentinel-1 data for timely tropical forest disturbance mapping: A case study for Sumatra, Indonesia</a></h2>
-</section>
-<section id="main-ideas" class="level2">
-<h2 class="anchored" data-anchor-id="main-ideas">Main ideas</h2>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="idetnification-of-knowledge-gap" class="level2">
+<h2 class="anchored" data-anchor-id="idetnification-of-knowledge-gap">Idetnification of knowledge gap</h2>
+<p>Some gaps that have been Identified:</p>
 <ul>
-<li>Combined detections improved detection rates by up to 38 % and timeliness by 16.5 days.</li>
-<li>L-Band reduces C-Band omissions in disturbance events with tree remnants. <strong>e.g.&nbsp;FIRES <span class="emoji" data-emoji="fire">🔥</span></strong></li>
+<li>Understanding the impact of fire severity with GEDI metrics by themself it’s not an easy task. (Going to the raw data)
+<ul>
+<li>Previous studies <span class="citation" data-cites="pascual_integrated_2023">(<a href="#ref-pascual_integrated_2023" role="doc-biblioref">Pascual and Guerra-Hernández 2023</a>)</span> have found that fire severity affects the energy metrics on the GEDI waveform data, but not significantly the AGBD metrics. (Although they used an patch-based approach)</li>
+<li>Some patch-based approaches have been studied, but repeat GEDI measurements have not been studied deeply related to fires (Only <span class="citation" data-cites="holcomb_repeat_2024">(<a href="#ref-holcomb_repeat_2024" role="doc-biblioref">Holcomb et al. 2024</a>)</span> did a bit).</li>
+</ul></li>
+<li>Biomass loss estimations using other EO datasets.</li>
+<li>Data fusion methods to improve the capability of using different EO data formats.</li>
 </ul>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-holcomb_repeat_2024" class="csl-entry" role="listitem">
+Holcomb, Amelia, Patrick Burns, Srinivasan Keshav, and David A. Coomes. 2024. <span>“Repeat <span>GEDI</span> Footprints Measure the Effects of Tropical Forest Disturbances.”</span> <em>Remote Sensing of Environment</em> 308 (July): 114174. <a href="https://doi.org/10.1016/j.rse.2024.114174">https://doi.org/10.1016/j.rse.2024.114174</a>.
+</div>
+<div id="ref-pascual_integrated_2023" class="csl-entry" role="listitem">
+Pascual, Adrián, and Juan Guerra-Hernández. 2023. <span>“An Integrated Assessment of Carbon Emissions from Forest Fires Beyond Impacts on Aboveground Biomass. <span>A</span> Showcase Using Airborne Lidar and <span>GEDI</span> Data over a Megafire in <span>Spain</span>.”</span> <em>Journal of Environmental Management</em> 345 (November): 118709. <a href="https://doi.org/10.1016/j.jenvman.2023.118709">https://doi.org/10.1016/j.jenvman.2023.118709</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
