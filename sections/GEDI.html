@@ -298,17 +298,55 @@ Figure&nbsp;1: Image taken from <a href="https://www.sciencedirect.com/science/a
 <li>Separate regression models were developed for each plant functional type (PFT): Evergreen Broadleef Trees (EBT), Deciduous Broadleef Tree (DBT), Evergreen Needleaf Trees (ENT) and Grasslands Shrublands, and Woodlands (GSW).</li>
 <li>Model uncertainty was quantified using conformal predictors (?).</li>
 <li>Spatial cross-validation was used to assess the performance.</li>
-<li>A PCA was performed to understand WSCI and</li>
+<li>A PCA was performed to understand relationship between WSCI and other structural variables (e.g.&nbsp;PAI, tree cover)</li>
+<li>A PCR (regression) was performed including and excluding the WSCI to check if it gives additional information not given by other GEDI metrics.</li>
+<li>Linear regression beteen WSCI and modeled and canopy height to check power law scaling relationships.</li>
 </ul>
 </section>
 <section id="results-1" class="level3">
 <h3 class="anchored" data-anchor-id="results-1">Results</h3>
 <ul>
 <li>The models resulted in a R<span class="math inline">\(^{2}\)</span> of 68% in the training data.</li>
+<li>Highest errors in regions of sparse tree cover (e.g.&nbsp;Grasslands, shrublands, woodlands). <strong>GEDI is not optimized to measure vert. structure of short plants (e.g.&nbsp;2-3m)</strong>
+<ul>
+<li>Heterosceasticity (Variance of errors increase as complexity decreases).</li>
+</ul></li>
 <li>Vertical complexity is better predicted (75%) than horizontal complexity (40%). Also it is mainly predicted by upper strata metrics.
 <ul>
 <li>Explained by: As canopy height increases, vertical layering also develops, increasing tree density.</li>
 </ul></li>
+</ul>
+<section id="global-patterns" class="level4">
+<h4 class="anchored" data-anchor-id="global-patterns">Global patterns</h4>
+<ul>
+<li>Latitudinal pattern: Higher WSCI in tropics (<span class="emoji" data-emoji="seedling">🌱</span> <span class="emoji" data-emoji="herb">🌿</span> 🌳), decrease on higher latitudes (🌲).</li>
+<li>Complexity in tropical forests depends more on lower and middle layers, while on temperate forests more strongly on upper layers.</li>
+</ul>
+</section>
+<section id="complexity-propto-other-structural-elements" class="level4">
+<h4 class="anchored" data-anchor-id="complexity-propto-other-structural-elements">Complexity <span class="math inline">\(\propto\)</span> other structural elements</h4>
+<ul>
+<li>PCA shows that forest density (<strong>PC1,</strong> (PAI, Tree cover)) captures broad-scale differences between regions and, vertical stratification and canopy height (<strong>PC2,</strong> (FHD, RH98, WSCI)) captures variations within these regions.</li>
+<li>PCRs show that WSCI capures 11% of variation no included on other GEDI metrics.</li>
+</ul>
+</section>
+<section id="complexity-and-height" class="level4">
+<h4 class="anchored" data-anchor-id="complexity-and-height">Complexity and height</h4>
+<ul>
+<li>Relationship between WSCI and canopy height can be described by a power law with scaling exponents that differ depending on region (Tropical, Temperate, Others).</li>
+<li>Tall forests are more complex, but in tropical forests short forests are also complex. This makes them special.</li>
+</ul>
+</section>
+</section>
+<section id="discussion-points" class="level3">
+<h3 class="anchored" data-anchor-id="discussion-points">Discussion points</h3>
+<ul>
+<li>Even though RH metrics are correlated among themselves, the division into three strata weakens that correlation. Thus, making them useful for modeling.</li>
+<li>Structural complexity is 3D (So also horizontal), the modelling of WSCI relies on inference of horizontal complexity from rel. with vertical complexity.</li>
+<li>Power-law scaling varies greatly depending on biomes. This is associated to differences in tree species, competition and other ecological dynamics.</li>
+<li>WSCI could be useful to assess forest degradation (e.g.&nbsp;comparing it with potential structural complexity). However, take with grain of salt cause methods to calculate potential and actual complexity differ.</li>
+<li>Fusion models are needed to improve spatial scale and this could also help improve models on areas with sparse tree cover.</li>
+<li>WSCI serves as an integrator of various structural metrics, but still much remains to understand abour structural complexity (i.e.&nbsp;How it develops, how it may be managed, what implies on ecosystem functioning)</li>
 </ul>
 </section>
 </section>
