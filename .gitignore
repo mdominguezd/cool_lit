@@ -3,3 +3,4 @@ main_files
 .quarto
 
 /.quarto/
+site_libs
