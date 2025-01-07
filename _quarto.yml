@@ -6,7 +6,7 @@ website:
   navbar:
     left:
       - href: sections/GEDI.qmd
-        text: GEDI
+        text: GEDI & Lidar
       - href: sections/forest_fires.qmd
         text: Forest fires
       - href: sections/other_satellites.qmd
