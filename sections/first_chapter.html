@@ -178,13 +178,31 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="questions-that-i-want-to-answer">Questions that I want to answer:</h3>
 <ul>
 <li>What methods have been used to obtain comparable spaceborne LiDAR measurements over small areas?</li>
-<li>How do researchers deal with temporal mismatches and geolocation uncertainties?</li>
-<li>What are the main challenges and best practices in comparing GEDI, ICESat-2, or other spaceborne LiDAR datasets?</li>
+<li>What are the main challenges and best practices in comparing GEDI, ICESat-2, or other spaceborne LiDAR datasets and how do researchers deal with them?</li>
 <li>What pre-processing techniques (e.g.&nbsp;filtering, interpolation) are used?</li>
 </ul>
 <section id="methods-used-to-obtain-comparable-gedi-measurements" class="level4">
 <h4 class="anchored" data-anchor-id="methods-used-to-obtain-comparable-gedi-measurements">Methods used to obtain comparable GEDI measurements</h4>
 <p><span class="citation" data-cites="holcomb_repeat_2024">Holcomb et al. (<a href="#ref-holcomb_repeat_2024" role="doc-biblioref">2024</a>)</span> developed a method to examine forest changes using nearby GEDI footprints. These nearby GEDI footprints were chosen using a 40 meter threshold. They showed that GEDI is able to capture biomass/canopy height losses after disturbances in a 30x30m resolution and at a population level.</p>
+</section>
+<section id="main-challenges" class="level4">
+<h4 class="anchored" data-anchor-id="main-challenges">Main challenges</h4>
+<ul>
+<li>GEDI footprints have a geolocation error of approximately 10.2 m.</li>
+<li>Environmental Influences: Factors such as vegetation type, canopy height, and terrain slope can lead to systematic biases in canopy height estimations, complicating comparisons</li>
+</ul>
+</section>
+<section id="pre-processing-techniques-for-spaceborne-lidar-pair-handling" class="level4">
+<h4 class="anchored" data-anchor-id="pre-processing-techniques-for-spaceborne-lidar-pair-handling">Pre-processing techniques for spaceborne LiDAR pair handling</h4>
+<p>Methods to improve the comparability of spaceborne LiDAR pairs have been developed recently.@ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.</p>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg" class="img-fluid"></p>
+<p>Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it.</p>
+</section>
+<section id="validation" class="level4">
+<h4 class="anchored" data-anchor-id="validation">Validation</h4>
+<ul>
+<li>PNOA LiDAR project in Spain.</li>
+</ul>
 
 
 
