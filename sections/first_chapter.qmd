@@ -1,0 +1,27 @@
+---
+from: markdown+emoji
+toc: true
+toc-depth: 2
+bibliography: ../references.bib
+---
+
+# Spaceborne LiDAR comparable pairs for small-scale analyses
+
+## Main ideas
+
+- There is a lot of difficulties for small-scale analysis using GEDI data for before and after comparisons [@east_measuring_2023;@mandl_spaceborne_2023].
+- **Hypothesis:** Difficulties appear due to differences on specific covariates between shots. (e.g. Topography, Land Cover, Tree species)
+- A systematic way to get comparable GEDI metrics should be developed.
+
+## Literature review 
+
+### Questions that I want to answer:
+- What methods have been used to obtain comparable spaceborne LiDAR measurements over small areas?
+- How do researchers deal with temporal mismatches and geolocation uncertainties?
+- What are the main challenges and best practices in comparing GEDI, ICESat-2, or other spaceborne LiDAR datasets?
+- What pre-processing techniques (e.g. filtering, interpolation) are used?
+
+#### Methods used to obtain comparable GEDI measurements
+
+@holcomb_repeat_2024 developed a method to examine forest changes using nearby GEDI footprints. These nearby GEDI footprints were chosen using a 40 meter threshold. They showed that GEDI is able to capture biomass/canopy height losses after disturbances in a 30x30m resolution and at a population level.
+

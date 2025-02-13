@@ -5,6 +5,8 @@ website:
   title: "Lit literature review"
   navbar:
     left:
+      - href: sections/first_chapter.qmd
+        text: Chapter 1
       - href: sections/GEDI.qmd
         text: GEDI & Lidar
       - href: sections/forest_fires.qmd

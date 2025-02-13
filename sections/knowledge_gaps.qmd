@@ -5,12 +5,25 @@ from: markdown+emoji
 bibliography: ../references.bib
 ---
 
-## Idetnification of knowledge gap
+## Identification of knowledge gap
 
 Some gaps that have been Identified:
 
 - Understanding the impact of fire severity with GEDI metrics by themself it's not an easy task. (Going to the raw data)
     - Previous studies [@pascual_integrated_2023] have found that fire severity affects the energy metrics on the GEDI waveform data, but not significantly the AGBD metrics. (Although they used an patch-based approach)
     - Some patch-based approaches have been studied, but repeat GEDI measurements have not been studied deeply related to fires (Only [@holcomb_repeat_2024] did a bit).
+- Geographic stratification of GEDI shots
 - Biomass loss estimations using other EO datasets.
 - Data fusion methods to improve the capability of using different EO data formats.
+
+```{python}
+#| echo: false
+import plotly.figure_factory as ff
+
+df = [dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28'),
+      dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15'),
+      dict(Task="Job C", Start='2009-02-20', Finish='2009-05-30')]
+
+fig = ff.create_gantt(df)
+fig.show()
+```
