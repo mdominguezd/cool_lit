@@ -17,13 +17,10 @@ Some gaps that have been Identified:
 - Data fusion methods to improve the capability of using different EO data formats.
 
 ```{python}
-#| echo: false
-import plotly.figure_factory as ff
+import plotly.express as px
 
-df = [dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28'),
-      dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15'),
-      dict(Task="Job C", Start='2009-02-20', Finish='2009-05-30')]
-
-fig = ff.create_gantt(df)
+fig = px.line(x=["a","b","c"], y=[1,3,2], title="sample figure")
+print(fig)
 fig.show()
+
 ```
