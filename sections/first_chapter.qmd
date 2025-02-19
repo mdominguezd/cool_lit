@@ -5,20 +5,26 @@ toc-depth: 2
 bibliography: ../references.bib
 ---
 
-# Spaceborne LiDAR comparable pairs for small-scale analyses
+# Space-borne LiDAR comparable pairs for small-scale analyses
 
 ## Main ideas
 
-- There is a lot of difficulties for small-scale analysis using GEDI data for before and after comparisons [@east_measuring_2023;@mandl_spaceborne_2023].
-- **Hypothesis:** Difficulties appear due to differences on specific covariates between shots. (e.g. Topography, Land Cover, Tree species)
-- A systematic way to get comparable GEDI metrics should be developed.
+-   There is a lot of difficulties for small-scale analysis using GEDI data for before and after comparisons [@east_measuring_2023; @mandl_spaceborne_2023].
+-   **Hypothesis:** Difficulties appear due to differences on specific covariates between shots. (e.g. Topography, Land Cover, Tree species)
+-   **Solution proposed:** A systematic way to get comparable GEDI metrics should be developed.
 
-## Literature review 
+## Literature review
 
 ### Questions that I want to answer:
-- What methods have been used to obtain comparable spaceborne LiDAR measurements over small areas?
-- What are the main challenges and best practices in comparing GEDI, ICESat-2, or other spaceborne LiDAR datasets and how do researchers deal with them?
-- What pre-processing techniques (e.g. filtering, interpolation) are used?
+
+-   What methods have been used to obtain comparable space-borne LiDAR measurements ***over small area***?
+-   What are the main challenges and best practices in comparing measurements from GEDI, ICESat-2, or other space-borne LiDAR datasets and how do researchers deal with them?
+    -   Vertical accuracy, geo-location error
+    -   Temporal resolution (Time between shots and disturbances)
+    -   How is vertical accuracy affected by land cover and topography.
+-   What pre-processing techniques (e.g. filtering, interpolation) are used?
+    -   Describe Amelia's, Milenkovic's and Pronk's thorough filtering process.
+    -   Describe Ji's waveform pre-processing and slope correction and the potential of extrapolating that to two near-coincident shots (?)
 
 #### Methods used to obtain comparable GEDI measurements
 
@@ -26,19 +32,45 @@ bibliography: ../references.bib
 
 #### Main challenges
 
-- GEDI footprints have a geolocation error of approximately 10.2 m. 
-- Environmental Influences: Factors such as vegetation type, canopy height, and terrain slope can lead to systematic biases in canopy height estimations, complicating comparisons
+-   GEDI footprints have a geo-location error of approximately 10.2 m.
+-   Factors that can lead to systematic biases in canopy height estimations, complicating comparisons:
+    -   Vegetation type
+    -   Canopy height
+    -   Terrain slope 
 
 
-#### Pre-processing techniques for spaceborne LiDAR pair handling
+```{python}
+#| eval: true
+#| echo: false
+#| output: asis # Important for voila
 
-Methods to improve the comparability of spaceborne LiDAR pairs have been developed recently.@ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.
+import numpy as np
+import ipywidgets as widgets
+from IPython.display import display
+
+num_input = widgets.IntText(description="Slope angle [°] : ")
+result = widgets.Label(value="Result: ")
+
+def slope_elev_change(n):
+    degs = n * (np.pi / 180)
+    diam = 25  # m
+    result.value = f"Result: {0.5 * diam * np.tan(degs)} meters"
+
+num_input.observe(lambda change: slope_elev_change(change['new']), names='value')
+
+display(num_input, result)
+```
+
+#### Pre-processing techniques for space-borne LiDAR pair handling
+
+Methods to improve the comparability of space-borne LiDAR pairs have been developed recently (Specifically, these methods could improve the vertical accuracy of GEDI). @ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.
 
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg)
 
 Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it.
 
+*Put some figures showing low vertical accuracy of GEDI*
 
-#### Validation 
+#### Validation
 
-- PNOA LiDAR project in Spain.
+-   PNOA LiDAR project in Spain.
