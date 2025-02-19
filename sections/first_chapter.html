@@ -43,7 +43,7 @@ div.csl-indent {
 }</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -86,6 +86,10 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js" crossorigin="anonymous"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -111,6 +115,14 @@ div.csl-indent {
   <li class="nav-item">
     <a class="nav-link active" href="../sections/first_chapter.html" aria-current="page"> 
 <span class="menu-text">Chapter 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sections/second_chapter.html"> 
+<span class="menu-text">Chapter 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../sections/third_chapter.html"> 
+<span class="menu-text">Chapter 3</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../sections/GEDI.html"> 
@@ -148,7 +160,7 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#spaceborne-lidar-comparable-pairs-for-small-scale-analyses" id="toc-spaceborne-lidar-comparable-pairs-for-small-scale-analyses" class="nav-link active" data-scroll-target="#spaceborne-lidar-comparable-pairs-for-small-scale-analyses">Spaceborne LiDAR comparable pairs for small-scale analyses</a>
+  <li><a href="#space-borne-lidar-comparable-pairs-for-small-scale-analyses" id="toc-space-borne-lidar-comparable-pairs-for-small-scale-analyses" class="nav-link active" data-scroll-target="#space-borne-lidar-comparable-pairs-for-small-scale-analyses">Space-borne LiDAR comparable pairs for small-scale analyses</a>
   <ul class="collapse">
   <li><a href="#main-ideas" id="toc-main-ideas" class="nav-link" data-scroll-target="#main-ideas">Main ideas</a></li>
   <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">Literature review</a></li>
@@ -157,19 +169,35 @@ div.csl-indent {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pre-processing techniques for space-borne LiDAR pair handling</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="spaceborne-lidar-comparable-pairs-for-small-scale-analyses" class="level1">
-<h1>Spaceborne LiDAR comparable pairs for small-scale analyses</h1>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="space-borne-lidar-comparable-pairs-for-small-scale-analyses" class="level1">
+<h1>Space-borne LiDAR comparable pairs for small-scale analyses</h1>
 <section id="main-ideas" class="level2">
 <h2 class="anchored" data-anchor-id="main-ideas">Main ideas</h2>
 <ul>
 <li>There is a lot of difficulties for small-scale analysis using GEDI data for before and after comparisons <span class="citation" data-cites="east_measuring_2023 mandl_spaceborne_2023">(<a href="#ref-east_measuring_2023" role="doc-biblioref">East et al. 2023</a>; <a href="#ref-mandl_spaceborne_2023" role="doc-biblioref">Mandl et al. 2023</a>)</span>.</li>
 <li><strong>Hypothesis:</strong> Difficulties appear due to differences on specific covariates between shots. (e.g.&nbsp;Topography, Land Cover, Tree species)</li>
-<li>A systematic way to get comparable GEDI metrics should be developed.</li>
+<li><strong>Solution proposed:</strong> A systematic way to get comparable GEDI metrics should be developed.</li>
 </ul>
 </section>
 <section id="literature-review" class="level2">
@@ -177,9 +205,18 @@ div.csl-indent {
 <section id="questions-that-i-want-to-answer" class="level3">
 <h3 class="anchored" data-anchor-id="questions-that-i-want-to-answer">Questions that I want to answer:</h3>
 <ul>
-<li>What methods have been used to obtain comparable spaceborne LiDAR measurements over small areas?</li>
-<li>What are the main challenges and best practices in comparing GEDI, ICESat-2, or other spaceborne LiDAR datasets and how do researchers deal with them?</li>
-<li>What pre-processing techniques (e.g.&nbsp;filtering, interpolation) are used?</li>
+<li>What methods have been used to obtain comparable space-borne LiDAR measurements <strong><em>over small area</em></strong>?</li>
+<li>What are the main challenges and best practices in comparing measurements from GEDI, ICESat-2, or other space-borne LiDAR datasets and how do researchers deal with them?
+<ul>
+<li>Vertical accuracy, geo-location error</li>
+<li>Temporal resolution (Time between shots and disturbances)</li>
+<li>How is vertical accuracy affected by land cover and topography.</li>
+</ul></li>
+<li>What pre-processing techniques (e.g.&nbsp;filtering, interpolation) are used?
+<ul>
+<li>Describe Amelia’s, Milenkovic’s and Pronk’s thorough filtering process.</li>
+<li>Describe Ji’s waveform pre-processing and slope correction and the potential of extrapolating that to two near-coincident shots (?)</li>
+</ul></li>
 </ul>
 <section id="methods-used-to-obtain-comparable-gedi-measurements" class="level4">
 <h4 class="anchored" data-anchor-id="methods-used-to-obtain-comparable-gedi-measurements">Methods used to obtain comparable GEDI measurements</h4>
@@ -188,15 +225,24 @@ div.csl-indent {
 <section id="main-challenges" class="level4">
 <h4 class="anchored" data-anchor-id="main-challenges">Main challenges</h4>
 <ul>
-<li>GEDI footprints have a geolocation error of approximately 10.2 m.</li>
-<li>Environmental Influences: Factors such as vegetation type, canopy height, and terrain slope can lead to systematic biases in canopy height estimations, complicating comparisons</li>
+<li>GEDI footprints have a geo-location error of approximately 10.2 m.</li>
+<li>Factors that can lead to systematic biases in canopy height estimations, complicating comparisons:
+<ul>
+<li>Vegetation type</li>
+<li>Canopy height</li>
+<li>Terrain slope</li>
+</ul></li>
 </ul>
-</section>
-<section id="pre-processing-techniques-for-spaceborne-lidar-pair-handling" class="level4">
-<h4 class="anchored" data-anchor-id="pre-processing-techniques-for-spaceborne-lidar-pair-handling">Pre-processing techniques for spaceborne LiDAR pair handling</h4>
-<p>Methods to improve the comparability of spaceborne LiDAR pairs have been developed recently.@ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.</p>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"103df815b64e474eb52c5206457874a4","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"b8b175eb6bda440d89ba66575ba94ba1","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
+</script>
+<p>Methods to improve the comparability of space-borne LiDAR pairs have been developed recently (Specifically, these methods could improve the vertical accuracy of GEDI). <span class="citation" data-cites="ji_deforestation_2024">Ji et al. (<a href="#ref-ji_deforestation_2024" role="doc-biblioref">2024</a>)</span> used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.</p>
 <p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg" class="img-fluid"></p>
 <p>Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it.</p>
+<p><em>Put some figures showing low vertical accuracy of GEDI</em></p>
 </section>
 <section id="validation" class="level4">
 <h4 class="anchored" data-anchor-id="validation">Validation</h4>
@@ -218,10 +264,16 @@ East, Alyson, Andrew Hansen, Dolors Armenteras, Patrick Jantz, and David W. Robe
 <div id="ref-holcomb_repeat_2024" class="csl-entry" role="listitem">
 Holcomb, Amelia, Patrick Burns, Srinivasan Keshav, and David A. Coomes. 2024. <span>“Repeat <span>GEDI</span> Footprints Measure the Effects of Tropical Forest Disturbances.”</span> <em>Remote Sensing of Environment</em> 308 (July): 114174. <a href="https://doi.org/10.1016/j.rse.2024.114174">https://doi.org/10.1016/j.rse.2024.114174</a>.
 </div>
+<div id="ref-ji_deforestation_2024" class="csl-entry" role="listitem">
+Ji, Min, Huan Xie, Jürgen Oberst, Qi Xu, Yuan Sun, Sicong Liu, Changda Liu, and Xiaohua Tong. 2024. <span>“Deforestation Detection from Spaceborne Full-Waveform Laser Altimetry, Incorporating Terrain Effects: <span>A</span> Case Study in <span>Porto</span> <span>Velho</span>, <span>Brazil</span>.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 129 (May): 103861. <a href="https://doi.org/10.1016/j.jag.2024.103861">https://doi.org/10.1016/j.jag.2024.103861</a>.
+</div>
 <div id="ref-mandl_spaceborne_2023" class="csl-entry" role="listitem">
 Mandl, Lisa, Ana Stritih, Rupert Seidl, Christian Ginzler, and Cornelius Senf. 2023. <span>“Spaceborne <span>LiDAR</span> for Characterizing Forest Structure Across Scales in the <span>European</span> <span>Alps</span>.”</span> <em>Remote Sensing in Ecology and Conservation</em> 9 (5): 599–614. <a href="https://doi.org/10.1002/rse2.330">https://doi.org/10.1002/rse2.330</a>.
 </div>
 </div></section></div></main> <!-- /main -->
+<script type="application/vnd.jupyter.widget-state+json">
+{"state":{"0374d03af3f04ce9b0244fea8b937685":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"DescriptionStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"DescriptionStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","description_width":""}},"103df815b64e474eb52c5206457874a4":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"IntTextModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"IntTextModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"IntTextView","continuous_update":false,"description":"Slope angle [°] : ","description_allow_html":false,"disabled":false,"layout":"IPY_MODEL_37f6f32304e543a88ec6768c2b081071","step":1,"style":"IPY_MODEL_0374d03af3f04ce9b0244fea8b937685","tabbable":null,"tooltip":null,"value":0}},"37f6f32304e543a88ec6768c2b081071":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}},"52556d24221441c98ff1ec54ed39c9f4":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"LabelStyleModel","state":{"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"LabelStyleModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"StyleView","background":null,"description_width":"","font_family":null,"font_size":null,"font_style":null,"font_variant":null,"font_weight":null,"text_color":null,"text_decoration":null}},"b8b175eb6bda440d89ba66575ba94ba1":{"model_module":"@jupyter-widgets/controls","model_module_version":"2.0.0","model_name":"LabelModel","state":{"_dom_classes":[],"_model_module":"@jupyter-widgets/controls","_model_module_version":"2.0.0","_model_name":"LabelModel","_view_count":null,"_view_module":"@jupyter-widgets/controls","_view_module_version":"2.0.0","_view_name":"LabelView","description":"","description_allow_html":false,"layout":"IPY_MODEL_d1768eef5c294796948a299e817955d6","placeholder":"​","style":"IPY_MODEL_52556d24221441c98ff1ec54ed39c9f4","tabbable":null,"tooltip":null,"value":"Result: "}},"d1768eef5c294796948a299e817955d6":{"model_module":"@jupyter-widgets/base","model_module_version":"2.0.0","model_name":"LayoutModel","state":{"_model_module":"@jupyter-widgets/base","_model_module_version":"2.0.0","_model_name":"LayoutModel","_view_count":null,"_view_module":"@jupyter-widgets/base","_view_module_version":"2.0.0","_view_name":"LayoutView","align_content":null,"align_items":null,"align_self":null,"border_bottom":null,"border_left":null,"border_right":null,"border_top":null,"bottom":null,"display":null,"flex":null,"flex_flow":null,"grid_area":null,"grid_auto_columns":null,"grid_auto_flow":null,"grid_auto_rows":null,"grid_column":null,"grid_gap":null,"grid_row":null,"grid_template_areas":null,"grid_template_columns":null,"grid_template_rows":null,"height":null,"justify_content":null,"justify_items":null,"left":null,"margin":null,"max_height":null,"max_width":null,"min_height":null,"min_width":null,"object_fit":null,"object_position":null,"order":null,"overflow":null,"padding":null,"right":null,"top":null,"visibility":null,"width":null}}},"version_major":2,"version_minor":0}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
