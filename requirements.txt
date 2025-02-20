@@ -2,4 +2,4 @@ plotly
 jupyter
 numpy
 pandas
-voila
+matplotlib
