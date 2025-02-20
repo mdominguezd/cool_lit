@@ -15,5 +15,14 @@ bibliography: ../references.bib
 ## Literature review
 
 - What are the current methods for integrating LiDAR and other EO data to assess vegetation structure? (Normally not structure change)
-- How have previous studies used space-borne LiDAR data to quantify vegetation structural changes in fire-affected areas, and what are the main limitations?
+- How have previous studies quantify vegetation structural changes in fire-affected areas, and what are the main limitations?
 - What machine learning or statistical models have been applied for upscaling vegetation structural metrics from LiDAR data to broader spatial scales using optical and radar data?
+
+
+### Current methods for integrating LiDAR and other EO products
+
+
+### Methods to quantify vegetation structural changes in fire-affected areas
+
+
+### Machine Learning and statistical models that have been applied for upscaling structural changes to broader spatial scales

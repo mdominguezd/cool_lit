@@ -83,11 +83,15 @@ a = ax.set_xlabel('Slope')
 
 When actual pairs are found, another big challenge is to evaluate if these pairs can be comparable based on what has happened during the time between shots. @east_measuring_2023 found for instance that structural changes vary as a function of time after disturbance (Initially seen on lower layers, then on upper canopy).
 
+The time between GEDI pairs used for the study on the amazon rainforest range from 5 to 1422 dyas with an average of time between shots of 522 days.
+
 ##### Land cover
 
 In forests with dense, multi-layered canopies, the GEDI laser pulse might be intercepted by upper canopy elements, preventing it from reaching the ground. This can lead to an overestimation of canopy height or an inaccurate ground elevation reading, affecting the overall height calculation.
 
-![](../LC_vertical_error.png)
+An initial experiment was performed using pairs of GEDI measurements that overlap with MODIS BA on different types of land cover. The results are shown on @fig-lc_error.
+
+![Difference beween pairs of GEDI shots on different land covers where fires have occured.](../LC_vertical_error.png){#fig-lc_error}
 
 #### Preprocessing techniques for spaceborne LiDAR pair handling
 
