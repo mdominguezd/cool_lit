@@ -9,10 +9,6 @@ bibliography: ../references.bib
 
 ## Main ideas
 
--  If wall-to-wall products can explain the spatial variation of vegetation structural changes; a model, in which LiDAR pairs are used as training data and other EO products as covariates, could be used to upscale the structural changes for a whole burned area.
--  This methodology should be validated with more refined 
+-  How can the method developed for a specific case study be extrapolated to different domains?
 
 ## Literature review
-
-- What are the current methods for integrating LiDAR and other EO data to assess vegetation structure? (Normally not structure change)
-- How have previous studies used space-borne LiDAR data to quantify vegetation structural changes in fire-affected areas, and what are the main limitations?

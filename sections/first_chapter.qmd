@@ -2,22 +2,30 @@
 from: markdown+emoji
 toc: true
 toc-depth: 2
+jupyter: python3
 bibliography: ../references.bib
+embed-resources: true
 ---
 
 # Space-borne LiDAR comparable pairs for small-scale analyses
 
 ## Main ideas
 
--   There is a lot of difficulties for small-scale analysis using GEDI data for before and after comparisons [@east_measuring_2023; @mandl_spaceborne_2023].
--   **Hypothesis:** Difficulties appear due to differences on specific covariates between shots. (e.g. Topography, Land Cover, Tree species)
--   **Solution proposed:** A systematic way to get comparable GEDI metrics should be developed.
+-   There is a lot of challenges for small-scale analysis using GEDI data for before and after disturbance comparisons [@east_measuring_2023; @mandl_spaceborne_2023].
+
+:::{layout-ncol="2"}
+
+**Hypothesis:** Difficulties appear due to differences on specific covariates between shots. (e.g. Topography, Land Cover, Tree species)
+
+**Solution proposed:** A systematic way to get comparable GEDI metrics should be developed.
+
+:::
 
 ## Literature review
 
 ### Questions that I want to answer:
 
--   What methods have been used to obtain comparable space-borne LiDAR measurements ***over small area***?
+-   What methods have been used to obtain comparable space-borne LiDAR measurements ***over small areas*** (How small is small)?
 -   What are the main challenges and best practices in comparing measurements from GEDI, ICESat-2, or other space-borne LiDAR datasets and how do researchers deal with them?
     -   Vertical accuracy, geo-location error
     -   Temporal resolution (Time between shots and disturbances)
@@ -30,47 +38,78 @@ bibliography: ../references.bib
 
 @holcomb_repeat_2024 developed a method to examine forest changes using nearby GEDI footprints. These nearby GEDI footprints were chosen using a 40 meter threshold. They showed that GEDI is able to capture biomass/canopy height losses after disturbances in a 30x30m resolution and at a population level.
 
+Different approaches not using spatially coincident pairs have also 
+
 #### Main challenges
 
--   GEDI footprints have a geo-location error of approximately 10.2 m.
--   Factors that can lead to systematic biases in canopy height estimations, complicating comparisons:
-    -   Vegetation type
-    -   Canopy height
-    -   Terrain slope 
+Factors that can lead to systematic biases in canopy height estimations, complicating comparisons:
 
+##### Geo-location errors
+
+GEDI footprints have a geo-location error of approximately 10.2 m. Low geolocation accuracy can cause errors on the calculation of ground elevation. Moreover, on heterogenous canopiews, geolocation error can cause the measurement to be taken over a different part of the canopy than the one presented.
+
+Big improvements related to geolocation error have taken place passing from GEDI v1 to v2 [@pronk_assessing_2024]. Additionally, researchers have also 
+
+##### Terrain slope 
+
+The terrain slope significantly affects spaceborne LiDAR measurements. On sloped terrain, laser pulses reflect from both vegetation and the ground simultaneously, leading to overlapping signals and complicating the separation of canopy and ground returns [@ji_deforestation_2024]. The maximum error associated to sloped terrains can be modeled as $max(\epsilon) = \frac{1}{2}*D*tan(slope)$ and is presented on @fig-slope
 
 ```{python}
-#| eval: true
 #| echo: false
-#| output: asis # Important for voila
-
 import numpy as np
-import ipywidgets as widgets
-from IPython.display import display
-
-num_input = widgets.IntText(description="Slope angle [°] : ")
-result = widgets.Label(value="Result: ")
-
-def slope_elev_change(n):
-    degs = n * (np.pi / 180)
-    diam = 25  # m
-    result.value = f"Result: {0.5 * diam * np.tan(degs)} meters"
-
-num_input.observe(lambda change: slope_elev_change(change['new']), names='value')
-
-display(num_input, result)
+import plotly.express as px
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')
 ```
 
-#### Pre-processing techniques for space-borne LiDAR pair handling
+```{python}
+#| label: fig-slope
+#| fig-cap: Error on verticl accuracy
+#| eval: true
+#| echo: false
+
+num_input = np.arange(0,70,5)
+
+fig, ax = plt.subplots(1,1, figsize = (6,3))
+ax.plot(num_input, 0.5 * 25 * np.tan(num_input * (np.pi / 180)))
+
+ax.set_ylabel('max(error) vertical accuracy')
+a = ax.set_xlabel('Slope')
+```
+
+![Effect of slope on canopy height estimation. Taken from @ji_deforestation_2024](https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr14.jpg){#fig-homoforest}
+
+##### Temporal resolution
+
+When actual pairs are found, another big challenge is to evaluate if these pairs can be comparable based on what has happened during the time between shots. @east_measuring_2023 found for instance that structural changes vary as a function of time after disturbance (Initially seen on lower layers, then on upper canopy).
+
+##### Land cover
+
+In forests with dense, multi-layered canopies, the GEDI laser pulse might be intercepted by upper canopy elements, preventing it from reaching the ground. This can lead to an overestimation of canopy height or an inaccurate ground elevation reading, affecting the overall height calculation.
+
+![](../LC_vertical_error.png)
+
+#### Preprocessing techniques for spaceborne LiDAR pair handling
+
+##### Filtering techniques
+
+Describe here filters used by @holcomb_repeat_2024 @milenkovic_assessing_2022.
+
+##### Ground and canopy height correction
 
 Methods to improve the comparability of space-borne LiDAR pairs have been developed recently (Specifically, these methods could improve the vertical accuracy of GEDI). @ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.
 
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg)
 
-Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it.
+Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it [@holcomb_repeat_2024, @pronk_assessing_2024]
 
-*Put some figures showing low vertical accuracy of GEDI*
+##### Geographic stratification of GEDI data
+
+@chen_improved_2023 performed a geographic stratification based on topographic and vegetation features to map AGB. Their results showed that using a stratified sample technique improved the accuracy of AGB estimates by up to 34.8%.
+
+![](https://www.mdpi.com/remotesensing/remotesensing-15-02625/article_deploy/html/images/remotesensing-15-02625-g007.png)
 
 #### Validation
 
--   PNOA LiDAR project in Spain.
+-   PNOA LiDAR project in Spain. (1ra cobertura until 2015, 2da cobertura until 2022)
+    - A BA where ALS is present pre and post-fire still needs to be found.

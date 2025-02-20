@@ -1,0 +1,67 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "from: markdown+emoji\n",
+        "title: \"Lit literature review\"\n",
+        "author: Martín Domínguez Durán\n",
+        "date: today\n",
+        "format:\n",
+        "  html:\n",
+        "    toc: true\n",
+        "    theme: journal\n",
+        "jupyter: python3\n",
+        "---\n",
+        "\n",
+        "\n",
+        "The following chapters contain some interesting literature that could be (or not) interesting for the reader. They are mainly related to topics related to **carbon loss estimation due to forest fires using earth observation products** (e.g. GEDI, Ice-SAT, Sentinel, etc.).\n",
+        "\n",
+        "<!-- ```{python}\n",
+        "#| eval: true\n",
+        "#| echo: false\n",
+        "\n",
+        "import numpy as np\n",
+        "import plotly.express as px\n",
+        "\n",
+        "num_input = np.arange(0,70,5)\n",
+        "\n",
+        "def slope_elev_change(n):\n",
+        "\n",
+        "    degs = n * (np.pi / 180)\n",
+        "    diam = 25  # m\n",
+        "\n",
+        "    return 0.5 * diam * np.tan(degs)\n",
+        "\n",
+        "elev_change = slope_elev_change(num_input)\n",
+        "\n",
+        "fig = px.line(x = num_input, y = elev_change, \n",
+        "                title = 'Effect of slope on vertical accuracy',\n",
+        "                labels={\n",
+        "                    \"x\": \"Slope (°)\",\n",
+        "                    \"y\": \"max(Vertical error) (cm)\",\n",
+        "                    })\n",
+        "``` -->\n",
+        "\n",
+        "<div style=\"display: flex; gap: 20%; width: 80%; margin: auto; text-align: center;\">\n",
+        "  <a href=\"sections/GEDI.qmd\" class=\"btn\" style=\"background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px;\" role=\"button\">GEDI & Forest 🌳 🛰️</a>\n",
+        "  <a href=\"sections/forest_fires.qmd\" class=\"btn\" style=\"background-color: #FF5733; color: white; padding: 15px; border-radius: 10px;\" role=\"button\">Forests and Forest Fires 🌳 🔥</a>\n",
+        "  <a href=\"sections/other_satellites.qmd\" class=\"btn\" style=\"background-color: #337AB7; color: white; padding: 15px; border-radius: 10px;\" role=\"button\">Other Satellites and Fires 🛰️</a>\n",
+        "</div>\n"
+      ],
+      "id": "40977085"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/home/mdominguezd/miniconda3/envs/webapp/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
