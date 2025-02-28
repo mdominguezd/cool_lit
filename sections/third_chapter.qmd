@@ -12,4 +12,9 @@ bibliography: ../references.bib
 -  How can the method developed for a specific case study be extrapolated to different domains?
 
 ## Literature review
+
 - Location embeddings (SatCLIP)
+
+#### Foundation models (GFZ)
+
+Self-supervised learning + scale make them capable of generalize so well for multiple tasks.

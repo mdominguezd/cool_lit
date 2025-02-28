@@ -14,15 +14,30 @@ bibliography: ../references.bib
 
 ## Literature review
 
+### Questions to answer:
+
 - What are the current methods for integrating LiDAR and other EO data to assess vegetation structure? (Normally not structure change)
 - How have previous studies quantify vegetation structural changes in fire-affected areas, and what are the main limitations?
 - What machine learning or statistical models have been applied for upscaling vegetation structural metrics from LiDAR data to broader spatial scales using optical and radar data?
 
+### ***Current methods for integrating LiDAR and other EO products***
 
-### Current methods for integrating LiDAR and other EO products
+#### Mono-temporal LiDAR
+
+@potapov_mapping_2021 (CH integrating GEDI with Landsat)
+
+@lang_high-resolution_2023 (CH Integrating GEDI w/ S2)
+
+These and other studies combined on @besic_remote-sensing-based_2025.
+
+#### Bi-temporal LiDAR
+
+Bi-temporal GEDI measurements (real + simulated) have been used to compare structural and spectral changes (Captured by optical EO data) in vegetation after fires [@huettermann_using_2023]
+
+@holcomb_repeat_2024 related change on GEDI pairs with change on
+
+### ***Methods to quantify vegetation structural changes in fire-affected areas***
 
 
-### Methods to quantify vegetation structural changes in fire-affected areas
+### ***Machine Learning and statistical models that have been applied for upscaling structural changes to broader spatial scales***
 
-
-### Machine Learning and statistical models that have been applied for upscaling structural changes to broader spatial scales
