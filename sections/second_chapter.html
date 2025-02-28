@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -35,10 +55,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bd89562929948232a0cfc2a2280e30cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-831a6e13d34e89ab8943621a9b1bffba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -161,26 +181,57 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="literature-review" class="level2">
 <h2 class="anchored" data-anchor-id="literature-review">Literature review</h2>
+<section id="questions-to-answer" class="level3">
+<h3 class="anchored" data-anchor-id="questions-to-answer">Questions to answer:</h3>
 <ul>
 <li>What are the current methods for integrating LiDAR and other EO data to assess vegetation structure? (Normally not structure change)</li>
 <li>How have previous studies quantify vegetation structural changes in fire-affected areas, and what are the main limitations?</li>
 <li>What machine learning or statistical models have been applied for upscaling vegetation structural metrics from LiDAR data to broader spatial scales using optical and radar data?</li>
 </ul>
+</section>
 <section id="current-methods-for-integrating-lidar-and-other-eo-products" class="level3">
-<h3 class="anchored" data-anchor-id="current-methods-for-integrating-lidar-and-other-eo-products">Current methods for integrating LiDAR and other EO products</h3>
+<h3 class="anchored" data-anchor-id="current-methods-for-integrating-lidar-and-other-eo-products"><strong><em>Current methods for integrating LiDAR and other EO products</em></strong></h3>
+<section id="mono-temporal-lidar" class="level4">
+<h4 class="anchored" data-anchor-id="mono-temporal-lidar">Mono-temporal LiDAR</h4>
+<p><span class="citation" data-cites="potapov_mapping_2021">Potapov et al. (<a href="#ref-potapov_mapping_2021" role="doc-biblioref">2021</a>)</span> (CH integrating GEDI with Landsat)</p>
+<p><span class="citation" data-cites="lang_high-resolution_2023">Lang et al. (<a href="#ref-lang_high-resolution_2023" role="doc-biblioref">2023</a>)</span> (CH Integrating GEDI w/ S2)</p>
+<p>These and other studies combined on <span class="citation" data-cites="besic_remote-sensing-based_2025">Besic et al. (<a href="#ref-besic_remote-sensing-based_2025" role="doc-biblioref">2025</a>)</span>.</p>
+</section>
+<section id="bi-temporal-lidar" class="level4">
+<h4 class="anchored" data-anchor-id="bi-temporal-lidar">Bi-temporal LiDAR</h4>
+<p>Bi-temporal GEDI measurements (real + simulated) have been used to compare structural and spectral changes (Captured by optical EO data) in vegetation after fires <span class="citation" data-cites="huettermann_using_2023">(<a href="#ref-huettermann_using_2023" role="doc-biblioref">Huettermann et al. 2023</a>)</span></p>
+<p><span class="citation" data-cites="holcomb_repeat_2024">Holcomb et al. (<a href="#ref-holcomb_repeat_2024" role="doc-biblioref">2024</a>)</span> related change on GEDI pairs with change on</p>
+</section>
 </section>
 <section id="methods-to-quantify-vegetation-structural-changes-in-fire-affected-areas" class="level3">
-<h3 class="anchored" data-anchor-id="methods-to-quantify-vegetation-structural-changes-in-fire-affected-areas">Methods to quantify vegetation structural changes in fire-affected areas</h3>
+<h3 class="anchored" data-anchor-id="methods-to-quantify-vegetation-structural-changes-in-fire-affected-areas"><strong><em>Methods to quantify vegetation structural changes in fire-affected areas</em></strong></h3>
 </section>
 <section id="machine-learning-and-statistical-models-that-have-been-applied-for-upscaling-structural-changes-to-broader-spatial-scales" class="level3">
-<h3 class="anchored" data-anchor-id="machine-learning-and-statistical-models-that-have-been-applied-for-upscaling-structural-changes-to-broader-spatial-scales">Machine Learning and statistical models that have been applied for upscaling structural changes to broader spatial scales</h3>
+
+
 
 
 </section>
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Machine Learning and statistical models that have been applied for upscaling structural changes to broader spatial scales</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-besic_remote-sensing-based_2025" class="csl-entry" role="listitem">
+Besic, Nikola, Nicolas Picard, Cédric Vega, Jean-Daniel Bontemps, Lionel Hertzog, Jean-Pierre Renaud, Fajwel Fogel, et al. 2025. <span>“Remote-Sensing-Based Forest Canopy Height Mapping: Some Models Are Useful, but Might They Provide Us with Even More Insights When Combined?”</span> <em>Geoscientific Model Development</em> 18 (2): 337–59. <a href="https://doi.org/10.5194/gmd-18-337-2025">https://doi.org/10.5194/gmd-18-337-2025</a>.
+</div>
+<div id="ref-holcomb_repeat_2024" class="csl-entry" role="listitem">
+Holcomb, Amelia, Patrick Burns, Srinivasan Keshav, and David A. Coomes. 2024. <span>“Repeat <span>GEDI</span> Footprints Measure the Effects of Tropical Forest Disturbances.”</span> <em>Remote Sensing of Environment</em> 308 (July): 114174. <a href="https://doi.org/10.1016/j.rse.2024.114174">https://doi.org/10.1016/j.rse.2024.114174</a>.
+</div>
+<div id="ref-huettermann_using_2023" class="csl-entry" role="listitem">
+Huettermann, Sven, Simon Jones, Mariela Soto-Berelov, and Samuel Hislop. 2023. <span>“Using <span>Landsat</span> Time Series and Bi-Temporal <span>GEDI</span> to Compare Spectral and Structural Vegetation Responses After Fire.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 122 (August): 103403. <a href="https://doi.org/10.1016/j.jag.2023.103403">https://doi.org/10.1016/j.jag.2023.103403</a>.
+</div>
+<div id="ref-lang_high-resolution_2023" class="csl-entry" role="listitem">
+Lang, Nico, Walter Jetz, Konrad Schindler, and Jan Dirk Wegner. 2023. <span>“A High-Resolution Canopy Height Model of the <span>Earth</span>.”</span> <em>Nature Ecology &amp; Evolution</em> 7 (11): 1778–89. <a href="https://doi.org/10.1038/s41559-023-02206-6">https://doi.org/10.1038/s41559-023-02206-6</a>.
+</div>
+<div id="ref-potapov_mapping_2021" class="csl-entry" role="listitem">
+Potapov, Peter, Xinyuan Li, Andres Hernandez-Serna, Alexandra Tyukavina, Matthew C. Hansen, Anil Kommareddy, Amy Pickens, et al. 2021. <span>“Mapping Global Forest Canopy Height Through Integration of <span>GEDI</span> and <span>Landsat</span> Data.”</span> <em>Remote Sensing of Environment</em> 253 (February): 112165. <a href="https://doi.org/10.1016/j.rse.2020.112165">https://doi.org/10.1016/j.rse.2020.112165</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
