@@ -11,6 +11,8 @@ website:
         text: Chapter 2
       - href: sections/third_chapter.qmd
         text: Chapter 3
+      - href: sections/fourth_chapter.qmd
+        text: Chapter 4
       - href: sections/GEDI.qmd
         text: GEDI & Lidar
       - href: sections/forest_fires.qmd

@@ -1,0 +1,13 @@
+---
+from: markdown+emoji
+toc: true
+toc-depth: 2
+bibliography: ../references.bib
+---
+
+# Estimation of fire emissions using dynamic combustion completeness estimated through vegetation structural changes.
+
+## Main ideas
+
+## Literature review
+

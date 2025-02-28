@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.6.39" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+
+<title>first_chapter – Lit literature review</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+<!-- htmldependencies:E3FAD763 -->
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="/index.html">
+    <span class="navbar-title">Lit literature review</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/first_chapter.html"> 
+<span class="menu-text">Chapter 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/second_chapter.html"> 
+<span class="menu-text">Chapter 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/third_chapter.html"> 
+<span class="menu-text">Chapter 3</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/fourth_chapter.html"> 
+<span class="menu-text">Chapter 4</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/GEDI.html"> 
+<span class="menu-text">GEDI &amp; Lidar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/forest_fires.html"> 
+<span class="menu-text">Forest fires</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/other_satellites.html"> 
+<span class="menu-text">Other satellites</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/Modelling.html"> 
+<span class="menu-text">Modelling</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/sections/knowledge_gaps.html"> 
+<span class="menu-text">Knowledge gap</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#space-borne-lidar-comparable-pairs-for-small-scale-analyses" id="toc-space-borne-lidar-comparable-pairs-for-small-scale-analyses">Space-borne LiDAR comparable pairs for small-scale analyses</a>
+  <ul>
+  <li><a href="#main-ideas" id="toc-main-ideas">Main ideas</a></li>
+  <li><a href="#literature-review" id="toc-literature-review">Literature review</a></li>
+  </ul></li>
+  </ul>
+</nav>
+<section id="space-borne-lidar-comparable-pairs-for-small-scale-analyses" class="level1">
+<h1>Space-borne LiDAR comparable pairs for small-scale analyses</h1>
+<section id="main-ideas" class="level2">
+<h2>Main ideas</h2>
+<ul>
+<li>There is a lot of challenges for small-scale analysis using GEDI data for before and after disturbance comparisons <span class="citation" data-cites="east_measuring_2023 mandl_spaceborne_2023">(<a href="#ref-east_measuring_2023" role="doc-biblioref">East et al. 2023</a>; <a href="#ref-mandl_spaceborne_2023" role="doc-biblioref">Mandl et al. 2023</a>)</span>.</li>
+</ul>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><strong>Hypothesis:</strong> If comparability is compromised due to errors associated to specific covariates between shots (e.g. Topography, Land Cover, Tree species), then a method could be developed to mitigate those errors and make pairs more comparable.</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p><strong>Solution proposed:</strong> A systematic way to get comparable GEDI metrics should be developed.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="literature-review" class="level2">
+<h2>Literature review</h2>
+<section id="questions-that-i-want-to-answer" class="level3">
+<h3>Questions that I want to answer:</h3>
+<ul>
+<li>What methods have been used to obtain comparable space-borne LiDAR measurements <strong><em>over small areas</em></strong> (How small is small)?</li>
+<li>What are the main challenges and best practices in comparing measurements from GEDI, ICESat-2, or other space-borne LiDAR datasets and how do researchers deal with them?
+<ul>
+<li>Vertical accuracy, geo-location error</li>
+<li>Temporal resolution (Time between shots and disturbances)</li>
+<li>How is vertical accuracy affected by land cover and topography.</li>
+</ul></li>
+<li>What pre-processing techniques (e.g. filtering, interpolation) are used?
+<ul>
+<li>Describe Amelia’s, Milenkovic’s and Pronk’s thorough filtering process.</li>
+<li>Describe Ji’s waveform pre-processing and slope correction and the potential of extrapolating that to two near-coincident shots (?)</li>
+</ul></li>
+</ul>
+<section id="methods-used-to-obtain-comparable-gedi-measurements" class="level4">
+<h4><strong><em>Methods used to obtain comparable GEDI measurements</em></strong></h4>
+<p><span class="citation" data-cites="holcomb_repeat_2024">Holcomb et al. (<a href="#ref-holcomb_repeat_2024" role="doc-biblioref">2024</a>)</span> developed a method to examine forest changes using nearby GEDI footprints. These nearby GEDI footprints were chosen using a 40 meter threshold. They showed that GEDI is able to capture biomass/canopy height losses after disturbances in a 30x30m resolution and at a population level.</p>
+<p>Different approaches not using spatially coincident pairs have also been considered before. For instance, to study the effects of fires in Portugal and Spain, <span class="citation" data-cites="guerra-hernandez_impact_2024">Guerra-Hernández et al. (<a href="#ref-guerra-hernandez_impact_2024" role="doc-biblioref">2024</a>)</span> aggregated GEDI footpints overlapping the burned area, before and after the fire occured. With this they estimated the average AGBD loss caused by the fire.</p>
+</section>
+<section id="main-challenges-while-comparing-space-borne-lidar-data" class="level4">
+<h4><strong><em>Main challenges while comparing space-borne LiDAR data</em></strong></h4>
+<p>Factors that can lead to systematic biases in canopy height estimations, complicating comparisons:</p>
+<section id="geo-location-errors" class="level5">
+<h5>Geo-location errors</h5>
+<p>GEDI footprints have a geo-location error of approximately 10.2 m. Low geolocation accuracy can cause errors on the calculation of ground elevation. Moreover, on heterogenous canopies, geolocation error can cause the measurement to be taken over a different part of the canopy than the one presented.</p>
+<p>Big improvements related to geolocation error have taken place passing from GEDI v1 to v2 <span class="citation" data-cites="pronk_assessing_2024">(<a href="#ref-pronk_assessing_2024" role="doc-biblioref">Pronk, Eleveld, and Ledoux 2024</a>)</span>. Additionally, researchers have also worked on improving the geolocation accuracy using high-res DEMs <span class="citation" data-cites="schleich_improving_2023">(<a href="#ref-schleich_improving_2023" role="doc-biblioref">Schleich et al. 2023</a>)</span>.</p>
+</section>
+<section id="terrain-slope" class="level5">
+<h5>Terrain slope</h5>
+<p>The terrain slope significantly affects spaceborne LiDAR measurements. On sloped terrain, laser pulses reflect from both vegetation and the ground simultaneously, leading to overlapping signals and complicating the separation of canopy and ground returns <span class="citation" data-cites="ji_deforestation_2024">(<a href="#ref-ji_deforestation_2024" role="doc-biblioref">Ji et al. 2024</a>)</span>. The maximum error for rh estimation associated to sloped terrains can be modeled as <span class="math inline">\(max(\epsilon) = \frac{1}{2}*D*tan(slope)\)</span> and is presented on <a href="#fig-slope" class="quarto-xref">Figure 1</a>.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div id="cell-fig-slope" class="cell quarto-layout-cell" data-execution_count="1" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="cell-output cell-output-display">
+<div id="fig-slope" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-slope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="first_chapter_files/figure-html/fig-slope-output-1.png" width="513" height="284" />
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-slope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 1: Error on verticl accuracy
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-homoforest" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-homoforest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr14.jpg" class="img-fluid" />
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-homoforest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 2: Effect of slope on canopy height estimation. Taken from <span class="citation" data-cites="ji_deforestation_2024">Ji et al. (<a href="#ref-ji_deforestation_2024" role="doc-biblioref">2024</a>)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="temporal-resolution" class="level5">
+<h5>Temporal resolution</h5>
+<p>When actual pairs are found, another big challenge is to evaluate if these pairs can be comparable based on what has happened during the time between shots. <span class="citation" data-cites="east_measuring_2023">East et al. (<a href="#ref-east_measuring_2023" role="doc-biblioref">2023</a>)</span> found for instance that structural changes vary as a function of time after disturbance (Initially seen on lower layers, then on upper canopy).</p>
+<p>The time between GEDI pairs used for the study on the amazon rainforest range from 5 to 1422 dyas with an average of time between shots of 522 days.</p>
+</section>
+<section id="land-cover" class="level5">
+<h5>Land cover</h5>
+<p>For the specific case of ground elevation, <span class="citation" data-cites="urbazaev_assessment_2022">Urbazaev et al. (<a href="#ref-urbazaev_assessment_2022" role="doc-biblioref">2022</a>)</span> assessed the effects of different landcovers on the accuracy of GEDI and ICESat’s estimations. They found that mean errors were less than 1m for all LC except for tropical forests where errors ranged from 1.75 to 5.56 meters.</p>
+<p>In forests with dense, multi-layered canopies, the GEDI laser pulse might be intercepted by upper canopy elements, preventing it from reaching the ground. This can lead to an overestimation of canopy height or an inaccurate ground elevation reading, affecting the overall height calculation. (Citation ?)</p>
+<p>An initial experiment was performed using pairs of GEDI measurements that overlap with MODIS BA on different types of land cover. The results are shown on <a href="#fig-lc_error" class="quarto-xref">Figure 3</a>.</p>
+<div id="fig-lc_error" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-lc_error-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../LC_vertical_error.png" class="img-fluid" />
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lc_error-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure 3: Difference beween pairs of GEDI shots on different land covers where fires have occured.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="preprocessing-techniques-for-spaceborne-lidar-pair-handling" class="level4">
+<h4><strong><em>Preprocessing techniques for spaceborne LiDAR pair handling</em></strong></h4>
+<section id="filtering-techniques" class="level5">
+<h5>Filtering techniques</h5>
+<p>Describe here filters used by <span class="citation" data-cites="holcomb_repeat_2024">Holcomb et al. (<a href="#ref-holcomb_repeat_2024" role="doc-biblioref">2024</a>)</span> &amp; <span class="citation" data-cites="milenkovic_assessing_2022">Milenković et al. (<a href="#ref-milenkovic_assessing_2022" role="doc-biblioref">2022</a>)</span>.</p>
+</section>
+<section id="ground-and-canopy-height-correction" class="level5">
+<h5>Ground and canopy height correction</h5>
+<p>Methods to improve the comparability of space-borne LiDAR pairs have been developed recently (Specifically, these methods could improve the vertical accuracy of GEDI). <span class="citation" data-cites="ji_deforestation_2024">Ji et al. (<a href="#ref-ji_deforestation_2024" role="doc-biblioref">2024</a>)</span> used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.</p>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg" class="img-fluid" /></p>
+<p>Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it <span class="citation" data-cites="holcomb_repeat_2024">Pronk, Eleveld, and Ledoux (<a href="#ref-pronk_assessing_2024" role="doc-biblioref">2024</a>)</span></p>
+</section>
+<section id="geographic-stratification-of-gedi-data" class="level5">
+<h5>Geographic stratification of GEDI data</h5>
+<p><span class="citation" data-cites="chen_improved_2023">Chen et al. (<a href="#ref-chen_improved_2023" role="doc-biblioref">2023</a>)</span> performed a geographic stratification based on topographic and vegetation features to map AGB. Their results showed that using a stratified sample technique improved the accuracy of AGB estimates by up to 34.8%.</p>
+<p><img src="https://www.mdpi.com/remotesensing/remotesensing-15-02625/article_deploy/html/images/remotesensing-15-02625-g007.png" class="img-fluid" /></p>
+</section>
+</section>
+<section id="als-data-for-possible-validationcalibration" class="level4">
+<h4><strong><em>ALS data for possible validation/calibration</em></strong></h4>
+<ul>
+<li>Data from PNOA LiDAR project in Spain is freely accessible and could be used to check on vegetation structure parameters (1ra cobertura until 2015, 2da cobertura until 2022)
+<ul>
+<li>This data could be used for many things:
+<ul>
+<li>Simulation of structural changes over time as a space-for-time substitution (Check gradient of different structural variables).</li>
+<li>High resolution assessment of vegetaion structural changes after fire.</li>
+<li>Creation of simulated footprints for pre-fire measurements and then combination with real GEDI footprints (Like <span class="citation" data-cites="huettermann_using_2023">Huettermann et al. (<a href="#ref-huettermann_using_2023" role="doc-biblioref">2023</a>)</span>).</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><img src="https://pnoa.ign.es/resources/images/lidar/cabeceras/cordoba.jpg" class="img-fluid" /></p>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Lit literature review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Lit literature review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q2hhcHRlciAx">Chapter 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL2ZpcnN0X2NoYXB0ZXIuaHRtbA==">/sections/first_chapter.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q2hhcHRlciAy">Chapter 2</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL3NlY29uZF9jaGFwdGVyLmh0bWw=">/sections/second_chapter.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q2hhcHRlciAz">Chapter 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL3RoaXJkX2NoYXB0ZXIuaHRtbA==">/sections/third_chapter.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q2hhcHRlciA0">Chapter 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL2ZvdXJ0aF9jaGFwdGVyLmh0bWw=">/sections/fourth_chapter.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6R0VESSAmIExpZGFy">GEDI &amp; Lidar</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL0dFREkuaHRtbA==">/sections/GEDI.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Rm9yZXN0IGZpcmVz">Forest fires</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL2ZvcmVzdF9maXJlcy5odG1s">/sections/forest_fires.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6T3RoZXIgc2F0ZWxsaXRlcw==">Other satellites</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL290aGVyX3NhdGVsbGl0ZXMuaHRtbA==">/sections/other_satellites.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TW9kZWxsaW5n">Modelling</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL01vZGVsbGluZy5odG1s">/sections/Modelling.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6S25vd2xlZGdlIGdhcA==">Knowledge gap</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlY3Rpb25zL2tub3dsZWRnZV9nYXBzLmh0bWw=">/sections/knowledge_gaps.html</span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lit literature review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lit literature review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lit literature review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Lit literature review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-chen_improved_2023" class="csl-entry" role="listitem">
+Chen, Lin, Chunying Ren, Bai Zhang, Zongming Wang, Weidong Man, and Mingyue Liu. 2023. <span>“Improved <span>Object</span>-<span>Based</span> <span>Mapping</span> of <span>Aboveground</span> <span>Biomass</span> <span>Using</span> <span>Geographic</span> <span>Stratification</span> with <span>GEDI</span> <span>Data</span> and <span>Multi</span>-<span>Sensor</span> <span>Imagery</span>.”</span> <em>Remote Sensing</em> 15 (10): 2625–25. <a href="https://doi.org/10.3390/rs15102625">https://doi.org/10.3390/rs15102625</a>.
+</div>
+<div id="ref-east_measuring_2023" class="csl-entry" role="listitem">
+East, Alyson, Andrew Hansen, Dolors Armenteras, Patrick Jantz, and David W. Roberts. 2023. <span>“Measuring <span>Understory</span> <span>Fire</span> <span>Effects</span> from <span>Space</span>: <span>Canopy</span> <span>Change</span> in <span>Response</span> to <span>Tropical</span> <span>Understory</span> <span>Fire</span> and <span>What</span> <span>This</span> <span>Means</span> for <span>Applications</span> of <span>GEDI</span> to <span>Tropical</span> <span>Forest</span> <span>Fire</span>.”</span> <em>Remote Sensing</em> 15 (3): 696. <a href="https://doi.org/10.3390/rs15030696">https://doi.org/10.3390/rs15030696</a>.
+</div>
+<div id="ref-guerra-hernandez_impact_2024" class="csl-entry" role="listitem">
+Guerra-Hernández, Juan, José M. C. Pereira, Atticus Stovall, and Adrian Pascual. 2024. <span>“Impact of Fire Severity on Forest Structure and Biomass Stocks Using <span>NASA</span> <span>GEDI</span> Data. <span>Insights</span> from the 2020 and 2021 Wildfire Season in <span>Spain</span> and <span>Portugal</span>.”</span> <em>Science of Remote Sensing</em> 9 (June): 100134. <a href="https://doi.org/10.1016/j.srs.2024.100134">https://doi.org/10.1016/j.srs.2024.100134</a>.
+</div>
+<div id="ref-holcomb_repeat_2024" class="csl-entry" role="listitem">
+Holcomb, Amelia, Patrick Burns, Srinivasan Keshav, and David A. Coomes. 2024. <span>“Repeat <span>GEDI</span> Footprints Measure the Effects of Tropical Forest Disturbances.”</span> <em>Remote Sensing of Environment</em> 308 (July): 114174. <a href="https://doi.org/10.1016/j.rse.2024.114174">https://doi.org/10.1016/j.rse.2024.114174</a>.
+</div>
+<div id="ref-huettermann_using_2023" class="csl-entry" role="listitem">
+Huettermann, Sven, Simon Jones, Mariela Soto-Berelov, and Samuel Hislop. 2023. <span>“Using <span>Landsat</span> Time Series and Bi-Temporal <span>GEDI</span> to Compare Spectral and Structural Vegetation Responses After Fire.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 122 (August): 103403. <a href="https://doi.org/10.1016/j.jag.2023.103403">https://doi.org/10.1016/j.jag.2023.103403</a>.
+</div>
+<div id="ref-ji_deforestation_2024" class="csl-entry" role="listitem">
+Ji, Min, Huan Xie, Jürgen Oberst, Qi Xu, Yuan Sun, Sicong Liu, Changda Liu, and Xiaohua Tong. 2024. <span>“Deforestation Detection from Spaceborne Full-Waveform Laser Altimetry, Incorporating Terrain Effects: <span>A</span> Case Study in <span>Porto</span> <span>Velho</span>, <span>Brazil</span>.”</span> <em>International Journal of Applied Earth Observation and Geoinformation</em> 129 (May): 103861. <a href="https://doi.org/10.1016/j.jag.2024.103861">https://doi.org/10.1016/j.jag.2024.103861</a>.
+</div>
+<div id="ref-mandl_spaceborne_2023" class="csl-entry" role="listitem">
+Mandl, Lisa, Ana Stritih, Rupert Seidl, Christian Ginzler, and Cornelius Senf. 2023. <span>“Spaceborne <span>LiDAR</span> for Characterizing Forest Structure Across Scales in the <span>European</span> <span>Alps</span>.”</span> <em>Remote Sensing in Ecology and Conservation</em> 9 (5): 599–614. <a href="https://doi.org/10.1002/rse2.330">https://doi.org/10.1002/rse2.330</a>.
+</div>
+<div id="ref-milenkovic_assessing_2022" class="csl-entry" role="listitem">
+Milenković, Milutin, Johannes Reiche, John Armston, Amy Neuenschwander, Wanda De Keersmaecker, Martin Herold, and Jan Verbesselt. 2022. <span>“Assessing <span>Amazon</span> Rainforest Regrowth with <span>GEDI</span> and <span>ICESat</span>-2 Data.”</span> <em>Science of Remote Sensing</em> 5 (June): 100051. <a href="https://doi.org/10.1016/j.srs.2022.100051">https://doi.org/10.1016/j.srs.2022.100051</a>.
+</div>
+<div id="ref-pronk_assessing_2024" class="csl-entry" role="listitem">
+Pronk, Maarten, Marieke Eleveld, and Hugo Ledoux. 2024. <span>“Assessing <span>Vertical</span> <span>Accuracy</span> and <span>Spatial</span> <span>Coverage</span> of <span>ICESat</span>-2 and <span>GEDI</span> <span>Spaceborne</span> <span>Lidar</span> for <span>Creating</span> <span>Global</span> <span>Terrain</span> <span>Models</span>.”</span> <em>Remote Sensing</em> 16 (13): 2259. <a href="https://doi.org/10.3390/rs16132259">https://doi.org/10.3390/rs16132259</a>.
+</div>
+<div id="ref-schleich_improving_2023" class="csl-entry" role="listitem">
+Schleich, Anouk, Sylvie Durrieu, Maxime Soma, and Cédric Vega. 2023. <span>“Improving <span>GEDI</span> <span>Footprint</span> <span>Geolocation</span> <span>Using</span> a <span>High</span>-<span>Resolution</span> <span>Digital</span> <span>Elevation</span> <span>Model</span>.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 16: 7718–32. <a href="https://doi.org/10.1109/JSTARS.2023.3298991">https://doi.org/10.1109/JSTARS.2023.3298991</a>.
+</div>
+<div id="ref-urbazaev_assessment_2022" class="csl-entry" role="listitem">
+Urbazaev, Mikhail, Laura L. Hess, Steven Hancock, Luciane Yumie Sato, Jean Pierre Ometto, Christian Thiel, Clémence Dubois, et al. 2022. <span>“Assessment of Terrain Elevation Estimates from <span>ICESat</span>-2 and <span>GEDI</span> Spaceborne <span>LiDAR</span> Missions Across Different Land Cover and Forest Types.”</span> <em>Science of Remote Sensing</em> 6 (December): 100067. <a href="https://doi.org/10.1016/j.srs.2022.100067">https://doi.org/10.1016/j.srs.2022.100067</a>.
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+</body>
+
+</html>
