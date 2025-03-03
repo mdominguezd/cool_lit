@@ -5,7 +5,7 @@ website:
   title: "Lit literature review"
   navbar:
     left:
-      - href: main.qmd
+      - href: sections/a_main.qmd
         text: Main
       - href: sections/first_chapter.qmd
         text: Objective 1
