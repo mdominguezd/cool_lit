@@ -6,7 +6,7 @@ website:
   reader-mode: true
   navbar:
     left:
-      - href: sections/a_main.qmd
+      - href: index.qmd
         text: Main
       - href: sections/first_chapter.qmd
         text: Objective 1
