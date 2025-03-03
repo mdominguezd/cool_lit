@@ -5,6 +5,9 @@ toc-depth: 2
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
+format:
+    html:
+        theme: journal
 ---
 
 # Space-borne LiDAR comparable pairs for small-scale analyses

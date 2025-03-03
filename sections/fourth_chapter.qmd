@@ -2,7 +2,12 @@
 from: markdown+emoji
 toc: true
 toc-depth: 2
+jupyter: python3
 bibliography: ../references.bib
+embed-resources: true
+format:
+    html:
+        theme: journal
 ---
 
 # Estimation of fire emissions using dynamic combustion completeness estimated through vegetation structural changes.
