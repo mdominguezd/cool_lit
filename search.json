@@ -4,7 +4,7 @@
     "href": "main.html",
     "title": "Lit literature review",
     "section": "",
-    "text": "The following chapters contain some interesting literature that could be (or not) interesting for the reader. They are mainly related to topics related to carbon loss estimation due to forest fires using earth observation products (e.g. GEDI, Ice-SAT, Sentinel, etc.).\n\nGEDI & Forest 🌳 🛰️ Forests and Forest Fires 🌳 🔥 Other Satellites and Fires 🛰️"
+    "text": "The following chapters contain some literature that could be (or not) interesting for the reader. They are mainly related to topics focusing on the Integration of spaceborne LiDAR data and multi-frequency Earth Observation data for assessing fire-induced vegetation structure changes, which is my PhD research topic. For it, I intend to foucs on 4 objectives:\n\n Objective 1: Comparable GEDI pairs for vegetation structure change. 🌳 🛰️  Objective 2: Integration of GEDI pairs with other EO datasets in a european case study 🛰️ + 🛰️\n Objective 3: Scale up to bigger and more diverse regions 🛰️🌎  Objective 4: Fire emission improvements based on enhanced estimation of vegetation structure changes 🔥🌳🛰️"
   },
   {
     "objectID": "sections/Modelling.html#a-high-resolution-canopy-height-model-of-the-earth",
