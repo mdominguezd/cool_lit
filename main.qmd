@@ -10,12 +10,14 @@ format:
     embed-resources: true
 ---
 
-The following chapters contain some interesting literature that could be (or not) interesting for the reader. They are mainly related to topics related to **carbon loss estimation due to forest fires using earth observation products** (e.g. GEDI, Ice-SAT, Sentinel, etc.).
+The following chapters contain some literature that could be (or not) interesting for the reader. They are mainly related to topics focusing on the **Integration of spaceborne LiDAR data and multi-frequency Earth Observation data for assessing fire-induced vegetation structure changes**, which is my PhD research topic. For it, I intend to foucs on 4 objectives: 
 
 
-<div style="display: flex; gap: 20%; width: 80%; margin: auto; text-align: center;">
-  <a href="sections/GEDI.qmd" class="btn" style="background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px;" role="button">GEDI & Forest 🌳 🛰️</a>
-  <a href="sections/forest_fires.qmd" class="btn" style="background-color: #FF5733; color: white; padding: 15px; border-radius: 10px;" role="button">Forests and Forest Fires 🌳 🔥</a>
-  <a href="sections/other_satellites.qmd" class="btn" style="background-color: #337AB7; color: white; padding: 15px; border-radius: 10px;" role="button">Other Satellites and Fires 🛰️</a>
+<div style="display: flex; gap: 0%; width: 70%; margin: auto; text-align: center;">
+  <a href="sections/first_chapter.qmd" class="btn" style="background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 1: Comparable GEDI pairs for vegetation structure change. 🌳 🛰️</a>
+  <a href="sections/second_chapter.qmd" class="btn" style="background-color: #FF5733; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 2: Integration of GEDI pairs with other EO datasets in a european case study  🛰️ + 🛰️</a>
+  
+  <a href="sections/third_chapter.qmd" class="btn" style="background-color: #337AB7; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 3: Scale up to bigger and more diverse regions 🛰️🌎</a>
+  <a href="sections/fourth_chapter.qmd" class="btn" style="background-color: #DAA520; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 4: Fire emission improvements based on enhanced estimation of vegetation structure changes 🔥🌳🛰️</a>
 </div>
 

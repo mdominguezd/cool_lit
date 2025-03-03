@@ -6,23 +6,23 @@ website:
   navbar:
     left:
       - href: sections/first_chapter.qmd
-        text: Chapter 1
+        text: Objective 1
       - href: sections/second_chapter.qmd
-        text: Chapter 2
+        text: Objective 2
       - href: sections/third_chapter.qmd
-        text: Chapter 3
+        text: Objective 3
       - href: sections/fourth_chapter.qmd
-        text: Chapter 4
-      - href: sections/GEDI.qmd
-        text: GEDI & Lidar
-      - href: sections/forest_fires.qmd
-        text: Forest fires
-      - href: sections/other_satellites.qmd
-        text: Other satellites
-      - href: sections/Modelling.qmd
-        text: Modelling
-      - href: sections/knowledge_gaps.qmd
-        text: Knowledge gap
+        text: Objective 4
+      # - href: sections/GEDI.qmd
+      #   text: GEDI & Lidar
+      # - href: sections/forest_fires.qmd
+      #   text: Forest fires
+      # - href: sections/other_satellites.qmd
+      #   text: Other satellites
+      # - href: sections/Modelling.qmd
+      #   text: Modelling
+      # - href: sections/knowledge_gaps.qmd
+      #   text: Knowledge gap
 format:
   html:
     css: styles.css
