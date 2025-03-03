@@ -1,0 +1,121 @@
+---
+from: markdown+emoji
+toc: true
+toc-depth: 2
+---
+
+## Global canopy height regression and uncertainty estimation from GEDI LIDAR waveforms with deep ensembles
+
+## A high-resolution canopy height model of the Earth
+
+## SatCLIP: Global, General-Purpose Location Embeddings with Satellite Imagery
+
+### Introduction
+
+- Satellite imagery is a valuable input data for predictive models across a wide range of real-world applications.
+- Many geospatial models also directly leverage geographic location for improving predictions.
+- Integrating geographic information into a deep learning model is not straightforward.
+- Introducing spatial coordinates as features can amplify geographic distribution shift problems and lead to poor evaluation accuracy.
+- Many location-informed models are only applicable for interpolation problems where the evaluation area overlaps with the training area.
+- This work addresses the research problem by pretraining location encoders with globally and uniformly sampled satellite imagery and with general-purpose use in mind.
+
+### Satellite Contrastive Location-Image Pretraining
+
+- SatCLIP learns an implicit representation of locations by matching CNN and ViT inferred visual patterns of openly available satellite imagery with their geographic coordinates.
+- The resulting location encoder efficiently summarizes the characteristics of any given location for convenient use in downstream tasks.
+- The paper motivates SatCLIP and then outlines its components and training paradigm.
+- SatCLIP has the potential to provide the best of both worlds: location embeddings capture both spatial effects and ground conditions while also being low-dimensional and runtime-efficient.
+
+#### Pretraining with the SatCLIP Objective
+
+- Describes the inputs to the geographic location encoder.
+- Defines two encoders: a location encoder and an image encoder.
+- Describes the CLIP objective for training both encoders.
+- This objective simultaneously optimizes the weights of the location encoder and image encoder to embed the feature vectors of the corresponding location and image nearby in a common d-dimensional feature space.
+
+#### Encoder Architectures
+
+- Geographic location encoders typically take the form of a small neural network (NN) applied to a nonparametric, functional positional encoding of the coordinates.
+- This work trains Siren(SH) location encoders proposed by Rußwurm et al., which use spherical harmonics basis (SH) functions as positional encoders and are particularly well-suited for coordinates on spherical surfaces.
+- They are combined with sinusoidal representation networks (Siren), which are broadly used for implicit neural representations.
+- The spatial smoothness of the representation is controlled by the number of Legendre polynomials L.
+- As an image encoder, they need a vision model that is expressive enough to learn visual patterns from satellite images.
+- In this work, they use ResNet18, ResNet50, and ViT16 vision encoders pretrained with momentum-contrast (MoCo) on Sentinel-2 satellite imagery.
+
+#### SatCLIP Implementation Details
+
+- SatCLIP is pretrained using the S2-100K dataset, which is assembled for this purpose.
+- 90% of the data points, selected uniformly at random, are used for pretraining and the remaining 10% is reserved as a validation set to monitor overfitting.
+- Models are trained for 500 epochs on an A100 GPU.
+
+### Experimental Setup
+
+- The paper focuses on three research questions:
+- How generalizable are SatCLIP embeddings from Sentinel-2 data, both across a diverse range of geospatial modeling tasks (RQ 1) and across unseen geographic areas (RQ 2), compared to existing pretrained location encoders and location-only prediction?
+- Do SatCLIP embeddings capture ground conditions and incorporate similarities over space? (RQ 3).
+- Experiments are designed to test the performance of SatCLIP embeddings for downstream tasks, both for spatial interpolation, and for geographic domain generalization.
+- Geographic generalization is an important aspect of performance as distributional shifts across geographic areas are a common challenge in environmental problems.
+
+#### Pretraining Dataset: 100k uniformly sampled Sentinel-2 images
+
+- To construct their pretraining dataset, S2-100K, they sample 100,000 tiles of 256×256 pixel, multi-spectral (12-channel) Sentinel-2 satellite imagery and their associated centroid locations.
+- The S2-100K dataset is designed with the goals of multi-task applicability and geographic generalization performance in mind.
+- Unlike S2-100K, pretraining datasets used in comparison methods often significantly underrepresent certain—especially non-Western—geographic areas as they were not specifically designed to provide general-purpose embeddings.
+
+#### Downstream Tasks
+
+- To test the general applicability of SatCLIP location embeddings, experiments are run on a wide range of geospatial predictive modeling tasks.
+- The nine downstream datasets used in this work span socioeconomic and environmental applications.
+
+#### Comparison Methods
+
+- The trained SatCLIP location embeddings are compared to GPS2Vec, CSP, and GeoCLIP pretrained location embeddings.
+- To compare to an image-only embedding, globally precomputed MOSAIKS features are used.
+- To assess the performance improvement from the integration of contextual information over location-only prediction, they also compare to downstream learners trained on raw latitude/longitude coordinates.
+
+#### Downstream Model Training
+
+- For all downstream tasks, multi-layer perceptron (MLP) models are trained with location embeddings and raw latitude/longitude coordinates as input to predict a (continuous or discrete) outcome variable.
+- Regression models use a mean squared error (MSE) loss and classification models use a cross-entropy loss.
+
+### Results
+
+- This section presents the results of the experiments.
+
+#### Downstream Task Performance (RQ 1)
+
+- SatCLIP embeddings (in either L = 10 or L = 40 configuration) achieve the best prediction scores by a large margin on seven of the nine tasks.
+- The exceptions are the Cali. Housing dataset, which is limited to California, and the Median Income dataset, which only contains data from the continental United States (US).
+- SatCLIP performs well on all continents for both tasks.
+- Prior location encoders (CSP and GPS2Vec) trained on spatially biased training data tend to perform better in Europe and North America than in the underrepresented continents of Africa, Asia, and South America.
+
+#### Zero/Few-Shot Geographic Adaptation (RQ 2)
+
+- SatCLIP models are often (but not always) better than the comparison approaches across both held-out continents.
+- Overall, SatCLIP embeddings perform systematically better in the few-shot geographic adaptation setting for Ecoregions and Countries tasks.
+
+#### Analysis of Location Embeddings (RQ 3)
+
+- They investigate qualitatively to what degree the SatCLIP embeddings have learned an implicit representation of different ground conditions in the location encoder weights.
+- SatCLIP location embeddings show high similarity between the Congo Basin location and other areas close to the Equator, particularly the Amazon and Indonesia.
+- In comparison, embeddings of the North American location are similar to areas in Europe or northern China that are similarly population-dense and industrialized.
+
+#### Effect of Location and Image Encoder Design on 
+
+- The choice of image encoder for pretraining (ViT-16, ResNet-18, ResNet-50) appears to only marginally affect results.
+- In contrast, different location encoder resolutions with scale parameters L = 10 and L = 40 have a greater effect.
+
+### Discussion
+
+- SatCLIP models can provide useful information for a wide range of downstream tasks, with the concrete benefit varying across tasks.
+- SatCLIP embeddings perform well across continents and are less prone to geographic bias in comparison to other methods like GPS2Vec or CSP.
+- The transfer of spatial patterns in Sentinel-2 imagery into the SatCLIP location encoder enables generalization across geographic areas.
+- At test time, SatCLIP location encoders can be applied directly to any point on the globe, without needing to download additional imagery.
+
+### Conclusion
+
+- SatCLIP is a method to learn an implicit neural representation of visual patterns on the globe by matching satellite images and their respective coordinates using a contrastive location-image pretraining objective.
+- Experiments show that SatCLIP is effective for global prediction tasks spanning social and environmental domains, for both interpolation and out-of-sample geographic prediction.
+- Two key factors contribute to the performance:
+- Their S2-100K pretraining dataset is uniformly distributed across the globe.
+- They use the recently proposed Siren(SH) location encoder which has proven well-suited for the global-scale representation of data on the spherical Earth.
