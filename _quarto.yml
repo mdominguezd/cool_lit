@@ -3,8 +3,9 @@ project:
 
 website:
   title: "Lit literature review"
-  style: "docked"
+  reader-mode: true
   navbar:
+    style: "docked"
     left:
       - href: sections/a_main.qmd
         text: Main
