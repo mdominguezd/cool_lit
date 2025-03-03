@@ -5,9 +5,6 @@ toc-depth: 2
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
-format:
-    html:
-        theme: journal
 ---
 
 # Global assessment of fire-induced vegetation structural changes  

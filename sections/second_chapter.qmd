@@ -5,9 +5,6 @@ toc-depth: 2
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
-format:
-    html:
-        theme: journal
 ---
 
 # Integration of space-borne LiDAR data pairs and multi frequency earth observation data for upscaling vegetation structural changes in burned areas. A European case study.
