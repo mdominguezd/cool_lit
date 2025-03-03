@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Lit literature review"
+  style: "docked"
   navbar:
     left:
       - href: sections/a_main.qmd
