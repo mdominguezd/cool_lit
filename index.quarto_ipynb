@@ -1,0 +1,44 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "from: markdown+emoji\n",
+        "title: \"Lit literature review\"\n",
+        "author: Martín Domínguez Durán\n",
+        "date: today\n",
+        "jupyter: python3\n",
+        "format:\n",
+        "  html:\n",
+        "    toc: true\n",
+        "    embed-resources: true\n",
+        "---\n",
+        "\n",
+        "\n",
+        "The following chapters contain some literature that could be (or not) interesting for the reader. They are mainly related to topics focusing on the **Integration of spaceborne LiDAR data and multi-frequency Earth Observation data for assessing fire-induced vegetation structure changes**, which is my PhD research topic. For it, I intend to foucs on 4 objectives: \n",
+        "\n",
+        "\n",
+        "<div style=\"display: flex; gap: 0%; width: 70%; margin: auto; text-align: center;\">\n",
+        "  <a href=\"sections/first_chapter.qmd\" class=\"btn\" style=\"background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px;\" role=\"button\"> Objective 1: Comparable GEDI pairs for vegetation structure change assessment 🌳 🛰️</a>\n",
+        "  <a href=\"sections/second_chapter.qmd\" class=\"btn\" style=\"background-color: #FF5733; color: white; padding: 15px; border-radius: 10px;\" role=\"button\"> Objective 2: Integration of GEDI pairs with other EO datasets for structural change evaluation in a European case study  (🛰️ + 🛰️) </a>\n",
+        "  \n",
+        "  <a href=\"sections/third_chapter.qmd\" class=\"btn\" style=\"background-color: #337AB7; color: white; padding: 15px; border-radius: 10px;\" role=\"button\"> Objective 3: Scale up to bigger and more diverse regions 🛰️🌎</a>\n",
+        "  <a href=\"sections/fourth_chapter.qmd\" class=\"btn\" style=\"background-color: #DAA520; color: white; padding: 15px; border-radius: 10px;\" role=\"button\"> Objective 4: Fire emission improvements based on enhanced estimation of vegetation structure changes 🔥🌳🛰️</a>\n",
+        "</div>\n"
+      ],
+      "id": "4e11ff4c"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/home/mdominguezd/miniconda3/envs/webapp/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
