@@ -179,7 +179,7 @@ gedi_ba = gpd.sjoin(gdf, region_of_interest, how='inner')
 import plotly.figure_factory as ff
 import plotly.express as px
 
-px.set_mapbox_access_token('pk.eyJ1IjoibWRvbWluZ3VlemQiLCJhIjoiY2xodGY5NWtvMDVidDNwcGJyNGFhZGV5byJ9.8vuMo0BXgq9605Bq8wmwCg')
+px.set_mapbox_access_token(os.environ.get('MAPBOX_TOKEN'))
 
 fig = ff.create_hexbin_mapbox(
     data_frame=gedi_ba, lat="latitude", 
@@ -207,7 +207,7 @@ gdf.crs = 4326
 
 gedi_ba = gpd.sjoin(gdf, region_of_interest, how='inner')
 
-px.set_mapbox_access_token('pk.eyJ1IjoibWRvbWluZ3VlemQiLCJhIjoiY2xodGY5NWtvMDVidDNwcGJyNGFhZGV5byJ9.8vuMo0BXgq9605Bq8wmwCg')
+px.set_mapbox_access_token(os.environ.get('MAPBOX_TOKEN'))
 
 fig = ff.create_hexbin_mapbox(
     data_frame=gedi_ba, lat="latitude", 
