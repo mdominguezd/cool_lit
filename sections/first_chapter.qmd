@@ -131,6 +131,7 @@ Other researchers have mainly focused on filtering GEDI data, based on quality a
 ```{python}
 import plotly.express as px
 import plotly.io as pio
+import os
 
 pio.renderers.default = "iframe"
 
