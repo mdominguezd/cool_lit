@@ -18,7 +18,7 @@ jobs:
     - name: Test env vars for python
       env:
         MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }} 
-      run: python -c 'import os;print(os.environ)'
+      run: python -c 'import os;print(os.environ['MAPBOX_TOKEN'])'
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
@@ -44,3 +44,4 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }} 
