@@ -6,6 +6,18 @@ on:
 name: Quarto Publish
 
 jobs:
+  test-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print env vars
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Run Python script
+        run: python -c 'import os;print(os.environ)'
+        env:
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
@@ -24,11 +36,10 @@ jobs:
           cache: 'pip'
       - run: pip install jupyter
       - run: pip install -r requirements.txt
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }} 
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
