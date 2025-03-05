@@ -6,19 +6,6 @@ on:
 name: Quarto Publish
 
 jobs:
-  test_env:
-    environment: TEST_SECRET
-    runs-on: ubuntu-latest
-    steps:
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.12
-        
-    - name: Test env vars for python
-      env:
-        MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }} 
-      run: python -c 'import os;print(os.environ['MAPBOX_TOKEN'])'
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
