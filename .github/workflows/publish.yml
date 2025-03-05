@@ -6,18 +6,6 @@ on:
 name: Quarto Publish
 
 jobs:
-  test-env:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print env vars
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-      - name: Run Python script
-        run: python -c 'import os;print(os.environ)'
-        env:
-          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
-
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
