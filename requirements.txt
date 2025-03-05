@@ -3,3 +3,5 @@ jupyter
 numpy
 pandas
 matplotlib
+leafmap
+gedidb==2025.2.6

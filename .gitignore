@@ -4,3 +4,6 @@ main_files
 
 /.quarto/
 site_libs
+*.html
+iframe_figures
+sections/iframe_figures
