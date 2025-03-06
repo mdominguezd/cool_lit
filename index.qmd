@@ -10,14 +10,16 @@ format:
     embed-resources: true
 ---
 
-The following chapters contain some literature that could be (or not) interesting for the reader. They are mainly related to topics focusing on the **Integration of spaceborne LiDAR data and multi-frequency Earth Observation data for assessing fire-induced vegetation structure changes**, which is my PhD research topic. For it, I intend to foucs on 4 objectives: 
+The following chapters contain some literature that could be (or not) interesting for the reader. They are mainly related to topics focusing on the **Integration of spaceborne LiDAR data and multi-frequency Earth Observation data for assessing fire-induced vegetation structure changes**, which is my PhD research topic. The general objective of my research is to: ***To develop a systematic approach for leveraging spaceborne LiDAR data to assess fire-induced vegetation structure changes, with a particular focus on improving measurement comparability, integrating Earth observation datasets, and evaluating the scalability of this integration across different spatial scales.*** For it, I intend to foucs on 4 objectives: 
 
 
-<div style="display: flex; gap: 0%; width: 70%; margin: auto; text-align: center;">
-  <a href="sections/first_chapter.qmd" class="btn" style="background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 1: Comparable GEDI pairs for vegetation structure change assessment 🌳 🛰️</a>
-  <a href="sections/second_chapter.qmd" class="btn" style="background-color: #FF5733; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 2: Integration of GEDI pairs with other EO datasets for structural change evaluation in a European case study  (🛰️ + 🛰️) </a>
-  
-  <a href="sections/third_chapter.qmd" class="btn" style="background-color: #337AB7; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 3: Scale up to bigger and more diverse regions 🛰️🌎</a>
-  <a href="sections/fourth_chapter.qmd" class="btn" style="background-color: #DAA520; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 4: Fire emission improvements based on enhanced estimation of vegetation structure changes 🔥🌳🛰️</a>
+<div style="display: flex; gap: 5%; width: 95%; margin: auto; text-align: center;">
+  <a href="sections/first_chapter.qmd" class="btn" style="background-color: #4CAF50; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 1: To investigate the sources of error in spaceborne LiDAR measurements and establish a framework for obtaining near-coincident, comparable GEDI measurements for robust vegetation structure change analysis 🌳 📏 🛰️</a>
+
+  <a href="sections/second_chapter.qmd" class="btn" style="background-color: #FF5733; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 2: To integrate near-coincident GEDI measurements with wall-to-wall Earth observation products to spatially characterize fire-induced vegetation structure changes in a specific European region  🛰️+🛰️ </a>
+
+  <a href="sections/third_chapter.qmd" class="btn" style="background-color: #337AB7; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 3: To assess the scalability of integrating GEDI measurements with Earth observation datasets for fire-induced vegetation structure change detection across larger spatial extents, from regional to global scales 🛰️🌎</a>
+
+  <a href="sections/fourth_chapter.qmd" class="btn" style="background-color: #DAA520; color: white; padding: 15px; border-radius: 10px;" role="button"> Objective 4: To evaluate the potential improvements in fire emission estimates by using vegetation structure changes derived from LiDAR and Earth observation data as indicators of combustion completeness 🔥🌳🛰️ </a>
 </div>
 
