@@ -9,9 +9,17 @@ embed-resources: true
 
 # Evaluate the scalability of integrating GEDI and Earth observation data for detecting fire-induced vegetation changes and improving fire emission estimates 
 
-## Main ideas
+## Main idea
 
--  How can the method developed for a specific case study be extrapolated to different domains?
+-  Fire emission models can underestimate emissions due to exclusion of small fires and fixed (biome-specific) combustion completeness factors.
+
+:::{layout-ncol="2"}
+
+**Hypothesis:** If a model integrating GEDI and EO data can perform well for a specific domain (region of interest), geographical generalization methods could be used to implement that model in different regions. And this model could be used to improve combustion completeness estimation for fire emission models. 
+
+**Proposed outcome:** A global model for vegetation structure change evaluation caused by fires.
+
+:::
 
 ## Literature review
 
