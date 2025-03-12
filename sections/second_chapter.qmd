@@ -1,46 +1,117 @@
 ---
 from: markdown+emoji
 toc: true
-toc-depth: 2
+toc-depth: 4
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
 ---
 
-# Integration of space-borne LiDAR data pairs and multi frequency earth observation data for upscaling vegetation structural changes in burned areas. A European case study.
+# Integrate near-coincident comparable GEDI measurements with wall-to-wall Earth observation products to spatially characterize fire-induced forest structure changes in a European region
 
-## Main ideas
+## Main idea
 
--  If wall-to-wall products can explain the spatial variation of vegetation structural changes; a model, in which LiDAR pairs are used as training data and other EO products as covariates, could be used to upscale the structural changes for a whole burned area.
--  This methodology should be validated with more refined datasets (e.g. Airborne or Terrestrial Laser Scanning)
+The spatial coverage limitation and the lack of guaranteed repeated cycle of GEDI makes structural change analysis particularly difficult. 
+
+:::{layout-ncol="2"}
+
+**Hypothesis:** If wall-to-wall products (SAR + MSI) can explain the spatial variation of vegetation structural changes detected by GEDI; a model, in which comparable GEDI pairs are used as training data and other EO products as covariates, could be used to upscale the structural changes for a specific study area.
+
+**Proposed outcome:** A spatially continuous characterization of fire-induced forest structural changes in a European region that is prone to forest fires. 
+
+:::
 
 ## Literature review
 
 ### Questions to answer:
 
-- What are the current methods for integrating LiDAR and other EO data to assess vegetation structure? (Normally not structure change)
+- What are the current methods for integrating LiDAR and other EO data to assess vegetation structure? (Normally not structure change, or change at all).
 - How have previous studies quantify vegetation structural changes in fire-affected areas, and what are the main limitations?
 - What machine learning or statistical models have been applied for upscaling vegetation structural metrics from LiDAR data to broader spatial scales using optical and radar data?
+- What are the future directions for GEDI + EO data integration research?
+- How is the integration of GEDI and EO data validated and the uncertainty calculated?
 
 ### ***Current methods for integrating LiDAR and other EO products***
 
+Since the launch of the GEDI mission, multiple studies have been developed on the integration of this data with other EO products to obtain regional and/or global spatial charaterization of the structural variables measured by GEDI. Most of these studies have focused on mono-temporal integration of EO products. In other words, the use of single GEDI measurements combined with other EO products to obtain regional or global maps with modeled vegetation structure variables. However, the integration of Bi-Temporal LiDAR data and EO products to assess change on these variables still needs to be studied further.
+
 #### Mono-temporal LiDAR
 
-@potapov_mapping_2021 (CH integrating GEDI with Landsat)
+Most of the studies integrating GEDI with other EO data products have focused on the estimation of variables like canopy height and above ground biomass density (AGBD). 
 
-@lang_high-resolution_2023 (CH Integrating GEDI w/ S2)
+@potapov_mapping_2021 created a global forest canopy height map for 2019, by using regression trees to extrapolate GEDI footprint-level forest canopy height measurements using multitemporal metrics derived from global Landsat analysis-ready data (CH integrating GEDI with Landsat).
 
-These and other studies combined on @besic_remote-sensing-based_2025.
+@lang_high-resolution_2023 developed a probabilistic deep learning model that fuses sparse canopy height data from the GEDI space-borne LiDAR mission with dense optical satellite images from Sentinel-2 to create a high-resolution global canopy height map.
 
 #### Bi-temporal LiDAR
 
-Bi-temporal GEDI measurements (real + simulated) have been used to compare structural and spectral changes (Captured by optical EO data) in vegetation after fires [@huettermann_using_2023]
+Other studies have used bi-temporal GEDI observations (real post-fire and simulated pre-fire from ALS data) at footprint locations to analyse structural vegetation fire response and then compared these responses with spectral vegetation fire responses derived from temporally corresponding Landsat pixels [@huettermann_using_2023]. On their study, they found that structural change metrics derived from bi-temporal GEDI observations generally demonstrated a more pronounced decline than spectral indices. Notably,  the median fire response of RH50 declined to 8.6% of the pre-fire value.
 
-@holcomb_repeat_2024 related change on GEDI pairs with change on landsat derived (disturbance intensity metrics).
+Moreover, @holcomb_repeat_2024 related change on near-coincident GEDI pairs with change on landsat derived (disturbance intensity metrics).
 
 ### ***Methods to quantify vegetation structural changes in fire-affected areas***
 
+Due to the difficulty of getting near-coincident GEDI footprints, previous research has mainly worked using simulated GEDI data to evaluate the potential of GEDI to asses structural changes [@hancock_gedi_2019]. Nevertheless, @holcomb_repeat_2024 and @besnard_gedidb_2025 's work make it now possible to compare real near-coincident GEDI pairs.
+
+On orbit GEDI measurements combined with simulated GEDI shots were used to evaluate structural vegetation fire response after the black summer fires in Australia [@huettermann_using_2023]. A brief description of their methods is presented on @tbl-huettermann.
+
+| Step                                      | Description                                                                                                                                                              |
+| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Acquisition of Post-fire GEDI Data** | **Real GEDI Version 2 data were collected in 2021** to assess forest structure one year after the 2019/2020 Black Summer fires. Data were filtered for quality.         |
+| **2. Simulation of Pre-fire GEDI Data**  | **Pre-fire ALS point cloud data (captured between 2013 and 2017) were processed with the GEDI simulator** using the footprint locations of the real GEDI data to emulate pre-fire structural observations . |
+| **3. Calculation of Structural Vegetation Fire Response (StVFR)** | **Bi-temporal comparison was performed at the footprint level** by calculating the ratio of rescaled post-fire real GEDI metrics to rescaled pre-fire simulated GEDI metrics using $\frac{GEDI_{post}}{GEDI_{pre}}$. |
+| **4. Data Filtering and Stratification**   | The dataset was **restricted to areas solely burned** by the Black Summer fires based on Landsat and NSW fire records and **stratified by fire severity and forest type** to examine the impact of these factors on the structural response. |
+| **5. Data Analysis**                       | **Statistical analyses** (boxplots, descriptive statistics, T-tests) were conducted to compare the fire responses of different structural metrics and to assess the influence of fire severity and forest type. |
+
+: Methods used by @huettermann_using_2023 {#tbl-huettermann .striped .hover}
+
+Previous studies like @east_measuring_2023 only considered simulated data to assess structural changes measured by GEDI. A description of their methods is presented on @tbl-east.
+
+| **Step**                                                | **Description**                                                                                                                                                              |
+|----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Utilizing Existing ALS Data**                           | ALS data from 2013, covering four sites in Acre, Brazil (Bonal, Talismã, Humaitá, Rio Branco), with ~10 points/m² resolution, collected post-fires (2005, 2010).               |
+| **Simulating GEDI Data from ALS**                         | ALS data was processed with a GEDI simulator to create 25-m diameter footprints, mimicking GEDI L1B data.                                                                     |
+| **Deriving Canopy Height Profiles & PAI**                 | Simulated waveforms were processed to derive canopy height profiles (RH curve) and plant area index (PAI) for 5 m height bins, using Gaussian ground finding algorithms.      |
+| **Stratified Random Sampling Design**                     | Simulated footprints were sampled via stratified random sampling, considering burn status and distance from forest edge (0–250 m, 250–500 m, 500–1000 m, 1000+ m).            |
+| **Defining Burned and Unburned Areas**                    | Burn scars were classified using MODIS and Landsat data, geo-referenced to ALS boundaries, and re-digitized for accurate spatial analysis.                                    |
+| **Quantifying Changes in PAI**                            | Wilcoxon’s signed-rank test was used to compare median PAI differences between burned and unburned areas for each height bin, with 95% confidence intervals.                  |
+| **Analyzing Relative Height Curve Responses**             | Negative binomial GAMs were applied to assess differences in RH curves between burned and unburned areas, modeling height return as a function of burn status and RH%.        |
+| **Developing a Fire Severity Metric (RHsum)**             | RHsum, the sum of positive RH values (RH0–RH98), was proposed as a fire severity metric. Differences in RHsum medians were tested using Wilcoxon’s signed-rank test.          |
+| **Comparing Measured Changes to On-Orbit GEDI Accuracy**  | Measured changes in PAI, RH curves, and RHsum were compared to on-orbit GEDI error metrics (R², RMSE, MAE, bias) to evaluate GEDI’s sensitivity to detect structural changes. |
+
+: Methods used by @east_measuring_2023 {#tbl-east .striped .hover}
 
 ### ***Machine Learning and statistical models that have been applied for upscaling structural changes to broader spatial scales***
 
-m
+#### Machine learning approaches
+
+Machine learning (ML) techniques, such as Random Forest (RF) and Support Vector Regression (SVR) have been extensively used to integrate GEDI and EO data. These models are trained on GEDI-derived metrics (e.g., relative heights) and predictors from EO data (e.g., vegetation indices, SAR backscatter) to predict vegetation structure attributes like canopy height and AGB. 
+
+For most of the cases, simple RF or other ML models (Also some including object-based modelling with stratification). [@chen_improved_2023]
+
+#### Deep Learning approaches
+
+Deep learning models, such as convolutional neural networks (CNNs) and multi-modal attention networks, have been explored for fusing GEDI and EO data. These models are particularly effective at handling the complex interactions between multi-sensor data and extracting features that are critical for vegetation structure mapping.
+
+The deep learning method used by @lang_high-resolution_2023 is a probabilistic approach employing an ensemble of fully convolutional neural networks that fuses sparse GEDI LiDAR data with dense Sentinel-2 optical imagery, incorporating geographical context and strategies to improve the accuracy.
+
+@chen_multimodal_2023 proposed a novel deep learning framework called the multi-modal attention remote sensing network (MARSNet). The MARSNet architecture is based on an encoder-decoder structure. A crucial aspect is the use of separate, identical encoders for each remote sensing data modality. These modalities include Sentinel-1 C-band SAR, ALOS-2 PALSAR-2 data, Sentinel-2 optical data, and ancillary data (NASADEM elevation and slope, latitude and longitude). This design prevents interference between different data types during feature extraction. They used dominant height derived from GEDI relative heights (RH) metrics as labels. Finally, a shared decoder takes the fused features from all modalities and estimates the dominant height.
+
+### ***Future directions on GEDI + EO integration***
+
+The main directions identified for future research on GEDI + EO data integration were:
+
+- **Improving Model Generalizability:** Developing models that can be applied across diverse ecosystems and regions. (Location embeddings)
+- **Enhancing Data Fusion Techniques:** Exploring innovative methods to combine GEDI with other - spaceborne LiDAR and EO data. (Multi modal DL)
+
+### ***Validation and uncertainty analysis***
+
+@hunka_nasa_2023 discuss the challenges and importance of validation and uncertainty analysis for space-based aboveground biomass density (AGBD) maps, particularly the NASA GEDI and ESA CCI products. Regarding validation they note that independent validation remains a challenge due to the scarcity of globally-distributed samples of in situ data. The authors recommend moving towards consistent statistical terminology and aligning on a rigorous framework for uncertainty estimation.
+
+In order to get independent in-situ validation, the use of data from PNOA LiDAR project in Spain is proposed. These ALS mapping camapigns could be used either for validation or for data augmentation in some specific cases.
+
+- Validation of GEDI vegetation structure variables.
+- Simulation of structural changes over time as a space-for-time substitution (Check gradient of different structural variables).
+- High resolution assessment of vegetaion structural changes after fire.
+- Creation of simulated footprints for pre-fire measurements and then combination with real GEDI footprints (Like @huettermann_using_2023).
+

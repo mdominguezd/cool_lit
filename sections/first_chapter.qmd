@@ -1,7 +1,7 @@
 ---
 from: markdown+emoji
 toc: true
-toc-depth: 2
+toc-depth: 4
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
@@ -9,17 +9,17 @@ execute:
   enabled: true
 ---
 
-# Space-borne LiDAR comparable pairs for small-scale analyses
+# Investigate the sources of error in spaceborne LiDAR measurements and establish a framework for obtaining near-coincident, comparable GEDI measurements for vegetation structure change analysis
 
-## Main ideas
+## Main idea
 
--   There is a lot of challenges for small-scale analysis using GEDI data for before and after disturbance comparisons [@east_measuring_2023; @mandl_spaceborne_2023].
+-   There is a lot of challenges for before and after disturbance comparisons using GEDI data [@east_measuring_2023; @mandl_spaceborne_2023; @huettermann_using_2023].
 
 :::{layout-ncol="2"}
 
-**Hypothesis:** If comparability is compromised due to errors associated to specific covariates between shots (e.g. Topography, Land Cover, Tree species), then a method could be developed to mitigate those errors and make pairs more comparable. 
+**Hypothesis:** If comparability is compromised due to errors associated to specific covariates (e.g. Topography, Land Cover, Tree species), then a method could be developed to mitigate those errors and make pairs more comparable. 
 
-**Solution proposed:** A systematic way to get comparable GEDI metrics should be developed.
+**Proposed outcome:** A systematic way to get comparable GEDI metrics which takes into account errors associated to topographic, landscape and vegatation covariates.
 
 :::
 
@@ -27,14 +27,10 @@ execute:
 
 ### Questions that I want to answer:
 
--   What methods have been used to obtain comparable space-borne LiDAR measurements ***over small areas*** (How small is small)?
+-   What methods have been used to obtain comparable space-borne LiDAR measurements?
 -   What are the main challenges and best practices in comparing measurements from GEDI, ICESat-2, or other space-borne LiDAR datasets and how do researchers deal with them?
-    -   Vertical accuracy, geo-location error
-    -   Temporal resolution (Time between shots and disturbances)
-    -   How is vertical accuracy affected by land cover and topography.
--   What pre-processing techniques (e.g. filtering, interpolation) are used?
-    -   Describe Amelia's, Milenkovic's and Pronk's thorough filtering process.
-    -   Describe Ji's waveform pre-processing and slope correction and the potential of extrapolating that to two near-coincident shots (?)
+-   What pre-processing techniques (e.g. filtering, interpolation) have been used?
+-   How can accurate comparability be assessed?
 
 #### ***Methods used to obtain comparable GEDI measurements***
 
@@ -60,7 +56,7 @@ The terrain slope significantly affects spaceborne LiDAR measurements. On sloped
 
 ```{python}
 #| label: fig-slope
-#| fig-cap: Error on verticl accuracy
+#| fig-cap: Error on vertical accuracy
 #| eval: true
 #| echo: false
 
@@ -88,37 +84,97 @@ When actual pairs are found, another big challenge is to evaluate if these pairs
 
 The time between GEDI pairs used for the study on the amazon rainforest range from 5 to 1422 dyas with an average of time between shots of 522 days.
 
-##### Land cover
+##### Land cover 
 
 For the specific case of ground elevation, @urbazaev_assessment_2022 assessed the effects of different landcovers on the accuracy of GEDI and ICESat's estimations. They found that mean errors were less than 1m for all LC except for tropical forests where errors ranged from 1.75 to 5.56 meters.
 
-In forests with dense, multi-layered canopies, the GEDI laser pulse might be intercepted by upper canopy elements, preventing it from reaching the ground. This can lead to an overestimation of canopy height or an inaccurate ground elevation reading, affecting the overall height calculation. (Citation ?)
+In forests with dense, multi-layered canopies, the GEDI laser pulse might be intercepted by upper canopy elements, preventing it from reaching the ground. This can lead to an overestimation of canopy height or an inaccurate ground elevation reading, affecting the overall height calculation. 
 
 An initial experiment was performed using pairs of GEDI measurements that overlap with MODIS BA on different types of land cover. The results are shown on @fig-lc_error.
 
 ![Difference beween pairs of GEDI shots on different land covers where fires have occured.](../LC_vertical_error.png){#fig-lc_error}
 
+##### Seasonality
+
+Moreover, LiDAR data collected in leaf-on and leaf-off conditions can vary due to seasonal changes in canopy structure and density.  Few studies have explored how using GEDI data from different seasons affects forest height estimation. @chen_multimodal_2023 showed seasonal variations on gedi RH98 measurements. Nevertheless, these variations were attributed to differing GEDI locations rather than seasonality.
+
 #### ***Preprocessing techniques for spaceborne LiDAR pair handling***
 
 ##### Filtering techniques
 
-Describe here filters used by @holcomb_repeat_2024 & @milenkovic_assessing_2022.
+ @holcomb_repeat_2024 applied several filtering stpes to the GEDI data used on their study. The main ones are described in the table below:
+
+ | **Filtering Step**                              | **Description**                                                                                     |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Removal of low-quality shots**               | GEDI shots flagged as low quality by NASA were discarded to retain only reliable measurements.       |
+| **Exclusion of periods with high geolocation error** | Data collected during periods of above-average geolocation error were excluded (GEDI v2 error: 10.2 m). |
+| **Filtering based on beam sensitivity**        | Shots with insufficient sensitivity to penetrate the canopy were removed (sensitivity > 0.98 required). |
+| **Exclusion of non-forest areas**              | Shots over water or urban areas were filtered out, as GEDI is designed to study vegetation structure. |
+| **Comparison with TanDEM-X elevation data**    | Shots with large discrepancies between GEDI and TanDEM-X elevation estimates were excluded.           |
+
+: Filters used by @holcomb_repeat_2024 {.striped .hover}
+
+@pronk_assessing_2024 filters were:
+
+| **Filtering Flag**                      | **Condition**                                  | **Description**                                                   |
+|------------------------------------------|------------------------------------------------|-------------------------------------------------------------------|
+| **rx_assess_quality_flag**               | Non-zero                                       | Excludes shots with low overall signal quality.                   |
+| **surface_flag**                         | Non-zero                                       | Ensures a ground surface return was detected.                     |
+| **degrade_flag**                         | Zero                                           | Includes only shots where the data was not degraded.              |
+
+: Filters used by @pronk_assessing_2024 {.striped .hover}
+
+Finally, @milenkovic_assessing_2022 followed the steps presented on the table below:
+
+| **Step**                               | **Substep** | **Description**                                                                                         |
+|----------------------------------------|-------------|-----------------------------------------------------------------------------------------------|
+| **Initial Data Selection**             | | Started with GEDI Level 2A v2 data collected over six months, containing ~10.9 million geolocated footprints. |
+| **Pre-processing Filters**             | | Applied two main filters to clean the initial dataset:                                                   |
+|    | **Secondary Forest Filter**          | Selected only GEDI shots overlapping with secondary forest pixels (stand age > 0) in Rondônia state.      |
+|    | **Erroneous Forest Height Filter**   | Excluded shots with RH98 values < 0 or > 75 m to remove implausible height measurements.                  |
+| **Stratification into Subgroups**      | | Split the remaining shots into subgroups based on acquisition parameters:                                |
+|    | **Quality and Degradation Flags**    | Created subgroups (e.g., QS90) including only shots with quality flag = 1 and degradation flag = 0.       |
+|    | **Beam Sensitivity Thresholds**      | QS90 was divided into QS95, QS98, and QS99 based on sensitivity thresholds (0.95, 0.98, 0.99).            |
+|    | **Algorithm Setting Group for Sensitivity** | Formed subgroups (e.g., ALL-S2, QS90-S2) using RH98 values but with sensitivity from Algorithm Setting Group 2. |
+
+: Filters used by @milenkovic_assessing_2022 {.striped .hover}
 
 ##### Ground and canopy height correction
 
-Methods to improve the comparability of space-borne LiDAR pairs have been developed recently (Specifically, these methods could improve the vertical accuracy of GEDI). @ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil.
+Methods to improve the comparability of space-borne LiDAR pairs have been developed recently (Specifically, these methods could improve the vertical accuracy of GEDI). @ji_deforestation_2024 used overlapping pairs of GEDI and ICE-Sat to improve the calculation of ground elevation and thus ameliorate the canopy height calculations. These overlapping pairs were then used to assess their capability to detect deforestation in Brazil. The steps followed are described on @fig-ji_description, @tbl-ground_ji and @tbl-slope_ji.
 
-![](https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg)
+![Graphical description of @ji_deforestation_2024 pre-processing techniques](https://ars.els-cdn.com/content/image/1-s2.0-S1569843224002152-gr3_lrg.jpg){#fig-ji_description}
 
-Other researchers have mainly focused on filtering GEDI data, based on quality assessments and/or variables that could influence it [@holcomb_repeat_2024, @pronk_assessing_2024]
+
+| **Step**                                | **Description**                                                                                                                                             |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Noise Removal and Signal Range Definition** | Raw waveform data from ICESat/GLAS and GEDI is processed to eliminate noise using a Gaussian filter and a signal range threshold above the noise level.      |
+| **Waveform Decomposition**              | The valid signal range is decomposed into multiple Gaussian components using the Progressive Waveform Decomposition (PWD) algorithm, representing layers like canopy or ground. |
+| **Initial Ground Return Selection**     | For overlapping footprints (centers within 50m), Gaussian components are shortlisted as potential ground returns, starting from lower elevations until 50% of waveform energy is accumulated. |
+| **Objective Function Construction**     | An objective function is built to assess the best matching Gaussian components (one from GLAS, one from GEDI) based on similarity in center position (u) and width (σ). |
+| **Minimizing the Objective Function**   | The objective function is minimized to find the optimal ground return pair, correcting for ground elevation differences caused by terrain slope.             |
+
+: Pre-processing for Improved Ground Identification {#tbl-ground_ji .striped .hover}
+
+| **Step**                                | **Description**                                                                                                                                             |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Terrain Slope and Aspect Calculation** | Slope (θ) and aspect (αAspect) are calculated using DEM data (e.g., SRTM DEM) with a moving window approach to account for terrain influences.               |
+| **Ground Center Offset Prediction (ΔhCofG)** | Using slope, aspect, distance (d), and azimuth (αAzimuth) between footprints, the ground center offset is predicted and incorporated into the objective function. |
+| **Correction in Canopy Height Variation (Δhc)** | After ground components are identified, the predicted ground offset (ΔhCofG) is applied to adjust canopy height variation (Δhc), removing slope-induced errors. |
+
+: Pre-processing for slope correction {#tbl-slope_ji .striped .hover}
 
 ##### Geographic stratification of GEDI data
 
-@chen_improved_2023 performed a geographic stratification based on topographic and vegetation features to map AGB. Their results showed that using a stratified sample technique improved the accuracy of AGB estimates by up to 34.8%.
+Another possible pre-processing approach to improve the collection of comparable GEDI pairs could be done through the stratification of GEDI data. For instance, @chen_improved_2023 performed a geographic stratification based on topographic and vegetation features to map AGB at the Jilin Province in Northeast China integrating GEDI data, SAR and MSI. Their results showed that using a stratified sample technique improved the accuracy of AGB estimates by up to 34.8%.
 
 ![](https://www.mdpi.com/remotesensing/remotesensing-15-02625/article_deploy/html/images/remotesensing-15-02625-g007.png)
 
-#### ***ALS data for possible validation/calibration***
+#### ***Accurate comparability assessment***
+
+**(NOT SURE IF THIS SHOULD BE HERE OR ON OBJ. 2)**
+
+##### ***ALS data for possible validation/calibration***
 
 -   Data from PNOA LiDAR project in Spain is freely accessible and could be used to check on vegetation structure parameters (1ra cobertura until 2015, 2da cobertura until 2022)
     - This data could be used for many things:
@@ -128,6 +184,6 @@ Other researchers have mainly focused on filtering GEDI data, based on quality a
 
 ![](https://pnoa.ign.es/resources/images/lidar/cabeceras/cordoba.jpg)
 
-#### gediDB
+#### ***gediDB examples***
 
-[https://mdominguezd.github.io/cool_lit/test_gedidb.html](https://mdominguezd.github.io/cool_lit/test_gedidb.html)
+Some examples to obtain GEDI pairs using the gediDB package developed by @besnard_gedidb_2025 are presented [**here**](https://mdominguezd.github.io/cool_lit/test_gedidb.html).

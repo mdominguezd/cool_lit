@@ -7,7 +7,7 @@ bibliography: ../references.bib
 embed-resources: true
 ---
 
-# Global assessment of fire-induced vegetation structural changes  
+# Evaluate the scalability of integrating GEDI and Earth observation data for detecting fire-induced vegetation changes and improving fire emission estimates 
 
 ## Main ideas
 

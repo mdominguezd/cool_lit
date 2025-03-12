@@ -12,8 +12,8 @@ website:
         text: Objective 2
       - href: sections/third_chapter.qmd
         text: Objective 3
-      - href: sections/fourth_chapter.qmd
-        text: Objective 4
+      - href: test_gedidb.ipynb
+        text: Some tests with GEDI data
       # - href: sections/GEDI.qmd
       #   text: GEDI & Lidar
       # - href: sections/forest_fires.qmd
@@ -22,8 +22,7 @@ website:
       #   text: Other satellites
       # - href: sections/Modelling.qmd
       #   text: Modelling
-      # - href: sections/knowledge_gaps.qmd
-      #   text: Knowledge gap
+      
 format:
   html:
     css: styles.css
