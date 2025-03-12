@@ -88,14 +88,14 @@
     "href": "sections/third_chapter.html",
     "title": "Evaluate the scalability of integrating GEDI and Earth observation data for detecting fire-induced vegetation changes and improving fire emission estimates",
     "section": "",
-    "text": "How can the method developed for a specific case study be extrapolated to different domains?\n\n\n\n\n\nLocation embeddings (SatCLIP)\n\n\n\nSelf-supervised learning + scale make them capable of generalize so well for multiple tasks."
+    "text": "Fire emission models can underestimate emissions due to exclusion of small fires and fixed (biome-specific) combustion completeness factors.\n\n\n\n\n\n\n\nHypothesis: If a model integrating GEDI and EO data can perform well for a specific domain (region of interest), geographical generalization methods could be used to implement that model in different regions. And this model could be used to improve combustion completeness estimation for fire emission models.\n\n\nProposed outcome: A global model for vegetation structure change evaluation caused by fires.\n\n\n\n\n\n\n\nLocation embeddings (SatCLIP)\n\n\n\nSelf-supervised learning + scale make them capable of generalize so well for multiple tasks."
   },
   {
-    "objectID": "sections/third_chapter.html#main-ideas",
-    "href": "sections/third_chapter.html#main-ideas",
+    "objectID": "sections/third_chapter.html#main-idea",
+    "href": "sections/third_chapter.html#main-idea",
     "title": "Evaluate the scalability of integrating GEDI and Earth observation data for detecting fire-induced vegetation changes and improving fire emission estimates",
     "section": "",
-    "text": "How can the method developed for a specific case study be extrapolated to different domains?"
+    "text": "Fire emission models can underestimate emissions due to exclusion of small fires and fixed (biome-specific) combustion completeness factors.\n\n\n\n\n\n\n\nHypothesis: If a model integrating GEDI and EO data can perform well for a specific domain (region of interest), geographical generalization methods could be used to implement that model in different regions. And this model could be used to improve combustion completeness estimation for fire emission models.\n\n\nProposed outcome: A global model for vegetation structure change evaluation caused by fires."
   },
   {
     "objectID": "sections/third_chapter.html#literature-review",
