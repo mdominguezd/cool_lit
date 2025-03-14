@@ -23,8 +23,30 @@ embed-resources: true
 
 ## Literature review
 
-- Location embeddings (SatCLIP)
+## Questions I want to answer
 
-#### Foundation models (GFZ)
+- How do fire regimes vary across different biomes globally?
+- What are the primary drivers of fire-induced vegetation change in tropical, temperate, boreal, and arid ecosystems?
+- How do different satellite data perform in assessing burn severity across ecosystems?
+- What are the current methods to improve geographic generalization on Machine Learning models?
+- How can you quantify and propagate uncertainty in global vegetation change models?
+- What are the best in situ or plot-level datasets for validating remote sensing observations globally?
+
+#### ***How do fire regimes vary across different biomes globally?***
+
+Fuel moisture and continuity are critical in determining fire regimes. In tropical and boreal ecosystems, moisture levels significantly influence fire occurrence and intensity, with drier conditions promoting more extensive fires [@kelley_how_2019].
+
+::: {layout-ncol="2"}
+
+![Taken from @kelley_how_2019](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41558-019-0540-7/MediaObjects/41558_2019_540_Fig2_HTML.png?as=webp)
+
+![Controls on burnt area for the period 2000-2014. Colors: vegetation type (orange), and the limitations imposed by fuel controls (green), moisture controls (blue), anthropogenic ignitions (brown), suppression (grey) and overall shift (purple)](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41558-019-0540-7/MediaObjects/41558_2019_540_Fig4_HTML.png?as=webp)
+
+:::
+
+#### ***Geographic generalization on Machine Learning models***
+
+
+##### Foundation models (GFZ)
 
 Self-supervised learning + scale make them capable of generalize so well for multiple tasks.
