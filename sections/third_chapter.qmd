@@ -34,6 +34,26 @@ embed-resources: true
 
 #### ***How do fire regimes vary across different biomes globally?***
 
+"Global decline in burned area of grassland, coincident with a small increase in burned  forest area" [@zheng_increasing_2021]
+
+Hydroclimatic factors, specifically mean annual precipitation (P) and potential evapotranspiration (E0), fundamentally shape the global distribution and potential of wildfires across different biomes by controlling the two most basic conditions necessary for fire: **fuel production** and **fuel dryness** [@boer_hydroclimatic_2021]. These two variables are able to explain 80% of the global variation in the 0.99 quantile of mean annual fractional burned area. The interplay of these two factors leads to a dichotomy of global fire regimes characterized by either fuel production limitations (PL-type fire) or fuel dryness limitations (DL-type fire).
+
+![(a) Observed fractional BA. (b) Predicted fractional BA. (c) Production limited vs. Dryness limited fires](https://content.cld.iop.org/journals/2515-7620/3/3/035001/revision3/ercabec1ff2_lr.jpg)
+
+The main differences between domains are: 
+
+| Feature                | Productivity-Limited (PL) Fire Domains | Dryness-Limited (DL) Fire Domains |
+|------------------------|--------------------------------------|-----------------------------------|
+| **Primary Fire Limitation** | Fuel availability (grass growth) | Fuel dryness (atmospheric moisture demand) |
+| **Typical Environment** | Drier environments | Mesic (moderately wet) environments |
+| **Main Fuel Type** | Grassy fuels | Woody vegetation and litter fuels |
+| **Key Climatic Factor** | Mean annual precipitation (P) | Potential evapotranspiration (E0) and climatic water deficit (D) |
+| **Fire Activity Trend** | F0.99 increases with precipitation (P) | F0.99 increases with E0 and D |
+| **Common Biomes** | Grasslands, shrublands, barren lands | Forests, wetlands, tundra |
+| **Fire Susceptibility** | Limited by fuel production | Limited by fuel drying |
+
+#### ***What are the primary drivers of fire-induced vegetation change in tropical, temperate, boreal, and arid ecosystems?***
+
 Fuel moisture and continuity are critical in determining fire regimes. In tropical and boreal ecosystems, moisture levels significantly influence fire occurrence and intensity, with drier conditions promoting more extensive fires [@kelley_how_2019].
 
 ::: {layout-ncol="2"}
@@ -44,9 +64,28 @@ Fuel moisture and continuity are critical in determining fire regimes. In tropic
 
 :::
 
+#### ***How do different satellite data perform in assessing burn severity across ecosystems?***
+
+The Global Forest Burn Severity (GFBS) dataset, derived from Landsat imagery, provides a 30-meter resolution assessment of burn severity, demonstrating better correlation with ground truth data compared to MODIS datasets. 
+
+The Normalized Burn Ratio (NBR) index is widely used for assessing burn severity, with studies showing its effectiveness in differentiating severity levels in various ecosystems
+
 #### ***Geographic generalization on Machine Learning models***
 
+##### Location embeddings
+
+The benefit of using location embeddings for geographic generalization lies in their ability to allow machine learning models to learn spatial patterns and relationships inherent in geolocated data. By encoding the location information effectively, models can generalize predictions to new, unseen geographic areas based on the spatial context learned from the training data [@ruswurm_geographic_2024]. 
+
+By capturing implicit characteristics of locations, such as environmental or socioeconomic factors reflected in satellite imagery, location embeddings allow models to make more informed predictions in geographically distant and unseen areas, going beyond simple reliance on spatial proximity [@klemmer_satclip_2024].
 
 ##### Foundation models (GFZ)
 
 Self-supervised learning + scale make them capable of generalize so well for multiple tasks.
+
+
+#### ***How can you quantify and propagate uncertainty in global vegetation change models?***
+
+#### ***What are the best in situ or plot-level datasets for validating remote sensing observations globally?***
+
+
+
