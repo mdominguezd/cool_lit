@@ -123,7 +123,7 @@
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-4",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon\nRH50 not the best for checking changes on understory."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#new-insights",
@@ -137,7 +137,14 @@
     "href": "sections/update_meetings/9_july_2025.html#whats-next",
     "title": "Lit literature review",
     "section": "What’s next",
-    "text": "What’s next\n\nIberia!\n\nStratified sampling for different LCLU"
+    "text": "What’s next\n\nIberia!\n\nWait for proposal feedback\nStratified sampling for different LCLUin Spain."
+  },
+  {
+    "objectID": "sections/update_meetings/9_july_2025.html#references",
+    "href": "sections/update_meetings/9_july_2025.html#references",
+    "title": "Lit literature review",
+    "section": "References",
+    "text": "References"
   },
   {
     "objectID": "sections/presentation.html#courses",
@@ -179,7 +186,7 @@
     "href": "sections/presentation.html#conferencesmeetings-4",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon\nRH50 not the best for checking changes on understory."
   },
   {
     "objectID": "sections/presentation.html#new-insights",
@@ -193,7 +200,14 @@
     "href": "sections/presentation.html#whats-next",
     "title": "Update meeting",
     "section": "What’s next",
-    "text": "What’s next\nIberia!\n\nStratified sampling for different LCLU\n\n\n\n\n\n\nClark, M. L., Hakkenberg, C. R., Bailey, T., Burns, P., & Goetz, S. J. (2025). Changes in GEDI-based measures of forest structure after large California wildfires relative to pre-fire conditions. Remote Sensing of Environment, 323, 114718. https://doi.org/10.1016/j.rse.2025.114718\n\n\nFayad, I., Zimmer, M., Schwartz, M., Ciais, P., Gieseke, F., Belouze, G., … d’Aspremont, A. (2025). DUNIA: Pixel-Sized Embeddings via Cross-Modal Alignment for Earth Observation Applications. arXiv. https://doi.org/10.48550/arXiv.2502.17066\n\n\nViana-Soto, A., García, M., Aguado, I., & Salas, J. (2022). Assessing post-fire forest structure recovery by combining LiDAR data and Landsat time series in Mediterranean pine forests. International Journal of Applied Earth Observation and Geoinformation, 108, 102754. https://doi.org/10.1016/j.jag.2022.102754"
+    "text": "What’s next\nIberia!\n\nWait for proposal feedback\nStratified sampling for different LCLUin Spain."
+  },
+  {
+    "objectID": "sections/presentation.html#references",
+    "href": "sections/presentation.html#references",
+    "title": "Update meeting",
+    "section": "References",
+    "text": "References\n\n\n\n\nClark, M. L., Hakkenberg, C. R., Bailey, T., Burns, P., & Goetz, S. J. (2025). Changes in GEDI-based measures of forest structure after large California wildfires relative to pre-fire conditions. Remote Sensing of Environment, 323, 114718. https://doi.org/10.1016/j.rse.2025.114718\n\n\nFayad, I., Zimmer, M., Schwartz, M., Ciais, P., Gieseke, F., Belouze, G., … d’Aspremont, A. (2025). DUNIA: Pixel-Sized Embeddings via Cross-Modal Alignment for Earth Observation Applications. arXiv. https://doi.org/10.48550/arXiv.2502.17066\n\n\nViana-Soto, A., García, M., Aguado, I., & Salas, J. (2022). Assessing post-fire forest structure recovery by combining LiDAR data and Landsat time series in Mediterranean pine forests. International Journal of Applied Earth Observation and Geoinformation, 108, 102754. https://doi.org/10.1016/j.jag.2022.102754"
   },
   {
     "objectID": "sections/second_chapter.html",
