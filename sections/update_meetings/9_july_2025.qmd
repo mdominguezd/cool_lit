@@ -49,6 +49,7 @@
 
 - Grasland GEDI optimization (Could be very interesting for other ecosystems)
 - INPE ALS data for Amazon
+- RH50 not the best for checking changes on understory.
 
 ## New insights
 
@@ -60,7 +61,11 @@
 
 ### Iberia!
 
-- Stratified sampling for different LCLU
+- Wait for proposal feedback 
+- Stratified sampling for different LCLUin Spain.
 - 
+
+## References
+
 
 
