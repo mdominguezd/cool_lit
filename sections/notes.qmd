@@ -1,0 +1,47 @@
+
+---
+from: markdown+emoji
+toc: true
+toc-depth: 2
+jupyter: python3
+bibliography: ../references.bib
+embed-resources: true
+---
+
+Taken from [@liu](Liu et al., 2020):
+
+GFED has essentially become a hybrid product that ingests active fire locations for its small fire boost (Randerson et al., 2012), and the MCD64A1 algorithm itself is coupled with active fire data (Giglio et al., 2009). Fuel loadings, combustion completeness, and emissions factors, which are dependent on region and land use and land cover (LULC), are then used to convert burned area to fire emissions… combustion completeness is estimated as a function of soil moisture (van der Werf et al., 2017) or tree cover (Wiedinmyer et al., 2011). 
+
+combustion completeness is a source of uncertainty: It affects the estimation of how much biomass is actually burned during fires, which can vary based on factors like soil moisture and tree cover
+
+
+Recent developments
+
+- Repeat GEDI shots (@holcomb_repeat_2024)
+- Simplified GEDI data handling (gediDB [@besnard_gedidb_2025])
+- L band SAR (NiSAR & Biomass)
+
+
+Main research objective
+
+To assess fire-induced vegetation structure changes integrating spaceborne LiDAR data and multi-frequency satellite data, with a particular focus on improving measurement comparability, integrating Earth observation datasets, and geographic generalization.
+
+
+
+Land cover change > Vegetation structure dynamics (study) (Area vs. 3D)
+
+
+
+-	High uncertainties associated to the lack of reference data for combustion completeness.
+-	It is not clear how much of the vegetation (C) is loss when a fire occur (Because of the fire)
+-	Many studies have studies the severity of fires, but they mainly represent this severity using spectral information (NBR [NIR & SWIR]). However, the change on vegetation structure can be a lot more than what is presented by the NBR.
+
+
+
+(Taken from Zang, 2024) Forest wildfires have been increasing since 2000, resulting in significant forest loss or degradation and the release of substantial amounts of carbon dioxide into the atmosphere
+
+
+- Assessing deforestation, forest disturbances and regrowth is crucial to understand past and present carbon budget models and model Climate Change scenarios.
+- Fire is one of the disturbances that contributes the most to GHG having a huge effect on the carbon cycle. 
+	- (Taken from Zang, 2024) Forest wildfires have been increasing since 2000, resulting in significant forest loss or degradation and the release of substantial amounts of carbon dioxide into the atmosphere
+- However, carbon models usually struggle on the fire emission estimations due to difficulty to evaluate vegetation structure changes due to fire. (They have very high uncertainties associated to them)

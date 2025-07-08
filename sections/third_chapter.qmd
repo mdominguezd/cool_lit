@@ -5,6 +5,10 @@ toc-depth: 2
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
+format:
+  html:
+    css: ../style/styles.css
+    toc: true
 ---
 
 # Evaluate the scalability of integrating GEDI and Earth observation data for detecting fire-induced vegetation changes and improving fire emission estimates 
@@ -30,9 +34,11 @@ embed-resources: true
 - How do different satellite data perform in assessing burn severity across ecosystems?
 - What are the current methods to improve geographic generalization on Machine Learning models?
 - How can you quantify and propagate uncertainty in global vegetation change models?
-- What are the best in situ or plot-level datasets for validating remote sensing observations globally?
+- What are the best in situ or plot-level datasets for validating vegetation structural metrics globally?
 
 #### ***How do fire regimes vary across different biomes globally?***
+
+Global fire atlas [@andela_tracking_2022]
 
 "Global decline in burned area of grassland, coincident with a small increase in burned  forest area" [@zheng_increasing_2021]
 
@@ -86,6 +92,12 @@ Self-supervised learning + scale make them capable of generalize so well for mul
 #### ***How can you quantify and propagate uncertainty in global vegetation change models?***
 
 #### ***What are the best in situ or plot-level datasets for validating remote sensing observations globally?***
+
+Comparison with NFIs in-situ plot data has been done previously. GEDI footprints that were spatially proximate to NFI plots were used to generate probability density curves of relative height distributions and those were compared to the NFI reference plot data.
+
+The Forest Inventory and Analysis program of the USA has over 300,000 sample locations with ground measurements of forest attributes. The data can be accessed here: [FIA datamart](https://research.fs.usda.gov/products/dataandtools/tools/fia-datamart).
+
+![Comparison of GEDI veg. structure metrics with National Forest Inventories](https://ars.els-cdn.com/content/image/1-s2.0-S1569843224001511-gr3_lrg.jpg)
 
 
 

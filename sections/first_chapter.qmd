@@ -7,6 +7,10 @@ bibliography: ../references.bib
 embed-resources: true
 execute: 
   enabled: true
+format:
+  html:
+    css: ../style/styles.css
+    toc: true
 ---
 
 # Investigate the sources of error in spaceborne LiDAR measurements and establish a framework for obtaining near-coincident, comparable GEDI measurements for vegetation structure change analysis

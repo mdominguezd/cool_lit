@@ -5,6 +5,10 @@ toc-depth: 4
 jupyter: python3
 bibliography: ../references.bib
 embed-resources: true
+format:
+  html:
+    css: ../style/styles.css
+    toc: true
 ---
 
 # Integrate near-coincident comparable GEDI measurements with wall-to-wall Earth observation products to spatially characterize fire-induced forest structure changes in a European region

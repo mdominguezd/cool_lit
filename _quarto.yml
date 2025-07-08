@@ -14,6 +14,8 @@ website:
         text: Objective 3
       - href: test_gedidb.ipynb
         text: Some tests with GEDI data
+      - href: sections/presentation.qmd
+        text: Slides
       # - href: sections/GEDI.qmd
       #   text: GEDI & Lidar
       # - href: sections/forest_fires.qmd
@@ -22,8 +24,3 @@ website:
       #   text: Other satellites
       # - href: sections/Modelling.qmd
       #   text: Modelling
-      
-format:
-  html:
-    css: styles.css
-    toc: true

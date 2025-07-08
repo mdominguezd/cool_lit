@@ -1,0 +1,26 @@
+---
+title: "Update meeting"
+date: today
+format: 
+  revealjs:
+    logo: https://optimise2.assets-servd.host/dim-platform/production/uploads/articles/187077_Wur-logo-wageningen.jpg?w=1200&q=82&auto=format&fit=crop&dm=1679988600&s=8c01718cc4a92a19b855667872fceeaa
+    theme: [moon, ../style/custom.scss]
+    preview-links: auto
+    header: Fire-induced vegetation structure change assessment
+    mermaid:
+      theme: forest
+from: markdown+emoji
+transition: fade
+csl: ../style/apa-6th-edition.csl
+jupyter: python3
+bibliography: ../references.bib
+toc: true
+toc-depth: 1
+execute:
+  echo: true
+---
+
+# 9 july 2025
+
+{{< include update_meetings/9_july_2025.qmd >}}
+

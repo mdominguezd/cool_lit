@@ -1,0 +1,66 @@
+## Courses
+
+### Project & time management
+
+- 
+
+### PolInSAR
+
+- Very technical
+- Some better unerstanding of InSAR and Polarimetric SAR
+- 
+
+## Conferences/meetings
+
+### NGC meeting
+
+    - Bigger picture of the project 
+    - Our contribution
+
+## Conferences/meetings
+
+### Living Planet Symposium {.center}
+
+![](update_meetings/figures/LPS_me.png)
+
+## Conferences/meetings
+
+### Living Planet Symposium 
+
+#### TU Dresden
+
+
+## Conferences/meetings
+
+### Living Planet Symposium 
+
+#### Mariano Garcia and Alcalá team
+
+- Combustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain's AHN))
+- Relation of C.C. with FRP (VIIRS)
+- Caution with waveform changes and actual biomass change
+- Open to visit
+
+## Conferences/meetings
+
+### Living Planet Symposium 
+
+#### Misha and Simon
+
+- Grasland GEDI optimization (Could be very interesting for other ecosystems)
+- INPE ALS data for Amazon
+
+## New insights
+
+- LiDAR metrics extrapolated to Landsat for fires in Spain @viana-soto_assessing_2022.
+- Paper from @clark_changes_2025
+- Dunia-LSCE Foundation model @fayad_dunia_2025
+
+## What's next
+
+### Iberia!
+
+- Stratified sampling for different LCLU
+- 
+
+
