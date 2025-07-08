@@ -2,13 +2,13 @@
 
 ### Project & time management
 
-- 
+- Nice group of people
+- Some tools for better time management (ClickUp)
 
 ### PolInSAR
 
 - Very technical
-- Some better unerstanding of InSAR and Polarimetric SAR
-- 
+- Some better unerstanding of Interferometric SAR and Polarimetric SAR, but not sure how much I will retain tbh.
 
 ## Conferences/meetings
 
@@ -29,6 +29,7 @@
 
 #### TU Dresden
 
+Xiao Liu working with GEDI time series by aggregating on 1km grid.
 
 ## Conferences/meetings
 
@@ -63,7 +64,7 @@
 
 - Wait for proposal feedback.
 - A lot of the workflow done for Amazon can and will be reused.
-- Stratified sampling for different LCLUin Spain.
+- Stratified sampling for different LCLU in Spain.
 - 
 
 ## References
