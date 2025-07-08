@@ -61,7 +61,8 @@
 
 ### Iberia!
 
-- Wait for proposal feedback 
+- Wait for proposal feedback.
+- A lot of the workflow done for Amazon can and will be reused.
 - Stratified sampling for different LCLUin Spain.
 - 
 
