@@ -81,21 +81,35 @@
     "href": "sections/update_meetings/9_july_2025.html",
     "title": "Lit literature review",
     "section": "",
-    "text": "LSD (Listen, Summarize, ask Deepening questions)\n\n\n\n\n\nSome tools for better time management (ClickUp)\nNice group of people\n\n\n\n\n\nVery technical.\nSome better unerstanding of Interferometric SAR and Polarimetric SAR, but not sure how much I will retain."
+    "text": "LSD (Listen, Summarize, ask Deepening questions)"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#courses",
     "href": "sections/update_meetings/9_july_2025.html#courses",
     "title": "Lit literature review",
     "section": "",
-    "text": "LSD (Listen, Summarize, ask Deepening questions)\n\n\n\n\n\nSome tools for better time management (ClickUp)\nNice group of people\n\n\n\n\n\nVery technical.\nSome better unerstanding of Interferometric SAR and Polarimetric SAR, but not sure how much I will retain."
+    "text": "LSD (Listen, Summarize, ask Deepening questions)"
+  },
+  {
+    "objectID": "sections/update_meetings/9_july_2025.html#courses-1",
+    "href": "sections/update_meetings/9_july_2025.html#courses-1",
+    "title": "Lit literature review",
+    "section": "Courses",
+    "text": "Courses\n\nProject & time management\n\nSome tools for better time management (ClickUp)\nNice group of people"
+  },
+  {
+    "objectID": "sections/update_meetings/9_july_2025.html#courses-2",
+    "href": "sections/update_meetings/9_july_2025.html#courses-2",
+    "title": "Lit literature review",
+    "section": "Courses",
+    "text": "Courses\n\nPolInSAR\n\nVery technical.\nSome better unerstanding of Interferometric SAR and Polarimetric SAR, but not sure how much I will retain."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nNGC meeting\n\nBigger picture of the project\nOur contribution"
+    "text": "Conferences/meetings\n\nNGC meeting\n\nBigger picture of the project\nOur contribution\nGood feedback from Maurizio and Simon. (Normalizing and )"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-1",
@@ -123,42 +137,49 @@
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-4",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nSpatial variability:"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nDifferent effects based on fire type:"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-5",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-5",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch the same effect of seasonality\nBut also different trends in over"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nSpatial variability:"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-6",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-6",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nRelation of C.C. with FRP (VIIRS)\nCaution with waveform changes and actual biomass change\nOpen to visit"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch effect of seasonality on GEDI measurements as well (Winter vs. Summer).\nBut also different trends in canopy (\\(\\downarrow\\)) vs. understory (\\(\\uparrow\\))."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-7",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-7",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared it with me).\nRH50 not the best for checking changes on understory, especially with GEDI."
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+  },
+  {
+    "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
+    "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
+    "title": "Lit literature review",
+    "section": "Conferences/meetings",
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared it with me).\nRH50 not the best for checking changes on understory. Better metrics would be cover below a certain height."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#new-insights",
     "href": "sections/update_meetings/9_july_2025.html#new-insights",
     "title": "Lit literature review",
     "section": "New insights",
-    "text": "New insights\n\nLiDAR metrics extrapolated to Landsat for fires in Spain @viana-soto_assessing_2022.\nPaper from @clark_changes_2025.\n\n\n\nDunia-LSCE Foundation model @fayad_dunia_2025"
+    "text": "New insights\n\n\nPaper from @clark_changes_2025 on GEDI-based metrics changes related to fires in California.\n\nUsed Amelia’s 40m theshold.\nSignificant structural loss compared to control (buffer around BA).\nExcept for one metric that showed an increase after fire (RE_10m),"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#whats-next",
     "href": "sections/update_meetings/9_july_2025.html#whats-next",
     "title": "Lit literature review",
     "section": "What’s next",
-    "text": "What’s next\n\nIberia!\n\nWait for proposal feedback.\nA lot of the workflow done for Amazon can and will be reused.\nStratified sampling for different LCLU in Spain."
+    "text": "What’s next\n\nProposal feedback (Any time now)\n\n\nIberia and Australia and Feature Space matching\n\nA lot of the workflow done for Amazon can and will be reused.\nStratified sampling for different LCLU in Spain.\nGEDI-data feature extraction and matching.\nALS for pre-disturbance pair similarity validation."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#references",
@@ -172,14 +193,28 @@
     "href": "sections/presentation.html#courses",
     "title": "Update meeting",
     "section": "Courses",
-    "text": "Courses\nStart to Supervise BSc. & MSc. thesis\n\nLSD (Listen, Summarize, ask Deepening questions)\n\nProject & time management\n\nSome tools for better time management (ClickUp)\nNice group of people\n\nPolInSAR\n\nVery technical.\nSome better unerstanding of Interferometric SAR and Polarimetric SAR, but not sure how much I will retain."
+    "text": "Courses\nStart to Supervise BSc. & MSc. thesis\n\nLSD (Listen, Summarize, ask Deepening questions)"
+  },
+  {
+    "objectID": "sections/presentation.html#courses-1",
+    "href": "sections/presentation.html#courses-1",
+    "title": "Update meeting",
+    "section": "Courses",
+    "text": "Courses\nProject & time management\n\nSome tools for better time management (ClickUp)\nNice group of people"
+  },
+  {
+    "objectID": "sections/presentation.html#courses-2",
+    "href": "sections/presentation.html#courses-2",
+    "title": "Update meeting",
+    "section": "Courses",
+    "text": "Courses\nPolInSAR\n\nVery technical.\nSome better unerstanding of Interferometric SAR and Polarimetric SAR, but not sure how much I will retain."
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings",
     "href": "sections/presentation.html#conferencesmeetings",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nNGC meeting\n\nBigger picture of the project\nOur contribution"
+    "text": "Conferences/meetings\nNGC meeting\n\nBigger picture of the project\nOur contribution\nGood feedback from Maurizio and Simon. (Normalizing and )"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-1",
@@ -207,49 +242,56 @@
     "href": "sections/presentation.html#conferencesmeetings-4",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nSpatial variability:"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nDifferent effects based on fire type:"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-5",
     "href": "sections/presentation.html#conferencesmeetings-5",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch the same effect of seasonality\nBut also different trends in over"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nSpatial variability:"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-6",
     "href": "sections/presentation.html#conferencesmeetings-6",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nRelation of C.C. with FRP (VIIRS)\nCaution with waveform changes and actual biomass change\nOpen to visit"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch effect of seasonality on GEDI measurements as well (Winter vs. Summer).\nBut also different trends in canopy (\\(\\downarrow\\)) vs. understory (\\(\\uparrow\\))."
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-7",
     "href": "sections/presentation.html#conferencesmeetings-7",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared it with me).\nRH50 not the best for checking changes on understory, especially with GEDI."
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+  },
+  {
+    "objectID": "sections/presentation.html#conferencesmeetings-8",
+    "href": "sections/presentation.html#conferencesmeetings-8",
+    "title": "Update meeting",
+    "section": "Conferences/meetings",
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared it with me).\nRH50 not the best for checking changes on understory. Better metrics would be cover below a certain height."
   },
   {
     "objectID": "sections/presentation.html#new-insights",
     "href": "sections/presentation.html#new-insights",
     "title": "Update meeting",
     "section": "New insights",
-    "text": "New insights\n\nLiDAR metrics extrapolated to Landsat for fires in Spain Viana-Soto, García, Aguado, & Salas (2022).\nPaper from Clark, Hakkenberg, Bailey, Burns, & Goetz (2025).\n\n\n\nDunia-LSCE Foundation model Fayad et al. (2025)"
+    "text": "New insights\n\n\nPaper from Clark, Hakkenberg, Bailey, Burns, & Goetz (2025) on GEDI-based metrics changes related to fires in California.\n\nUsed Amelia’s 40m theshold.\nSignificant structural loss compared to control (buffer around BA).\nExcept for one metric that showed an increase after fire (RE_10m),"
   },
   {
     "objectID": "sections/presentation.html#whats-next",
     "href": "sections/presentation.html#whats-next",
     "title": "Update meeting",
     "section": "What’s next",
-    "text": "What’s next\nIberia!\n\nWait for proposal feedback.\nA lot of the workflow done for Amazon can and will be reused.\nStratified sampling for different LCLU in Spain."
+    "text": "What’s next\n\nProposal feedback (Any time now)\n\nIberia and Australia and Feature Space matching\n\nA lot of the workflow done for Amazon can and will be reused.\nStratified sampling for different LCLU in Spain.\nGEDI-data feature extraction and matching.\nALS for pre-disturbance pair similarity validation."
   },
   {
     "objectID": "sections/presentation.html#references",
     "href": "sections/presentation.html#references",
     "title": "Update meeting",
     "section": "References",
-    "text": "References\n\n\n\n\nClark, M. L., Hakkenberg, C. R., Bailey, T., Burns, P., & Goetz, S. J. (2025). Changes in GEDI-based measures of forest structure after large California wildfires relative to pre-fire conditions. Remote Sensing of Environment, 323, 114718. https://doi.org/10.1016/j.rse.2025.114718\n\n\nFayad, I., Zimmer, M., Schwartz, M., Ciais, P., Gieseke, F., Belouze, G., … d’Aspremont, A. (2025). DUNIA: Pixel-Sized Embeddings via Cross-Modal Alignment for Earth Observation Applications. arXiv. https://doi.org/10.48550/arXiv.2502.17066\n\n\nViana-Soto, A., García, M., Aguado, I., & Salas, J. (2022). Assessing post-fire forest structure recovery by combining LiDAR data and Landsat time series in Mediterranean pine forests. International Journal of Applied Earth Observation and Geoinformation, 108, 102754. https://doi.org/10.1016/j.jag.2022.102754"
+    "text": "References\n\n\n\n\nClark, M. L., Hakkenberg, C. R., Bailey, T., Burns, P., & Goetz, S. J. (2025). Changes in GEDI-based measures of forest structure after large California wildfires relative to pre-fire conditions. Remote Sensing of Environment, 323, 114718. https://doi.org/10.1016/j.rse.2025.114718"
   },
   {
     "objectID": "sections/second_chapter.html",

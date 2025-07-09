@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -139,6 +168,9 @@ ul.task-list li input[type="checkbox"] {
 <li>LSD (Listen, Summarize, ask Deepening questions)</li>
 </ul>
 </section>
+</section>
+<section id="courses-1" class="level2">
+<h2 class="anchored" data-anchor-id="courses-1">Courses</h2>
 <section id="project-time-management" class="level3">
 <h3 class="anchored" data-anchor-id="project-time-management">Project &amp; time management</h3>
 <ul>
@@ -146,6 +178,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Nice group of people</li>
 </ul>
 </section>
+</section>
+<section id="courses-2" class="level2">
+<h2 class="anchored" data-anchor-id="courses-2">Courses</h2>
 <section id="polinsar" class="level3">
 <h3 class="anchored" data-anchor-id="polinsar">PolInSAR</h3>
 <ul>
@@ -161,6 +196,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Bigger picture of the project</li>
 <li>Our contribution</li>
+<li>Good feedback from Maurizio and Simon. (Normalizing and )</li>
 </ul>
 </section>
 </section>
@@ -189,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="poster-1" class="level4">
 <h4 class="anchored" data-anchor-id="poster-1">Poster</h4>
 <p>Different effects based on fire type:</p>
-<p><img src="update_meetings/figures/rh_change_norm_fire_type.png" class="img-fluid"></p>
+<p><img src="update_meetings/figures/seasonality_of_change.png" class="img-fluid"></p>
 </section>
 </section>
 </section>
@@ -199,8 +235,8 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="living-planet-symposium-3">Living Planet Symposium</h3>
 <section id="poster-2" class="level4">
 <h4 class="anchored" data-anchor-id="poster-2">Poster</h4>
-<p>Spatial variability:</p>
-<p><img src="update_meetings/figures/treatment_change_magnitude_5km.png" class="img-fluid"></p>
+<p>Different effects based on fire type:</p>
+<p><img src="update_meetings/figures/rh_change_norm_fire_type.png" class="img-fluid"></p>
 </section>
 </section>
 </section>
@@ -208,13 +244,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="conferencesmeetings-5">Conferences/meetings</h2>
 <section id="living-planet-symposium-4" class="level3">
 <h3 class="anchored" data-anchor-id="living-planet-symposium-4">Living Planet Symposium</h3>
-<section id="xiao-liu-from-tu-dresden" class="level4">
-<h4 class="anchored" data-anchor-id="xiao-liu-from-tu-dresden">Xiao Liu from TU Dresden</h4>
-<p>Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.</p>
-<ul>
-<li>Could catch the same effect of seasonality</li>
-<li>But also different trends in over</li>
-</ul>
+<section id="poster-3" class="level4">
+<h4 class="anchored" data-anchor-id="poster-3">Poster</h4>
+<p>Spatial variability:</p>
+<p><img src="update_meetings/figures/treatment_change_magnitude_5km.png" class="img-fluid"></p>
 </section>
 </section>
 </section>
@@ -222,13 +255,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="conferencesmeetings-6">Conferences/meetings</h2>
 <section id="living-planet-symposium-5" class="level3">
 <h3 class="anchored" data-anchor-id="living-planet-symposium-5">Living Planet Symposium</h3>
-<section id="mariano-garcia-and-alcalá-team" class="level4">
-<h4 class="anchored" data-anchor-id="mariano-garcia-and-alcalá-team">Mariano Garcia and Alcalá team</h4>
+<section id="xiao-liu-from-tu-dresden" class="level4">
+<h4 class="anchored" data-anchor-id="xiao-liu-from-tu-dresden">Xiao Liu from TU Dresden</h4>
+<p>Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.</p>
 <ul>
-<li>Combustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))</li>
-<li>Relation of C.C. with FRP (VIIRS)</li>
-<li>Caution with waveform changes and actual biomass change</li>
-<li>Open to visit</li>
+<li>Could catch effect of seasonality on GEDI measurements as well (Winter vs.&nbsp;Summer).</li>
+<li>But also different trends in canopy (<span class="math inline">\(\downarrow\)</span>) vs.&nbsp;understory (<span class="math inline">\(\uparrow\)</span>).</li>
 </ul>
 </section>
 </section>
@@ -237,36 +269,56 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="conferencesmeetings-7">Conferences/meetings</h2>
 <section id="living-planet-symposium-6" class="level3">
 <h3 class="anchored" data-anchor-id="living-planet-symposium-6">Living Planet Symposium</h3>
-<section id="misha-and-simon" class="level4">
-<h4 class="anchored" data-anchor-id="misha-and-simon">Misha and Simon</h4>
+<section id="mariano-garcia-and-alcalá-team" class="level4">
+<h4 class="anchored" data-anchor-id="mariano-garcia-and-alcalá-team">Mariano Garcia and Alcalá team</h4>
+<ul>
+<li>Combustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))</li>
+<li>Calculated C.C. as <span class="math inline">\(\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\)</span></li>
+<li>Relation of C.C. with FRE (VIIRS)</li>
+<li>Caution with waveform changes and actual biomass change.</li>
+<li>Open for visit</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="conferencesmeetings-8" class="level2">
+<h2 class="anchored" data-anchor-id="conferencesmeetings-8">Conferences/meetings</h2>
+<section id="living-planet-symposium-7" class="level3">
+<h3 class="anchored" data-anchor-id="living-planet-symposium-7">Living Planet Symposium</h3>
+<section id="misha-and-simon-gfz" class="level4">
+<h4 class="anchored" data-anchor-id="misha-and-simon-gfz">Misha and Simon (GFZ)</h4>
 <ul>
 <li>Grasland GEDI optimization (Could be very interesting for other ecosystems)</li>
 <li>INPE ALS data for Amazon (Shared it with me).</li>
-<li>RH50 not the best for checking changes on understory, especially with GEDI.</li>
+<li>RH50 not the best for checking changes on understory. Better metrics would be cover below a certain height.</li>
 </ul>
 </section>
 </section>
 </section>
 <section id="new-insights" class="level2">
 <h2 class="anchored" data-anchor-id="new-insights">New insights</h2>
+<!-- - LiDAR metrics extrapolated to Landsat for fires in Spain @viana-soto_assessing_2022. -->
 <ul>
-<li>LiDAR metrics extrapolated to Landsat for fires in Spain <span class="citation" data-cites="viana-soto_assessing_2022">@viana-soto_assessing_2022</span>.</li>
-<li>Paper from <span class="citation" data-cites="clark_changes_2025">@clark_changes_2025</span>.
+<li>Paper from <span class="citation" data-cites="clark_changes_2025">@clark_changes_2025</span> on GEDI-based metrics changes related to fires in California.
 <ul>
-<li></li>
+<li>Used Amelia’s 40m theshold.</li>
+<li>Significant structural loss compared to control (buffer around BA).</li>
+<li>Except for one metric that showed an increase after fire (RE_10m),</li>
 </ul></li>
-<li>Dunia-LSCE Foundation model <span class="citation" data-cites="fayad_dunia_2025">@fayad_dunia_2025</span></li>
 </ul>
 </section>
 <section id="whats-next" class="level2">
 <h2 class="anchored" data-anchor-id="whats-next">What’s next</h2>
-<section id="iberia" class="level3">
-<h3 class="anchored" data-anchor-id="iberia">Iberia!</h3>
 <ul>
-<li>Wait for proposal feedback.</li>
+<li>Proposal feedback (Any time now)</li>
+</ul>
+<section id="iberia-and-australia-and-feature-space-matching" class="level3">
+<h3 class="anchored" data-anchor-id="iberia-and-australia-and-feature-space-matching">Iberia and Australia and Feature Space matching</h3>
+<ul>
 <li>A lot of the workflow done for Amazon can and will be reused.</li>
 <li>Stratified sampling for different LCLU in Spain.</li>
-<li></li>
+<li>GEDI-data feature extraction and matching.</li>
+<li>ALS for pre-disturbance pair similarity validation.</li>
 </ul>
 </section>
 </section>
