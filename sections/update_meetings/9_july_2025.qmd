@@ -24,7 +24,7 @@
 
 - Bigger picture of the project 
 - Our contribution
-- Good feedback from Maurizio and Simon. (Normalizing and )
+- Good feedback from Maurizio and Simon. (Normalizing and control areas around BAs)
 
 ## Conferences/meetings
 
@@ -48,7 +48,7 @@
 
 #### Poster 
 
-Different effects based on fire type:
+Different effects based on season of GEDI pair:
 
 ![](update_meetings/figures/seasonality_of_change.png)
 
@@ -117,7 +117,7 @@ Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains 
 
 - Proposal feedback (Any time now)
 
-### Iberia and Australia and Feature Space matching
+### Iberia and Australia Feature Space matching
 
 - A lot of the workflow done for Amazon can and will be reused.
 - Stratified sampling for different LCLU in Spain.
