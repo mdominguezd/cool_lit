@@ -158,7 +158,7 @@
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-7",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actul biomass calculations.\nOpen for visit"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
@@ -263,7 +263,7 @@
     "href": "sections/presentation.html#conferencesmeetings-7",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actul biomass calculations.\nOpen for visit"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-8",
