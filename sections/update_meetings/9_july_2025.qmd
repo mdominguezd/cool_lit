@@ -68,7 +68,7 @@ Different effects based on fire type:
 
 #### Poster 
 
-Spatial variability:
+Spatial variability of canopy height change:
 
 ![](update_meetings/figures/treatment_change_magnitude_5km.png)
 
@@ -92,7 +92,7 @@ Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains 
 - Combustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain's AHN))
 - Calculated C.C. as $\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}$
 - Relation of C.C. with FRE (VIIRS)
-- Caution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actul biomass calculations.
+- Caution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actual biomass calculations.
 - Open for visit
 
 ## Conferences/meetings
@@ -102,8 +102,8 @@ Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains 
 #### Misha and Simon (GFZ)
 
 - Grasland GEDI optimization (Could be very interesting for other ecosystems)
-- INPE ALS data for Amazon (Shared it with me).
-- RH50 not the best for checking changes on understory. Better metrics would be cover below a certain height.
+- INPE ALS data for Amazon (Shared).
+- RH50 not the best for checking changes on understory (influenced by overall canopy structure). Better metrics would be cover below a certain height (e.g. 5 or 10m).
 
 ## New insights
 
@@ -111,16 +111,18 @@ Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains 
 - Paper from @clark_changes_2025 on GEDI-based metrics changes related to fires in California.
     - Used Amelia's 40m theshold.
     - Significant structural loss compared to control (buffer around BA).
-    - Except for one metric that showed an increase after fire (RE_10m), 
+    - Except for one metric that showed an increase after fire (RE_10m), increased penetration so more energy returned from lower layers.
+    - Explored predictors of structural change, and found pre-fire fuel to be the main predictor.
 
 ## What's next
 
-- Proposal feedback (Any time now)
+- Proposal feedback (Any time now according to Simon)
+- Meeting w/ Amelia to discuss LPS poster.
 
 ### Iberia and Australia Feature Space matching
 
-- A lot of the workflow done for Amazon can and will be reused.
-- Stratified sampling for different LCLU in Spain.
+- A lot of the workflow done for Amazon can and will be reused. 
+- Sampling for different undisturbed LC in Spain and Australian East Coast (Multi-temporal ALS).
 - GEDI-data feature extraction and matching.
 - ALS for pre-disturbance pair similarity validation.
 
