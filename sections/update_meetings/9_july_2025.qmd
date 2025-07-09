@@ -92,7 +92,7 @@ Xiao working with GEDI time series by aggregating on 1km grid at Harz mountains 
 - Combustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain's AHN))
 - Calculated C.C. as $\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}$
 - Relation of C.C. with FRE (VIIRS)
-- Caution with waveform changes and actual biomass change.
+- Caution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actul biomass calculations.
 - Open for visit
 
 ## Conferences/meetings
