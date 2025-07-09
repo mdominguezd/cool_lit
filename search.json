@@ -144,7 +144,7 @@
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-5",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nSpatial variability:"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nSpatial variability of canopy height change:"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-6",
@@ -158,28 +158,28 @@
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-7",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actul biomass calculations.\nOpen for visit"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actual biomass calculations.\nOpen for visit"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared it with me).\nRH50 not the best for checking changes on understory. Better metrics would be cover below a certain height."
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared).\nRH50 not the best for checking changes on understory (influenced by overall canopy structure). Better metrics would be cover below a certain height (e.g. 5 or 10m)."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#new-insights",
     "href": "sections/update_meetings/9_july_2025.html#new-insights",
     "title": "Lit literature review",
     "section": "New insights",
-    "text": "New insights\n\n\nPaper from @clark_changes_2025 on GEDI-based metrics changes related to fires in California.\n\nUsed Amelia’s 40m theshold.\nSignificant structural loss compared to control (buffer around BA).\nExcept for one metric that showed an increase after fire (RE_10m),"
+    "text": "New insights\n\n\nPaper from @clark_changes_2025 on GEDI-based metrics changes related to fires in California.\n\nUsed Amelia’s 40m theshold.\nSignificant structural loss compared to control (buffer around BA).\nExcept for one metric that showed an increase after fire (RE_10m), increased penetration so more energy returned from lower layers.\nExplored predictors of structural change, and found pre-fire fuel to be the main predictor."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#whats-next",
     "href": "sections/update_meetings/9_july_2025.html#whats-next",
     "title": "Lit literature review",
     "section": "What’s next",
-    "text": "What’s next\n\nProposal feedback (Any time now)\n\n\nIberia and Australia Feature Space matching\n\nA lot of the workflow done for Amazon can and will be reused.\nStratified sampling for different LCLU in Spain.\nGEDI-data feature extraction and matching.\nALS for pre-disturbance pair similarity validation."
+    "text": "What’s next\n\nProposal feedback (Any time now according to Simon)\nMeeting w/ Amelia to discuss LPS poster.\n\n\nIberia and Australia Feature Space matching\n\nA lot of the workflow done for Amazon can and will be reused.\nSampling for different undisturbed LC in Spain and Australian East Coast (Multi-temporal ALS).\nGEDI-data feature extraction and matching.\nALS for pre-disturbance pair similarity validation."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#references",
@@ -249,7 +249,7 @@
     "href": "sections/presentation.html#conferencesmeetings-5",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nSpatial variability:"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nSpatial variability of canopy height change:"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-6",
@@ -263,28 +263,28 @@
     "href": "sections/presentation.html#conferencesmeetings-7",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actul biomass calculations.\nOpen for visit"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change. LiDAR can be very sensitive to leaves or other structures that are less relevant for actual biomass calculations.\nOpen for visit"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-8",
     "href": "sections/presentation.html#conferencesmeetings-8",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared it with me).\nRH50 not the best for checking changes on understory. Better metrics would be cover below a certain height."
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared).\nRH50 not the best for checking changes on understory (influenced by overall canopy structure). Better metrics would be cover below a certain height (e.g. 5 or 10m)."
   },
   {
     "objectID": "sections/presentation.html#new-insights",
     "href": "sections/presentation.html#new-insights",
     "title": "Update meeting",
     "section": "New insights",
-    "text": "New insights\n\n\nPaper from Clark, Hakkenberg, Bailey, Burns, & Goetz (2025) on GEDI-based metrics changes related to fires in California.\n\nUsed Amelia’s 40m theshold.\nSignificant structural loss compared to control (buffer around BA).\nExcept for one metric that showed an increase after fire (RE_10m),"
+    "text": "New insights\n\n\nPaper from Clark, Hakkenberg, Bailey, Burns, & Goetz (2025) on GEDI-based metrics changes related to fires in California.\n\nUsed Amelia’s 40m theshold.\nSignificant structural loss compared to control (buffer around BA).\nExcept for one metric that showed an increase after fire (RE_10m), increased penetration so more energy returned from lower layers.\nExplored predictors of structural change, and found pre-fire fuel to be the main predictor."
   },
   {
     "objectID": "sections/presentation.html#whats-next",
     "href": "sections/presentation.html#whats-next",
     "title": "Update meeting",
     "section": "What’s next",
-    "text": "What’s next\n\nProposal feedback (Any time now)\n\nIberia and Australia Feature Space matching\n\nA lot of the workflow done for Amazon can and will be reused.\nStratified sampling for different LCLU in Spain.\nGEDI-data feature extraction and matching.\nALS for pre-disturbance pair similarity validation."
+    "text": "What’s next\n\nProposal feedback (Any time now according to Simon)\nMeeting w/ Amelia to discuss LPS poster.\n\nIberia and Australia Feature Space matching\n\nA lot of the workflow done for Amazon can and will be reused.\nSampling for different undisturbed LC in Spain and Australian East Coast (Multi-temporal ALS).\nGEDI-data feature extraction and matching.\nALS for pre-disturbance pair similarity validation."
   },
   {
     "objectID": "sections/presentation.html#references",
