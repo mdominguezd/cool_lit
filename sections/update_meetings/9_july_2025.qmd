@@ -48,9 +48,19 @@
 
 #### Poster 
 
-Different effects based on season of GEDI pair:
+Different effects based on season of second GEDI shot (Ref. shifted):
 
 ![](update_meetings/figures/seasonality_of_change.png)
+
+## Conferences/meetings
+
+### Living Planet Symposium 
+
+#### Poster 
+
+Only considering pairs taken from same season:
+
+![](update_meetings/figures/season_filtered_change.png)
 
 ## Conferences/meetings
 
