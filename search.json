@@ -130,39 +130,46 @@
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-3",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nDifferent effects based on season of GEDI pair:"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nDifferent effects based on season of second GEDI shot (Ref. shifted):"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-4",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-4",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nDifferent effects based on fire type:"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nOnly considering pairs taken from same season:"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-5",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-5",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nSpatial variability of canopy height change:"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nDifferent effects based on fire type:"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-6",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-6",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch effect of seasonality on GEDI measurements as well (Winter vs. Summer).\nBut also different trends in canopy (\\(\\downarrow\\)) vs. understory (\\(\\uparrow\\))."
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nPoster\nSpatial variability of canopy height change:"
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-7",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-7",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch effect of seasonality on GEDI measurements as well (Winter vs. Summer).\nBut also different trends in canopy (\\(\\downarrow\\)) vs. understory (\\(\\uparrow\\))."
   },
   {
     "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
     "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-8",
+    "title": "Lit literature review",
+    "section": "Conferences/meetings",
+    "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+  },
+  {
+    "objectID": "sections/update_meetings/9_july_2025.html#conferencesmeetings-9",
+    "href": "sections/update_meetings/9_july_2025.html#conferencesmeetings-9",
     "title": "Lit literature review",
     "section": "Conferences/meetings",
     "text": "Conferences/meetings\n\nLiving Planet Symposium\n\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared).\nRH50 not the best for checking changes on understory (influenced by overall canopy structure). Better metrics would be cover below a certain height (e.g. 5 or 10m)."
@@ -235,39 +242,46 @@
     "href": "sections/presentation.html#conferencesmeetings-3",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nDifferent effects based on season of GEDI pair:"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nDifferent effects based on season of second GEDI shot (Ref. shifted):"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-4",
     "href": "sections/presentation.html#conferencesmeetings-4",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nDifferent effects based on fire type:"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nOnly considering pairs taken from same season:"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-5",
     "href": "sections/presentation.html#conferencesmeetings-5",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nSpatial variability of canopy height change:"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nDifferent effects based on fire type:"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-6",
     "href": "sections/presentation.html#conferencesmeetings-6",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch effect of seasonality on GEDI measurements as well (Winter vs. Summer).\nBut also different trends in canopy (\\(\\downarrow\\)) vs. understory (\\(\\uparrow\\))."
+    "text": "Conferences/meetings\nLiving Planet Symposium\nPoster\nSpatial variability of canopy height change:"
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-7",
     "href": "sections/presentation.html#conferencesmeetings-7",
     "title": "Update meeting",
     "section": "Conferences/meetings",
-    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+    "text": "Conferences/meetings\nLiving Planet Symposium\nXiao Liu from TU Dresden\nXiao working with GEDI time series by aggregating on 1km grid at Harz mountains in Germany.\n\nCould catch effect of seasonality on GEDI measurements as well (Winter vs. Summer).\nBut also different trends in canopy (\\(\\downarrow\\)) vs. understory (\\(\\uparrow\\))."
   },
   {
     "objectID": "sections/presentation.html#conferencesmeetings-8",
     "href": "sections/presentation.html#conferencesmeetings-8",
+    "title": "Update meeting",
+    "section": "Conferences/meetings",
+    "text": "Conferences/meetings\nLiving Planet Symposium\nMariano Garcia and Alcalá team\n\nCombustion completeness from multi-temporal ALS (Working a lot with PNOAD (Spain’s AHN))\nCalculated C.C. as \\(\\frac{|AGB_{post} - AGB_{pre}|}{AGB_{pre}}\\)\nRelation of C.C. with FRE (VIIRS)\nCaution with waveform changes and actual biomass change.\nOpen for visit"
+  },
+  {
+    "objectID": "sections/presentation.html#conferencesmeetings-9",
+    "href": "sections/presentation.html#conferencesmeetings-9",
     "title": "Update meeting",
     "section": "Conferences/meetings",
     "text": "Conferences/meetings\nLiving Planet Symposium\nMisha and Simon (GFZ)\n\nGrasland GEDI optimization (Could be very interesting for other ecosystems)\nINPE ALS data for Amazon (Shared).\nRH50 not the best for checking changes on understory (influenced by overall canopy structure). Better metrics would be cover below a certain height (e.g. 5 or 10m)."
