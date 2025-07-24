@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mdominguezd.github.io/cool_lit/no_sections/other_satellites.html</loc>
-    <lastmod>2025-07-10T10:05:30.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/no_sections/knowledge_gaps.html</loc>
-    <lastmod>2025-07-10T10:05:30.718Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/no_sections/forest_fires.html</loc>
-    <lastmod>2025-07-10T10:05:30.718Z</lastmod>
-  </url>
-  <url>
     <loc>https://mdominguezd.github.io/cool_lit/test_gedidb.html</loc>
-    <lastmod>2025-07-10T10:08:27.042Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/sections/update_meetings/9_july_2025.html</loc>
-    <lastmod>2025-07-10T10:05:30.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/sections/presentation.html</loc>
-    <lastmod>2025-07-10T10:05:30.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/sections/second_chapter.html</loc>
-    <lastmod>2025-07-10T10:05:30.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/sections/first_chapter.html</loc>
-    <lastmod>2025-07-10T10:05:30.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/sections/notes.html</loc>
-    <lastmod>2025-07-10T10:05:30.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/sections/third_chapter.html</loc>
-    <lastmod>2025-07-10T10:05:30.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mdominguezd.github.io/cool_lit/index.html</loc>
-    <lastmod>2025-07-10T10:05:30.717Z</lastmod>
+    <lastmod>2025-07-24T08:32:58.487Z</lastmod>
   </url>
   <url>
     <loc>https://mdominguezd.github.io/cool_lit/no_sections/Modelling.html</loc>
-    <lastmod>2025-07-10T10:05:30.718Z</lastmod>
+    <lastmod>2025-07-24T08:28:57.065Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/no_sections/forest_fires.html</loc>
+    <lastmod>2025-07-24T08:28:57.065Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/update_meetings/9_july_2025.html</loc>
+    <lastmod>2025-07-24T08:28:57.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/third_chapter.html</loc>
+    <lastmod>2025-07-24T08:28:57.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/first_chapter.html</loc>
+    <lastmod>2025-07-24T08:28:57.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/papers.html</loc>
+    <lastmod>2025-07-24T08:28:57.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/index.html</loc>
+    <lastmod>2025-07-24T08:28:57.065Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/notes.html</loc>
+    <lastmod>2025-07-24T08:28:57.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/second_chapter.html</loc>
+    <lastmod>2025-07-24T08:28:57.068Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/sections/presentation.html</loc>
+    <lastmod>2025-07-24T08:28:57.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/no_sections/other_satellites.html</loc>
+    <lastmod>2025-07-24T08:28:57.065Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mdominguezd.github.io/cool_lit/no_sections/knowledge_gaps.html</loc>
+    <lastmod>2025-07-24T08:28:57.065Z</lastmod>
   </url>
   <url>
     <loc>https://mdominguezd.github.io/cool_lit/no_sections/GEDI.html</loc>
-    <lastmod>2025-07-10T10:05:30.717Z</lastmod>
+    <lastmod>2025-07-24T08:28:57.065Z</lastmod>
   </url>
 </urlset>
