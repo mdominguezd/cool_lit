@@ -12,6 +12,8 @@ website:
         text: Objective 2
       - href: sections/third_chapter.qmd
         text: Objective 3
+      - href: sections/papers.qmd
+        text: Brief notes on papers
       - href: test_gedidb.ipynb
         text: Some tests with GEDI data
       - href: sections/presentation.qmd

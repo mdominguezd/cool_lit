@@ -1,0 +1,102 @@
+---
+from: markdown+emoji
+toc: true
+toc-depth: 2
+jupyter: python3
+bibliography: ../references.bib
+embed-resources: true
+format:
+  html:
+    css: ../style/styles.css
+    toc: true
+---
+
+## Burning of woody debris dominates fire emissions in the Amazon and Cerrado
+
+### Context
+
+#### Relevance
+
+Accurate estimation of fire emissions is crucial due to their significant impacts on the integrity of tropical forests, the global carbon cycle, and air quality. Wildfires in the Amazon region, encompassing both the tropical forest and the Cerrado savannahs, threaten biodiversity, the stability and recovery of tropical forests, and their carbon sink potential. Emissions from deforestation fires have led to increased carbon emissions, causing the southeastern Amazon region to act as carbon sources in 2019 and 2020. These emissions, including greenhouse gases like carbon dioxide (CO2) and methane (CH4), and air pollutants such as carbon monoxide (CO), particulate matter (PM), and nitrogen oxides (NOx), also increase human mortality rates in Brazil.
+
+#### Fire emissions estimation
+
+Fire emissions are currently estimated using fire emissions inventories and global vegetation models. State-of-the-art approaches often employ Earth observation (EO)-based emissions inventories that use emission factors linking fuel consumption to trace gas emissions like CO or NOx. These emission factors are **tipcally averaged per biome but actually vary spatially and temporally with fuel type, chemistry, and moisture**. Additionally, some approaches are top-down, like KNMI.S5p which uses Sentinel-5p satellite observations of CO and NOx concentrations in an atmospheric model inversion. Other bottom-up approaches are based on satellite fire radiative power (e.g., GFA.S4F and GFAS) or burnt area (e.g., TUD.S4F, GFED500m, REFIT.AC).
+
+#### Fire emission uncertainties
+
+ Uncertainties in current fire emissions inventories stem from the oversimplified representation of fuel properties in combustion and fire emissions models. Emission factors, which link fuel consumption to trace gas emissions, are typically averaged per biome but actually vary spatially and temporally with fuel type, chemistry, and moisture. The effects of fuels on the combustion process and on the composition of fire emissions remain uncertain. Significant uncertainties also arise from EO products that exclude small fires, leading to 27% lower dry matter burnt (DMB) estimates compared to those accounting for them
+
+#### Objective of TUD.S4F
+
+(TUD.S4F) aims to overcome these limitations by:
+
+1. Offering higher spatial resolution (333 × 333 m) than existing methods.
+2. Estimating local surface fuel accumulation from observed vegetation and land cover changes.
+3. Incorporating fuel moisture derived from satellite data.
+4. Dynamically computing emission factors and combustion efficiency based on fuel moisture, composition, and type, rather than using fixed values
+
+**How was woody debris estimated?:** In the TUD.S4F approach, fuel loads, including fine and coarse woody debris (FWD, CWD), are derived from canopy height and Leaf Area Index (LAI) using allometric equations calibrated with GEDI observations and the ESA CCI biomass map. The accumulation of surface fuels is estimated from land cover changes and temporal changes in LAI.
+
+
+```{mermaid}
+mindmap
+  root((Fire Emissions Research))
+    Context
+      Environmental Impact
+        Tropical Forest Integrity
+        Global Carbon Cycle
+        Amazon Carbon Source 2019-2020
+      Health Impact
+        Mortality in Brazil
+        Air Pollutants CO PM NOx
+        Greenhouse Gases CO2 CH4
+    
+    Current Methods
+      Earth Observation
+        Fixed Emission Factors per Biome 
+        Top-down KNMI.S5p
+        Bottom-up Fire Power e.g. GFAS
+        Bottom-up Burnt Area e.g. GFED
+    
+    Limitations
+      Oversimplified Fuel Properties
+      Fixed Values Should Vary
+      Small Fires Excluded
+        27% Lower DMB Estimates
+    
+    TUD.S4F Solution
+      Higher Resolution 333m
+      Local Fuel Estimation
+      Satellite Fuel Moisture
+      Dynamic Emission Factors
+      GEDI Calibrated Methods
+    
+    Key Findings
+      Regional Fuel Mix
+        Woody Debris 75% Total
+        Herbaceous litter Secondary
+        Live Vegetation Minimal
+      Fire Type Differences
+        Forest Fires 80% Woody Debris
+        Savannah Fires 60% Woody Debris
+      
+      Validation
+        Not much field data
+        Compared to field measurements
+          Amazon RMSE 1.67 kg/m²
+          Cerrado RMSE 0.64 kg/m²
+          Outperforms Other Models
+      
+      Emission Patterns
+        Spatial CO Gradient
+          Andes 40 g/kg when Flaming/Complete
+          Amazon 120 g/kg when Smouldering/Incomplete
+        Biome Differences
+          Savannah 71 g/kg
+          Forest 100-109 g/kg
+        Woody Debris Effect
+          High Loads Over 3 kg/m²
+          Triggers Smouldering
+          Higher CO Emissions
+```
